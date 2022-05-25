@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./cssImages/scss/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/6fe325caa6.js" crossorigin="anonymous"></script>
+    <title>Manage Client</title>
+</head>
+<body>
+    <section class="login-section">
+        <div class="">
+            <div class="d-flex">
+                <div class="cstm-aside px-3 d-flex flex-column pb-5 justify-content-between">
+                    <div class="py-4 mt-2">
+                        <div class="aside-logo">
+                            <img src="./cssImages/images/Asset 1@3x (1).png" alt="">
+                        </div>
+                        <div class="admin-info mt-2">
+                            <img src="./cssImages/images/Asset 4@3x (1).png" alt="">
+                            <div class="admin-name">
+                                Administrator
+                            </div>
+                            <div class="admin-email">
+                                admin@email.com
+                            </div>
+                            <div class="cstm-links">
+                                <ul>
+                                    <li>
+                                        <div class="d-flex align-items-center">
+                                            <div class="aside-icon icon-1"></div>
+                                            <div>
+                                                <a href="#">Home</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="d-flex align-items-center">
+                                            <div class="aside-icon icon-2"></div>
+                                            <div>
+                                                <a href="dashboard.html">Dashboard</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="d-flex align-items-center">
+                                            <div class="aside-icon icon-3"></div>
+                                            <div>
+                                                <a href="clients.html">Products</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="d-flex align-items-center">
+                                            <div class="aside-icon icon-4"></div>
+                                            <div>
+                                                <a href="#">Contacts</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="d-flex align-items-center">
+                                            <div class="aside-icon icon-5"></div>
+                                            <div>
+                                                <a href="clients.html">Clients</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="d-flex align-items-center">
+                                            <div class="aside-icon icon-6"></div>
+                                            <div>
+                                                <a href="#">Settings</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="logout-cont text-center">
+                        <button class="logout-btn">
+                            LOGOUT
+                        </button>
+                    </div>
+                </div>
+                <div class="py-5 main-content px-5">
+                    <div class="main-nav d-flex justify-content-between">
+                        <div class="d-flex align-items-center"> 
+                            <h1>Manage Clients{Client}</h1>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div>
+                                <input type="search" name="" placeholder="Search Client" id="">
+                            </div>
+                            <div>
+                                
+                                <a href="#">
+                                    <img src="./cssImages/images/Asset 2@3x (1).png" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="./cssImages/images/Asset 3@3x (1).png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-5 ">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Client Info</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Plan Settings</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="messages-tab" data-bs-toggle="tab" data-bs-target="#messages" type="button" role="tab" aria-controls="messages" aria-selected="false">QR Codes</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="settings-tab" data-bs-toggle="tab" data-bs-target="#settings" type="button" role="tab" aria-controls="settings" aria-selected="false">Media & Images</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="wheels-tab" data-bs-toggle="tab" data-bs-target="#wheels" type="button" role="tab" aria-controls="wheels" aria-selected="false">Wheel Conﬁguration</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="sms-tab" data-bs-toggle="tab" data-bs-target="#sms" type="button" role="tab" aria-controls="sms" aria-selected="false">SMS Messages</button>
+                            </li>
+                          </ul>
+                          
+                        <div class="tab-content">
+                            <!-- Client Info -->
+                            <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="container">
+                                    <form action="" class="manage-form pt-5">   
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                            <h6>Client Name</h6>
+                                                            <input type="text" name="" id="" placeholder="Enter client Name">
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                            <h6>Website URL</h6>
+                                                            <input type="text" name="" id="" placeholder="https://example.com/">
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <h6>Primary Contact</h6>
+                                                        <select name="" id="">
+                                                            <option value="0">Select Contact</option>
+                                                            <option value="1">Contact 1</option>
+                                                            <option value="2">Contact 2</option>
+                                                            <option value="3">Contact 3</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <h6>Data Template</h6>
+                                                        <select name="" id="">
+                                                            <option value="0">Select Template</option>
+                                                            <option value="1">Template 1</option>
+                                                            <option value="2">Template 2</option>
+                                                            <option value="3">Template 3</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <h6>SMS</h6>
+                                                        <select name="" id="">
+                                                            <option value="0">Select</option>
+                                                            <option value="1">Option 1</option>
+                                                            <option value="2">Option 2</option>
+                                                            <option value="3">Option 3</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                            <h6>Enter Username</h6>
+                                                            <input type="text" name="" id="" placeholder="Enter Username">
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                            <h6>Enter Password</h6>
+                                                            <input type="password" name="" id="" placeholder="Enter Password">
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                            <h6>CRM Emails</h6>
+                                                            <input type="email" name="" id="" placeholder="example@example.com">
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                            <h6>Service Plans</h6>
+                                                            <select name="" id="">
+                                                                <option value="0">Select service plans</option>
+                                                            </select>
+                                                    </div>
+                                                    <div class="col-md-6 d-flex justify-content-between">
+                                                        <button class="save-btn" type="button">Save</button>
+                                                        <button class="cancel-btn" type="button">Cancel</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <h6>Website Products</h6>
+                                                <textarea name="" id="" cols="100" rows="10"></textarea>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <!-- Plan Settings -->
+                            <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                <div class="container">
+                                    <form action="" class="manage-form pt-5">   
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="row">
+                                                    <div class="w-20">
+                                                            <h6>Plan Type</h6>
+                                                                <select name="" id="">
+                                                                    <option value="0">Select Plan Type</option>
+                                                                    <option value="1">Option 1</option>
+                                                                    <option value="2">Option 2</option>
+                                                                    <option value="3">Option 3</option>
+                                                                </select>
+                                                    </div>
+                                                    <div class="w-20">
+                                                            <h6>Number Of Attempts</h6>
+                                                            <input type="text" name="" id="" placeholder="Enter number of attempts">
+                                                    </div>
+                                                    <div class="w-20">
+                                                            <h6>Current Sessions</h6>
+                                                            <input type="text" name="" id="" placeholder="Enter number of sessions">
+                                                    </div>
+                                                    <div class="w-20">
+                                                            <h6>Agent Wait Time</h6>
+                                                            <input type="text" name="" id="" placeholder="Enter wait time">
+                                                    </div>
+                                                    <div class="w-20">
+                                                            <h6>Disclose Caller ID</h6>
+                                                                    
+                                                                <select name="" id="">
+                                                                    <option value="0">Select</option>
+                                                                    <option value="1">Option 1</option>
+                                                                    <option value="2">Option 2</option>
+                                                                    <option value="3">Option 3</option>
+                                                                </select>
+                                                    </div>
+                                                    
+                                                    <div class="col-md-6">
+                                                        <h6>Plan Type</h6>
+                                                        <div class="d-flex">
+                                                            <select name="" id="" class="me-2">
+                                                                <option value="0">Select Plan Type</option>
+                                                                <option value="1">Option 1</option>
+                                                                <option value="2">Option 2</option>
+                                                                <option value="3">Option 3</option>
+                                                            </select>
+                                                            <button class="cancel-btn">Add Agent +</button>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="plan-table mb-4">
+                                                        <table width="100%">
+                                                            <thead>
+                                                                <tr>
+                                                                    <td width="60%">Name</td>
+                                                                    <td width="20%">Phone</td>
+                                                                    <td width="20%"></td>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+
+                                                    <div>
+                                                    <div class="col-md-6 d-flex">
+                                                        <button class="save-btn" type="button">Save</button>
+                                                        <button class="cancel-btn" type="button">Cancel</button>
+                                                    </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <!-- QR CODES -->
+                            <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">
+                                <div class="container">
+                                    <form action="" class="manage-form pt-5">   
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                            <h6>Title</h6>
+                                                            <input type="text" name="" id="" placeholder="Enter Titke">
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                            <h6>Text</h6>
+                                                            <input type="text" name="" id="" placeholder="">
+                                                    </div>
+                                                </div>
+                                                    <div class="col-md-12 p-4 mb-4 bordered">
+                                                        <table width="100%" class="">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Agent1</td>
+                                                                    <td>?pid=7d921a2f-34acd733&src=agent1</td>
+                                                                    <td><a href="#" style="color: red;">DELETE</a></td>
+                                                                    <td><i class="fa-solid fa-download"></i></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Phone QR</td>
+                                                                    <td>?pid=7d921a2f-34acd733&src=qr</td>
+                                                                    <td><a href="#" style="color: red;">DELETE</a></td>
+                                                                    <td><i class="fa-solid fa-download"></i></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>TV</td>
+                                                                    <td>?pid=7d921a2f-34acd733&src=tv</td>
+                                                                    <td><a href="#" style="color: red;">DELETE</a></td>
+                                                                    <td><i class="fa-solid fa-download"></i></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <h6>Enter QR</h6>
+                                                        <input type="text" name="" id="" placeholder="Enter QR">
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                            <h6>Enter Title</h6>
+                                                            <input type="text" name="" id="" placeholder="Enter Title">
+                                                    </div>
+                                                    
+                                                    <div class="col-md-4">
+                                                        <h6>Select Theme</h6>
+                                                        <select name="" id="">
+                                                            <option value="0">Select Theme</option>
+                                                            <option value="1">Option 1</option>
+                                                            <option value="2">Option 2</option>
+                                                            <option value="3">Option 3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div>
+                                                            <h6>Background Opacity</h6>
+                                                            <div><span id="demo"></span>%</div>
+                                                            <input class="px-0 mb-3" type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                                                        </div>
+                                                        
+                                                        <h6>Active</h6>
+                                                        <select name="" id="">
+                                                            <option value="0">Select</option>
+                                                            <option value="1">Option 1</option>
+                                                            <option value="2">Option 2</option>
+                                                            <option value="3">Option 3</option>
+                                                        </select>
+                                                        <div>
+                                                            <h6>Upload Your Logo</h6>
+                                                            <button type="button" class="spin-wheel-btn ms-0" onclick="HandleBrowseClick('input-image-hidden');" >UPLOAD IMAGE</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-8 img-preview">
+                                                        <img id="image-preview" src="" >
+
+                                                            <input style="display:none" id="input-image-hidden" onchange="document.getElementById('image-preview').src = window.URL.createObjectURL(this.files[0])" type="file" accept="image/jpeg, image/png">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-md-6 d-flex">
+                                                <button class="save-btn" type="button">Save</button>
+                                                <button class="cancel-btn" type="button">Cancel</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <!-- Media and Images -->
+                            <div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab">
+                                <div class="container">
+                                    <form action="" class="manage-form pt-5">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <h6>Select Demo Page</h6>
+                                                        <input type="file" name="" id="">
+                                                        <div class="upload-preview">
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <h6>Select HTML Page</h6>
+                                                        <input type="file" name="" id="">
+                                                        <div class="upload-preview">
+                                                            
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <h6>Select MMS Image</h6>
+                                                        <input type="file" name="" id="">
+                                                        <div class="upload-preview">
+                                                            
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        
+                                                    <div class="col-md-6 d-flex mt-4">
+                                                        <button class="save-btn" type="button">Save</button>
+                                                        <button class="cancel-btn" type="button">Cancel</button>
+                                                    </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <!-- Wheel Config -->
+                            <div class="tab-pane" id="wheels" role="tabpanel" aria-labelledby="wheels-tab">
+                                <div class="container">
+                                    <form action="" class="manage-form pt-5">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <h6>Title</h6>
+                                                        <input type="text" name="" id="" placeholder="Enter Title">
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <h6>Button Text</h6>
+                                                        <input type="text" name="" id="" placeholder="Enter button text">
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <h6>Start Delay Time</h6>
+                                                        <input type="text" name="" id="" placeholder="0">
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <h6>Message</h6>
+                                                        <input type="text" name="" id="" placeholder="Enter Message">
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <h6>Offer</h6>
+                                                        <input type="text" name="" id="" placeholder="Enter Offer">
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <h6>Offer 1</h6>
+                                                        <input type="text" name="" id="" placeholder="Enter Offer">
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <h6>Offer 2</h6>
+                                                        <input type="text" name="" id="" placeholder="Enter Offer">
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <h6>Offer 3</h6>
+                                                        <input type="text" name="" id="" placeholder="Enter Offer">
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <h6>Offer 4</h6>
+                                                        <input type="text" name="" id="" placeholder="Enter Offer">
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <h6>Offer 5</h6>
+                                                        <input type="text" name="" id="" placeholder="Enter Offer">
+                                                    </div>
+                                                    <div class="col-md-6 d-flex justify-content-between">
+                                                        <button class="save-btn" type="button">Save</button>
+                                                        <button class="cancel-btn" type="button">Cancel</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 text-center px-5">
+                                                <img src="./assets/images/Asset 151@3x.png" alt="" style="max-width: 60%;">
+                                                <h1 class="pt-5">SPIN NOW!</h1>
+                                                <h5>Imagine how this would look on your site!</h5>
+                                                <div>
+                                                    <form action=""  class="manage-form">
+                                                        <div class="d-flex justify-content-center px-5">
+                                                            <div class="col-md-7">
+                                                                <input type="text" placeholder="Enter phone Number">
+                                                            </div>
+                                                            <div class="col-md-5 d-flex ">
+                                                                <button class="spin-wheel-btn" type="button">Spin The Wheel</button>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="pt-1 px-5">
+                                                    
+                                                    <div class="spin-wheel-sm-text">
+                                                        By submitting my request and clicking 'Ok', I conﬁrm that I have read and agree to the Terms and Conditions and that I consent for TapText or its partners to contact me regarding my inquiry via phone calls and/or text messages at any telephone number provided by me. I understand these communications could be sent using an autodialer. I also understand that my consent is not required in order to utilize these services. For recurring SMS campaigns: Text STOP to cancel and HELP for help. Message and data rates may apply.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <!-- SMS -->
+                            <div class="tab-pane" id="sms" role="tabpanel" aria-labelledby="sms-tab">
+                                <div class="container">
+                                    <form action="" class="manage-form pt-5">   
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                            <h6>Client Name</h6>
+                                                            <input type="text" name="" id="" placeholder="Enter client Name">
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                            <h6>Website URL</h6>
+                                                            <input type="text" name="" id="" placeholder="https://example.com/">
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <h6>SMS</h6>
+                                                            <input type="file" name="" id="" placeholder="Upload Files">
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <h6>Website Products</h6>
+                                                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                                                    </div>
+                                                    <div class="col-md-6 d-flex justify-content-between">
+                                                        <button class="save-btn" type="button">Save</button>
+                                                        <button class="cancel-btn" type="button">Cancel</button>
+                                                    </div>
+                                                    </div>
+                                                </div>
+                                                    <div class="col-md-6 justify-content-center d-flex">
+                                                        <img class="phone-img" src="./assets/images/phone.png" alt="">
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        var slider = document.getElementById("myRange");
+        var output = document.getElementById("demo");
+        output.innerHTML = slider.value;
+        
+        slider.oninput = function() {
+          output.innerHTML = this.value;
+        }
+    </script>
+    <script type="text/javascript">
+            function HandleBrowseClick(input_image)
+            {
+                var fileinput = document.getElementById(input_image);
+                fileinput.click();
+            }     
+    </script>
+    <script>
+        $(document).ready(function(){
+            $('a[data-toggle="tab"]').on('show.bs.tab', function(e) {
+                localStorage.setItem('activeTab', $(e.target).attr('href'));
+            });
+            var activeTab = localStorage.getItem('activeTab');
+            if(activeTab){
+                $('#myTab a[href="' + activeTab + '"]').tab('show');
+            }
+        });
+        </script>
+</body>
+</html>
