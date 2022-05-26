@@ -1,0 +1,197 @@
+
+        body {
+            padding-top: 0px;
+        }
+        #sidebar_main {
+            width: 100%;
+        }
+        .analyticsHeader {
+            font-size: 25px;
+            font-weight: bold;
+            padding-top: 5px;
+            float: left;
+        }
+        #page_content_inner{
+            background: white;
+            background-image: url(https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/628b9142d1af69d07ea1e861.png);
+            background-position: 100% 0%;
+            background-repeat: no-repeat;
+            padding: 24px 0px 0px 0px;
+        }
+        #sidebar_main .sidebar_main_header {
+            background-image: unset;
+            border-bottom: 0px;
+        }
+        #header_main{
+            background: transparent;
+            box-shadow: unset;
+            margin-left: 0px !important;
+        }
+        .md-card {
+            background: transparent;
+            box-shadow: unset;
+        }
+        .user_action_icon {
+            background: #ffffff;
+            border-radius: 10px;
+        }
+        .user_action_image {
+            background: #ffffff;
+            border-radius: 10px !important;
+            padding: 0px 10px 10px 10px !important;
+            margin-left: 10px !important;
+        }
+        #header_main .header_main_search_input {
+            color: gray;
+        }
+        #header_main .header_main_search_form{
+            padding: 2px 46px 0 0px !important;
+        }
+        .portalCenterSectio01 {
+            margin-top: 10px;
+        }
+        .portalCenterSectio01 .md-card {
+            background: #d576bc;
+            border-radius: 10px;
+        }
+        .portalCenterSectio01 h2, .portalCenterSectio01 span {
+            color: #ffffff !important;
+        }
+        .chartist .ct-label{
+            font-size: 10px !important;
+        }
+        .uk-grid-medium-padding0 {
+            padding-left: 0px;
+        }
+        /*donut*/
+        #canvas-holder {
+            width: 100%;
+            margin-top: 0px;
+            text-align: center;
+        }
+
+        #chartjs-tooltip {
+            opacity: 1 !important;
+            position: absolute;
+            background: transparent;
+            color: white;
+            border-radius: 3px;
+            -webkit-transition: all .1s ease;
+            transition: all .1s ease;
+            pointer-events: none;
+            -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+        }
+        .chartjs-tooltip-key {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            margin-right: 10px;
+        }
+        .chart001 #chartjs-tooltip {
+            display: none !important;
+        }
+        /**/
+        .icon-container-status {
+            width: 50px;
+            height: 50px;
+            position: relative;
+            margin: 0 auto;
+        }
+
+        .icon-container-status img {
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+        }
+
+        .icon-container-status .status-circle {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: grey;
+            border: 2px solid white;
+            bottom: 0;
+            right: 0;
+            position: absolute;
+        }
+        .wrap-status {
+            text-align: center;
+        }
+        .wrap-status .clients{
+            padding-top: 10px;
+        }
+        .wrap-status .email {
+            padding-bottom: 20px;
+        }
+        .sidebar_logo{
+            margin-bottom: 20px;
+            margin-top: 10px;
+            margin: 0 auto;
+        }
+        .menu_section li .menu_title:hover{
+            color: #7cb342;
+        }
+        .sidebar_logo {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        #myInput {
+            background-image: url('/css/searchicon.png');
+            background-position: 10px 10px;
+            background-repeat: no-repeat;
+            width: 50%;
+            font-size: 16px;
+            padding: 12px 20px 12px 40px;
+            border: 1px solid #ddd;
+            margin-bottom: 12px;
+            margin-top: 10px;
+          }
+          
+          #myTable {
+            border-collapse: collapse;
+            width: 100%;
+            border: 1px solid #ddd;
+            font-size: 18px;
+          }
+
+          .tableListProdct {
+              padding-left: 60px;
+              padding-top: 30px;
+          }
+          
+          #myTable th, #myTable td {
+            text-align: left;
+            padding: 12px;
+          }
+          
+          #myTable tr {
+            border-bottom: 1px solid #ddd;
+          }
+          
+          #myTable tr.header, #myTable tr:hover {
+            background-color: #f1f1f1;
+          }
+
+        /*Responsive*/
+        @media screen and (min-width: 1400px) {
+            #bar-chart{
+                height: 400px !important;
+                width: 100% !important;
+            }
+            #bar-chart2{
+                height: 200px !important;
+                width: 100% !important;
+            }
+            #bar-chart3 {
+                height: 600px !important;
+                width: 100% !important;
+            }
+            .sidebar_logo{
+                width: 300px;
+            }
+            .menu_section {
+                margin: 0 auto;
+                width: 300px;
+            }
+        }

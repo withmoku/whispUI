@@ -14,8 +14,7 @@
     <link rel="icon" type="image/png" href="assets/img/favicon-16x16.png" sizes="16x16">
     <link rel="icon" type="image/png" href="assets/img/favicon-32x32.png" sizes="32x32">
 
-    <title>Dashboard</title>
-
+    <title>Manage Products</title>
  
     <!-- uikit -->
     <link rel="stylesheet" href="bower_components/uikit/css/uikit.almost-flat.min.css" media="all">
@@ -33,9 +32,6 @@
     <link rel="stylesheet" href="assets/css/themes/themes_combined.min.css" media="all">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <link href="https://unpkg.com/tabulator-tables@5.2.4/dist/css/tabulator.min.css" rel="stylesheet">
-    <script type="text/javascript" src="https://unpkg.com/tabulator-tables@5.2.4/dist/js/tabulator.min.js"></script>
 
     <link href="assets/css/dashboard.css" rel="stylesheet">
 
@@ -80,13 +76,13 @@
                                         <span class="menu_title">Home</span>
                                     </a>
                                 </li>
-                                <li class="current_section">
+                                <li class="">
                                     <a href="">
                                         <span class="menu_icon"><i class="fa fa-pie-chart" style="font-size:24px"></i></span>
                                         <span class="menu_title">Dashboard</span>
                                     </a>
                                 </li>
-                                <li class="" title="">
+                                <li class="current_section" title="">
                                     <a href="clients.html">
                                         <span class="menu_icon"><i class="fa fa-briefcase" style="font-size:24px"></i></span>
                                         <span class="menu_title">Products</span>
@@ -121,7 +117,7 @@
                         <div class="header_main_content">
                             <nav class="uk-navbar">
                                 
-                                <span class="analyticsHeader">Analytics</span>
+                                <span class="analyticsHeader">Manage Products</span>
                                 
                                 <div class="uk-navbar-flip">
                                     <ul class="uk-navbar-nav user_actions">
@@ -296,318 +292,95 @@
                         </div>
                     </header><!-- main header end -->
                     <div class="uk-grid" data-uk-grid-margin data-uk-grid-match="{target:'.md-card'}">
-                         <div class="uk-width-medium-7-10">
-                            <div class="md-card">
-                                <!-- section 01-->
-                                <div class="md-card-content">
-                                    <div class="uk-grid uk-grid-medium portalCenterSectio01" data-uk-grid-margin data-uk-grid-match="{target:'.md-card'}">
-                                        <div class="uk-width-medium-1-3">
-                                            <div class="md-card">
-                                                <div class="md-card-content">
-                                                    <div class="uk-float-right uk-margin-top uk-margin-small-right"></div>
-                                                    <span class="uk-text-muted uk-text-small">CLICKS</span>
-                                                    <h2 class="uk-margin-remove"><span class="countUpMe">0<noscript>5750</noscript></span></h2>
-                                                </div>
-                                            </div>
-                                            <div class="md-card">
-                                                <div class="md-card-content">
-                                                    <div class="uk-float-right uk-margin-top uk-margin-small-right"></div>
-                                                    <span class="uk-text-muted uk-text-small">BUTTON CLICKS</span>
-                                                    <h2 class="uk-margin-remove"><span class="countUpMe">0<noscript>1348</noscript></span></h2>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="uk-width-medium-1-3">
-                                            <div class="md-card">
-                                                <div class="md-card-content">
-                                                    <div class="uk-float-right uk-margin-top uk-margin-small-right"></div>
-                                                    <span class="uk-text-muted uk-text-small">CONVERSATIONS</span>
-                                                    <h2 class="uk-margin-remove"><span class="countUpMe">0<noscript>58</noscript></span></h2>
-                                                </div>
-                                            </div>
-                                            <div class="md-card">
-                                                <div class="md-card-content">
-                                                    <div class="uk-float-right uk-margin-top uk-margin-small-right"></div>
-                                                    <span class="uk-text-muted uk-text-small">CHAT CLICKS</span>
-                                                    <h2 class="uk-margin-remove"><span class="countUpMe">0<noscript>35</noscript></span></h2>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="uk-width-medium-1-3">
-                                            <div class="md-card">
-                                                <div class="md-card-content">
-                                                    <div class="uk-float-right uk-margin-top uk-margin-small-right"></div>
-                                                    <span class="uk-text-muted uk-text-small">CONVERSIONS</span>
-                                                    <h2 class="uk-margin-remove">1%</h2>
-                                                </div>
-                                            </div>
-                                            <div class="md-card">
-                                                <div class="md-card-content">
-                                                    <div class="uk-float-right uk-margin-top uk-margin-small-right"></div>
-                                                    <span class="uk-text-muted uk-text-small">URL SESSIONS</span>
-                                                    <h2 class="uk-margin-remove"><span class="countUpMe">0<noscript>35</noscript></span></h2>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--end section 01-->
-                                    <!--section 03-->
-                                    <div class="uk-grid">
-                                        <div class="uk-width-medium-8-10">
-                                            <div class="md-card chart001">
-                                                <div class="">
-                                                    <h4 class="heading_c" style="color:#001730;padding-top: 10px;"><b>Recent Clients</b></h4>
-                                                    <!-- Chart.js v2.9.3 -->
-                                                    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
-                                                    <canvas id="bar-chart" height="400" style="width: 100%;"></canvas>         
-                                                </div>
-                                                <script>
-                                                    // Bar chart
-                                                    new Chart(document.getElementById("bar-chart"), {
-                                                        type: 'bar',
-                                                        data: {
-                                                            labels: ['Credit.com', 'Fit4life Fayetteville', 'Fit4life Jacksonville', 'Gym Grow Evans', 'Fit4life - Gills Hill', 'Fit4life Cleaveland', 'Fit4life Raeford', 'Gym Grow Club', 'Fir4life Feyetteville', 'Gym Grow Club'],
-                                                        datasets: [
-                                                            {
-                                                            barPercentage: 0.5,
-                                                            barThickness: 6,
-                                                            maxBarThickness: 8,
-                                                            minBarLength: 2,    
-                                                            label: "",
-                                                            backgroundColor: "#001730",
-                                                            data: [1478,2200,734,784,433, 100, 300, 250, 1300, 1500]
-                                                            }
-                                                        ]
-                                                        },
-                                                        options: {
-                                                        legend: { display: false },
-                                                        title: {
-                                                            display: true,
-                                                            text: '',
-                                                            align: 'left'
-                                                        },
-                                                        scales: {
-                                                            xAxes: [{
-                                                                gridLines: {
-                                                                    display:false
-                                                                }
-                                                            }],
-                                                            yAxes: [{
-                                                                gridLines: {
-                                                                    display:false
-                                                                }   
-                                                            }]
-                                                        }
-                                                        }
-                                                    });
-                                                </script>
-                                            </div>
-                                        </div>
-                                        <div class="uk-width-medium-2-10  uk-grid-medium-padding0">
-                                            <div class="md-card">
-                                                <h4 class="heading_c" style="color:#001730;padding-top: 10px;"><b>Device Used</b></h4>
-                                                <div id="canvas-holder" style="width: 150px;">
-                                                    <canvas id="chart-area" height="300" style="width: 100%;"/>
-                                                </div>
-                                                <div id="chartjs-tooltip"></div>
-                                                <script>
-                                                window.chartColors = {
-                                                    mobile: '#2bb2d7',
-                                                    browser: '#001730'
-                                                };
-
-                                                Chart.defaults.global.tooltips.custom = function(tooltip) {
-                                                // Tooltip Element
-                                                var tooltipEl = document.getElementById('chartjs-tooltip');
-
-                                                // Hide if no tooltip
-                                                if (tooltip.opacity === 0) {
-                                                    tooltipEl.style.opacity = 0;
-                                                    return;
-                                                }
-
-                                                // Set Text
-                                                if (tooltip.body) {
-                                                    var total = 0;
-
-                                                    // get the value of the datapoint
-                                                    var value = this._data.datasets[tooltip.dataPoints[0].datasetIndex].data[tooltip.dataPoints[0].index].toLocaleString();
-
-                                                    // calculate value of all datapoints
-                                                this._data.datasets[tooltip.dataPoints[0].datasetIndex].data.forEach(function(e) {
-                                                    total += e;
-                                                    });
-
-                                                    // calculate percentage and set tooltip value
-                                                    tooltipEl.innerHTML = '<h1>' + (value / total * 100) + '%</h1>';
-                                                }
-
-                                                // calculate position of tooltip
-                                                var centerX = (this._chartInstance.chartArea.left + this._chartInstance.chartArea.right) / 2;
-                                                var centerY = ((this._chartInstance.chartArea.top + this._chartInstance.chartArea.bottom) / 2);
-
-                                                // Display, position, and set styles for font
-                                                tooltipEl.style.opacity = 1;
-                                                tooltipEl.style.left = centerX + 'px';
-                                                tooltipEl.style.top = centerY + 'px';
-                                                tooltipEl.style.fontFamily = tooltip._fontFamily;
-                                                tooltipEl.style.fontSize = tooltip.fontSize;
-                                                tooltipEl.style.fontStyle = tooltip._fontStyle;
-                                                tooltipEl.style.padding = tooltip.yPadding + 'px ' + tooltip.xPadding + 'px';
-                                                };
-
-                                                var config = {
-                                                type: 'doughnut',
-                                                data: {
-                                                    datasets: [{
-                                                    data: [80, 20],
-                                                    backgroundColor: [
-                                                        window.chartColors.mobile,
-                                                        window.chartColors.browser,
-                                                    ],
-                                                    }],
-                                                    labels: [
-                                                    "Mobile",
-                                                    "Browser"
-                                                    ]
-                                                },
-                                                options: {
-                                                    responsive: true,
-                                                    legend: {
-                                                    display: true,
-                                                    labels: {
-                                                        padding: 20
-                                                    },
-                                                    },
-                                                    tooltips: {
-                                                    enabled: false,
-                                                    }
-                                                }
-                                                };
-
-                                                window.onload = function() {
-                                                    var ctx = document.getElementById("chart-area").getContext("2d");
-                                                    window.myPie = new Chart(ctx, config);
-                                                };  
-                                                </script>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="uk-grid">
-                                        <div class="uk-width-medium-10-10">
-                                            <div class="md-card chart001">
-                                                <div class="">
-                                                    <h4 class="heading_c" style="color:#001730;padding-top: 10px;"><b>Conversations By Contacts</b></h4>
-                                                    <!-- Chart.js v2.9.3 -->
-                                                   <canvas id="bar-chart2" height="200" style="width: 100%;"></canvas>         
-                                                </div>
-                                                <script>
-                                                    // Bar chart
-                                                    new Chart(document.getElementById("bar-chart2"), {
-                                                        type: 'bar',
-                                                        data: {
-                                                            labels: ['1', '2', '3', '4', '5', '6', '7', '8', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20'],
-                                                        datasets: [
-                                                            {
-                                                                barPercentage: 0.5,
-                                                                barThickness: 6,
-                                                                maxBarThickness: 8,
-                                                                minBarLength: 2,
-                                                                label: "",
-                                                                backgroundColor: "#32a9de",
-                                                                data: [1478,2200,734,784,433, 100, 300, 250, 1300, 1500,1478,2200,734,784,433, 100, 300, 250, 1300, 1500]
-                                                            }
-                                                        ]
-                                                        },
-                                                        options: {
-                                                        legend: { display: false },
-                                                        title: {
-                                                            display: true,
-                                                            text: '',
-                                                            align: 'left'
-                                                        },
-                                                        scales: {
-                                                            xAxes: [{
-                                                                gridLines: {
-                                                                    display:false
-                                                                }
-                                                            }],
-                                                            yAxes: [{
-                                                                gridLines: {
-                                                                    display:false
-                                                                }   
-                                                            }]
-                                                        },
-                                                        tooltips: {
-                                                            enabled: false,
-                                                            }
-                                                        }
-                                                    });
-                                                </script>
-                                            </div>
-                                        </div>            
-                                    </div>                
-                                    <!--end section 03-->
-                                </div>
-                            </div>
+                         <div class="uk-width-medium-8-10 tableListProdct">
+                            <table id="myTable">
+                                <tr class="header">
+                                  <th>Product Identifier</th>
+                                  <th>
+                                        Name<br />
+                                        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+                                  </th>
+                                  <th>Country</th>
+                                  <th>Country</th>
+                                  <th></th>
+                                </tr>
+                                <tr>
+                                  <td>0c60829f</td>
+                                  <td>Germany</td>
+                                  <td>Ipsum</td>
+                                  <td>
+                                    <a class="md-btn md-btn-primary" href="javascript:void(0)">
+                                        <i class="uk-icon-list"></i>
+                                        Details
+                                    </a>
+                                  </td>
+                                  <td>
+                                    <a class="md-btn md-btn-danger" href="javascript:void(0)">
+                                        <i class="uk-icon-close"></i>
+                                        Delete
+                                    </a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>Berglunds snabbkop</td>
+                                  <td>1230c608</td>
+                                  <td>Lorem</td>
+                                </tr>
+                                <tr>
+                                  <td>321fd34</td>
+                                  <td>UK</td>
+                                  <td>Dorem</td>
+                                </tr>
+                                <tr>
+                                  <td>32123er23</td>
+                                  <td>Germany</td>
+                                  <td>Ipsum</td>
+                                </tr>
+                                <tr>
+                                  <td>fdsf34</td>
+                                  <td>Canada</td>
+                                  <td>Lorem</td>
+                                </tr>
+                                <tr>
+                                  <td>fdsdf234</td>
+                                  <td>Italy</td>
+                                  <td>Dorem</td>
+                                </tr>
+                                <tr>
+                                  <td>dsf3234</td>
+                                  <td>UK</td>
+                                  <td>Lorem</td>
+                                </tr>
+                                <tr>
+                                  <td>fdsf45</td>
+                                  <td>France</td>
+                                  <td>Ipsom</td>
+                                </tr>
+                              </table>
+                              <script>
+                                function myFunction() {
+                                  var input, filter, table, tr, td, i, txtValue;
+                                  input = document.getElementById("myInput");
+                                  filter = input.value.toUpperCase();
+                                  table = document.getElementById("myTable");
+                                  tr = table.getElementsByTagName("tr");
+                                  for (i = 0; i < tr.length; i++) {
+                                    td = tr[i].getElementsByTagName("td")[1];
+                                    if (td) {
+                                      txtValue = td.textContent || td.innerText;
+                                      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                                        tr[i].style.display = "";
+                                      } else {
+                                        tr[i].style.display = "none";
+                                      }
+                                    }       
+                                  }
+                                }
+                                </script>
                         </div>
-                        <div class="uk-width-medium-3-10">
+                        <div class="uk-width-medium-1-10">
                             <div class="md-card">
-                                <div class="md-card-content">
-                                    <img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/628cb41e7f39f5135e992b23.png" />
-                                </div>
-                                <div class="md-card-content">
-                                    <div class="md-card chart0011" style='background-color: #001730; border-radius: 10px;'>
-                                        <h5 style="text-align: center; color: #ffffff;padding-top: 30px;">Clicks By Products</h5>
-                                        <div class="">
-                                            <canvas id="bar-chart3" height="300" style="width: 100%;"></canvas>         
-                                        </div>
-                                        <script>
-                                            // Bar chart
-                                            new Chart(document.getElementById("bar-chart3"), {
-                                                type: 'bar',
-                                                data: {
-                                                    labels: ['Peak Payment','Generic', 'Gym Grow Club'],
-                                                datasets: [
-                                                    {
-                                                    barPercentage: 0.5,
-                                                    barThickness: 6,
-                                                    maxBarThickness: 8,
-                                                    minBarLength: 2,    
-                                                    label: "",
-                                                    backgroundColor: "#32a9de",
-                                                    data: [250, 1300, 1500],
-                                                    color: '#ffffff'
-                                                    }
-                                                ]
-                                                },
-                                                options: {
-                                                legend: { display: false },
-                                                title: {
-                                                    display: true,
-                                                    text: '',
-                                                    align: 'left',
-                                                    color: '#ffffff',
-                                                    paddingBottom: '50px'
-                                                },
-                                                scales: {
-                                                    xAxes: [{
-                                                        gridLines: {
-                                                            display:false,
-                                                            color: '#ffffff'
-                                                        }
-                                                    }],
-                                                    yAxes: [{
-                                                        gridLines: {
-                                                            display:false
-                                                        }   
-                                                    }]
-                                                }
-                                                }
-                                            });
-                                        </script>
-                                    </div>
-                                </div>
+                                 
                             </div>
                         </div>
                     </div>
