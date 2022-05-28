@@ -38,7 +38,37 @@
         <script type="text/javascript" src="bower_components/matchMedia/matchMedia.addListener.js"></script>
         <link rel="stylesheet" href="assets/css/ie.css" media="all">
     <![endif]-->
-
+    <style>
+        .header_double_height:after {
+            background: transparent;
+        }
+        .invoiceSection01 .left{
+            padding-top: 30px;
+        }
+        .invoiceSection01 .email {
+            margin-top: -25px;
+            color: #aab2c3;
+            margin-left: 60px;
+        }
+        .invoiceSection01 .right{
+            text-align: right;
+        }
+        .invoiceSection01 .right p {
+            line-height: .5em;
+            color: #aab2c3;
+        }
+        .invoiceSection02{
+            padding-top: 10px;
+        }
+        .invoiceSection02 p {
+            color: #ffffff;
+            font-size: 16px;
+        }
+        .invoiceSection02 .right {
+            text-align: right;
+            padding-right: 30px;
+        }
+    </style>
 </head>
 <body class="disable_transitions sidebar_main_open sidebar_main_swipe header_double_height">
     <!-- main header -->
@@ -566,7 +596,7 @@
     <div id="page_content">
         <div id="page_content_inner">
 
-            <div class="uk-width-medium-8-10 uk-container-center reset-print">
+            <div class="uk-width-9-10 uk-container-center reset-print">
                 <div class="uk-grid uk-grid-collapse" data-uk-grid-margin>
                     <div class="uk-width-large-7-10">
                         <div class="md-card md-card-single main-print" id="invoice">
@@ -574,12 +604,12 @@
                             <div id="invoice_form"></div>
                         </div>
                     </div>
-                    <div class="uk-width-large-3-10 hidden-print uk-visible-large">
+                    <div class="uk-width-large-3-10 hidden-print uk-visible-large" style="background: #ffffff;">
                         <div class="md-list-outside-wrapper">
-                            <div class="md-list-outside-search">
+                            <div class="md-list-outside-search" style='display: none'>
                                 <input type="text" class="md-input inverted-colors" placeholder="Find invoice..." id="invoice-filtering"/>
                             </div>
-                            <div class="md-list-outside-inner">
+                            <div class="md-list-outside-inner" style="margin-top: -50px;">
                                 <ul class="md-list md-list-outside invoices_list" id="invoices_list">
     
                                 <li class="heading_list">March 2020</li>
@@ -772,6 +802,164 @@
     </div>
 
     <script id="invoice_template" type="text/x-handlebars-template">
+        <div class="" data-uk-grid-margin data-uk-grid-match="{target:'.md-card'}">
+            <div class="">
+                <div class="md-card">
+                    <div class="md-card-content">
+                       
+                        <div class="uk-grid invoiceSection01" data-uk-grid-margin>
+                            <div class="uk-width-medium-1-2 left">
+                                <div class="">
+                                    <div class="">
+                                        <img src='./assets/img/logo_small.png' />
+                                        <p class="email">whispemailaddress@whisp.io</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="uk-width-medium-1-2 right">
+                                <div class="">
+                                    <div class="d-card-content">
+                                        <i class="md-icon material-icons" id="invoice_print">&#xE8ad;</i>
+                                        <p>2808 Robson St.</p>
+                                        <p>Vancouver, BC V6B 3K9</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="uk-grid invoiceSection02" style="background: url('./assets/img/invoiceBg01.png');margin-right: 0px !important;margin-left: 0px !important; background-size: 100% 100%;" data-uk-grid-margin>
+                            <div class="uk-width-medium-1-2 left">
+                                <div class="">
+                                    <div class="">
+                                        <p><b>Invoice Number</b></p>
+                                        <p>163/2015</p>
+                                        <p>Issued Date: 27 - 05 - 2022</p>
+                                        <p>Due Date: 10 - 06 - 2022</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="uk-width-medium-1-2 right">
+                                <div class="">
+                                    <div class="d-card-content">
+                                        <p><b>Billed to</b></p>
+                                        <p>Price LTD</p>
+                                        <p>2894 Bond Street</p>
+                                        <p>Providence, RI 02908</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="uk-grid invoiceSection03" style="margin-right: 0px !important; margin-left: 0px !important;">
+                            <div class="uk-width-medium" style="margin-right: 0px !important; padding-left: 0px !important;">
+                                <p class="title01" style='font-weight: bold'>Invoice Description</p>
+                                <hr />
+                            </div>
+                            <div class="uk-width-medium" style="margin-right: 0px !important; padding-left: 0px !important;">
+                                <table class="uk-table">
+                                    <thead>
+                                        <tr class="uk-text-upper">
+                                            <th>Item Name</th>
+                                            <th>Rate</th>
+                                            <th class="uk-text-center">Hours</th>
+                                            <th class="uk-text-center">Vat</th>
+                                            <th class="uk-text-center">Total</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="uk-table-middle">
+                                            <td>
+                                                <span class="uk-text-large">Website design & development</span><br/>
+                                                <span class="uk-text-muted uk-text-small">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+                                            </td>
+                                            <td>
+                                                $25.00
+                                            </td>
+                                            <td class="uk-text-center">
+                                                32
+                                            </td>
+                                            <td class="uk-text-center">
+                                                23%
+                                            </td>
+                                            <td class="uk-text-center">
+                                                $984.00
+                                            </td>
+                                        </tr>
+                                        <tr class="uk-table-middle">
+                                            <td>
+                                                <span class="uk-text-large">Search engine optimization</span><br/>
+                                                <span class="uk-text-muted uk-text-small">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+                                            </td>
+                                            <td>
+                                                $50.00
+                                            </td>
+                                            <td class="uk-text-center">
+                                                20
+                                            </td>
+                                            <td class="uk-text-center">
+                                                $100.00
+                                            </td>
+                                            <td class="uk-text-center">
+                                                $1,537.00
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table><br /><br />
+                                <div class="uk-grid sec">
+                                    <div class="uk-width-small-1-2">
+                                        <b>Payment Method</b><br /><br />
+                                        <div>
+                                            <p>Select Payment: <b>Wire Transfer</b></p>
+                                            <p>Account Name: <b>Account XYZ</b></p>
+                                            <p>Account Number: <b>IBAN 123 123 123 123</b></p>
+                                            <p>Tracking Number: <b>0000-000-00RN</b></p>
+                                        </div>  
+                                    </div>
+                                    <div class="uk-width-small-1-2">
+                                        <table class="uk-table">
+                                            <tbody>
+                                                <tr class="uk-table-middle">
+                                                    <td>
+                                                        <span class="uk-text-large">Sub Total</span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="uk-text-large">$3,050.00</span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="uk-table-middle">
+                                                    <td>
+                                                        <span class="uk-text-large">Discount</span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="uk-text-large">$0</span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="uk-table-middle">
+                                                    <td>
+                                                        <span class="uk-text-large">Total Tax</span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="uk-text-large">$701.50</span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="uk-table-middle">
+                                                    <td>
+                                                        <span class="uk-text-large"><b>Total</b></span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="uk-text-large"><b>$3,751.50</b></span>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="md-card-toolbar{{#if invoice.header}} hidden-print{{/if}}">
             <div class="md-card-toolbar-actions hidden-print">
                 <i class="md-icon material-icons" id="invoice_print">&#xE8ad;</i>
@@ -785,103 +973,6 @@
                     </div>
                 </div>
             </div>
-            <h3 class="md-card-toolbar-heading-text large" id="invoice_name">
-                Invoice {{invoice.invoice_number}}
-            </h3>
-        </div>
-        <div class="md-card-content invoice_content print_bg{{#if invoice.footer}} invoice_footer_active{{/if}}">
-            {{#if invoice.header}}
-                <div class="invoice_header md-bg-blue-grey-500">
-                    <img src="assets/img/logo_light.png" alt="" height="30" width="140"/>
-                    <img class="uk-float-right" src="assets/img/others/html5-css-javascript-logos.png" alt="" height="80" width="205"/>
-                </div>
-            {{/if}}
-            <div class="uk-margin-medium-bottom">
-                {{#if invoice.header}}
-                <h3 class="heading_a uk-margin-bottom"> Invoice {{invoice.invoice_number}} </h3>
-                {{/if}}
-                <span class="uk-text-muted uk-text-small uk-text-italic">Date:</span> {{invoice.invoice_date}}
-                <br/>
-                <span class="uk-text-muted uk-text-small uk-text-italic">Due Date:</span> <span {{#if invoice.overdue}} class="uk-text-danger uk-text-bold"{{/if}}>{{invoice.invoice_due_date}}</span>
-            </div>
-            <div class="uk-grid" data-uk-grid-margin>
-                <div class="uk-width-small-3-5">
-                    <div class="uk-margin-bottom">
-                        <span class="uk-text-muted uk-text-small uk-text-italic">From:</span>
-                        <address>
-                            <p><strong>{{invoice.invoice_from_company}}</strong></p>
-                            <p>{{invoice.invoice_from_address_1}}</p>
-                            <p>{{invoice.invoice_from_address_2}}</p>
-                        </address>
-                    </div>
-                    <div class="uk-margin-medium-bottom">
-                        <span class="uk-text-muted uk-text-small uk-text-italic">To:</span>
-                        <address>
-                            <p><strong>{{invoice.invoice_to_company}}</strong></p>
-                            <p>{{invoice.invoice_to_address_1}}</p>
-                            <p>{{invoice.invoice_to_address_2}}</p>
-                        </address>
-                    </div>
-                </div>
-                <div class="uk-width-small-2-5">
-                    <span class="uk-text-muted uk-text-small uk-text-italic">Total:</span>
-                    <p class="heading_b {{#if invoice.overdue}}uk-text-danger{{else}}uk-text-success{{/if}}">{{invoice.invoice_total_value}}</p>
-                    <p class="uk-text-small uk-text-muted uk-margin-top-remove">Incl. VAT -
-                        {{invoice.invoice_vat_value}}</p>
-                </div>
-            </div>
-            <div class="uk-grid uk-margin-large-bottom">
-                <div class="uk-width-1-1">
-                    <table class="uk-table">
-                        <thead>
-                            <tr class="uk-text-upper">
-                                <th>Description</th>
-                                <th>Rate</th>
-                                <th class="uk-text-center">Hours</th>
-                                <th class="uk-text-center">Vat</th>
-                                <th class="uk-text-center">Total</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                        {{#each invoice.invoice_services}}
-                        <tr class="uk-table-middle">
-                                <td>
-                                    <span class="uk-text-large">{{ service_name }}</span><br/>
-                                    <span class="uk-text-muted uk-text-small">{{ service_description }}</span>
-                                </td>
-                                <td>
-                                    {{ service_rate }}
-                                </td>
-                                <td class="uk-text-center">
-                                    {{ service_hours }}
-                                </td>
-                                <td class="uk-text-center">
-                                    {{ service_vat }}
-                                </td>
-                                <td class="uk-text-center">
-                                    {{ service_total }}
-                                </td>
-                            </tr>
-                        {{/each}}
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            <div class="uk-grid">
-                <div class="uk-width-1-1">
-                    <span class="uk-text-muted uk-text-small uk-text-italic">Payment to:</span>
-                    <p class="uk-margin-top-remove">
-                        {{{ invoice.invoice_payment_info }}}
-                    </p>
-                    <p class="uk-text-small">Please pay within {{ invoice.invoice_payment_due }} days</p>
-                </div>
-            </div>
-            {{#if invoice.footer}}
-            <div class="invoice_footer">
-                Zboncak, Nikolaus and Dicki<span>&middot;</span>145 Boehm Drive
-Strosinchester, MT 28830<br>
-                </span>(204) 359-7419 x11298<span>&middot;</span>considine.lorena@stanton.com            </div>
-            {{/if}}
         </div>
     </script>
 
@@ -890,7 +981,7 @@ Strosinchester, MT 28830<br>
             <div class="md-card-toolbar">
                 <div class="md-card-toolbar-actions">
                     <i class="md-icon material-icons">&#xE161;</i>
-                </div>
+                </div>popup
                 <input name="invoice_number" id="invoice_number" class="md-card-toolbar-input" type="text" value="" placeholder="Invoice number" />
             </div>
             <div class="md-card-content large-padding">
