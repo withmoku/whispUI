@@ -14709,3 +14709,39 @@ address p + p {
 #card-1 span, #card-2 span, #card-3 span, #card-4 span{
     color: #fff!important;
 }
+
+
+/****Modified****/
+/***whisp new design (mailbox)***/
+.content_mailbox {
+    padding: 90px 24px 100px !important;
+}
+.mailbox-top-bar{
+    display: -ms-flexbox;
+    display: -webkit-flex; 
+    display: flex;
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.top_mailbox{
+    background: none !important;
+    box-shadow: none !important;
+    position: inherit !important;
+    
+}
+.uk-mailbox{
+    background: white;
+    box-shadow: 0 3px 6px rgb(0 0 0 / 16%), 0 3px 6px rgb(0 0 0 / 23%);
+    padding: 10px;
+}
+.mailbox-search{
+    width:  25%;
+}
+
+.border-5{
+    border-radius: 5px;
+}
