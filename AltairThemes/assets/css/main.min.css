@@ -14788,6 +14788,8 @@ address p + p {
     border-bottom:  1px solid;
 }
 /****** end chat edit ******/
+
+/******Scrumboard Edit********/
 .scrumboard_content {
     padding-top: 145px !important;
 }
@@ -14808,4 +14810,23 @@ address p + p {
 .top_bar_panel_scrumboard {
     margin-right:  10% !important;
     margin-left: 10% !important;
+}
+/*******************************/
+
+/*******snippet edit*************/
+.top_bar_snippet {
+    background: none !important;
+    box-shadow: none !important;
+
+    position: inherit !important;
+}
+
+.top_bar_snippet ul li {
+    background: white;
+    margin-right: 15px !important;
+    border-radius: 10px;
+}
+
+.page_content_snippet {
+    padding-top: 40px;
 }
