@@ -5171,7 +5171,7 @@ body > .content-preloader.preloader-active {
 .md-card + .md-card,
 .md-card + .uk-grid,
 .uk-grid + .md-card {
-    margin-top: 25px;
+    margin-top: 0px;
 }
 .md-card .full_width_in_card {
     padding: 16px 24px;
@@ -12839,7 +12839,7 @@ a.editable-click.editable-disabled:hover {
     content: "\e315";
 }
 .user_heading {
-    padding: 24px;
+    padding: 0px 35px 25px;
     background: #1976d2;
     color: #fff;
     position: relative;
@@ -12878,7 +12878,7 @@ a.editable-click.editable-disabled:hover {
     padding: 0;
 }
 .user_heading_bg .bg_overlay {
-    padding: 24px;
+    padding: 60px;
     position: relative;
 }
 .user_heading_bg .bg_overlay:before {
@@ -12897,7 +12897,7 @@ a.editable-click.editable-disabled:hover {
 .user_heading_avatar {
     float: left;
     margin-right: 24px;
-    position: relative;
+    margin-top: -40px;
 }
 @media only screen and (max-width: 959px) {
     .user_heading_avatar {
@@ -12921,8 +12921,8 @@ a.editable-click.editable-disabled:hover {
 }
 .user_heading_avatar .thumbnail {
     transition: all 280ms cubic-bezier(0.4, 0, 0.2, 1);
-    width: 82px;
-    height: 82px;
+    width: 150px;
+    height: 150px;
     line-height: 74px;
     border-radius: 50%;
     border: 2px solid #fff;
@@ -12960,7 +12960,12 @@ a.editable-click.editable-disabled:hover {
     display: none;
 }
 .user_heading_content {
-    padding: 16px 0;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    justify-content: space-between;
 }
 @media only screen and (max-width: 959px) {
     .user_heading_content {
