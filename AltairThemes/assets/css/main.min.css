@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+body{
+    font-family: 'Raleway', sans-serif !important;
+   
+}
 [class*="uk-animation-"] {
     -webkit-animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -6383,7 +6388,7 @@ label.md-label {
 .md-list .uk-nestable-list > li > .md-list-content .md-list-heading,
 .md-list > li > .md-list-content .md-list-heading {
     margin: 0;
-    font-weight: 500;
+    font-weight: 700;
     display: block;
     overflow: hidden;
     padding-bottom: 1px;
@@ -6488,13 +6493,14 @@ label.md-label {
 .md-list-addon > li {
     margin-left: 64px;
     position: relative;
+    padding: 15px !important;
 }
 .md-list-addon > li:last-child .md-list-addon-element {
     border-bottom: none;
     bottom: 0;
 }
 .md-list-addon > li:first-child .md-list-addon-element {
-    top: 0;
+    top: 7px;
 }
 .md-list-addon > li.md-list-item-active .md-list-addon-element,
 .md-list-addon > li.md-list-item-active .md-list-addon-element .material-icons {
@@ -6503,7 +6509,7 @@ label.md-label {
 .md-list-addon-element {
     position: absolute;
     left: -64px;
-    top: -1px;
+    top: 5px;
     bottom: -1px;
     width: 64px;
     text-align: center;
@@ -6572,7 +6578,7 @@ label.md-label {
     padding: 0 4px;
 }
 .md-list-outside > li {
-    padding: 0;
+    padding: 8px;
 }
 .md-list-outside > li > .md-list-content {
     padding: 8px 16px;
@@ -11423,7 +11429,7 @@ a.editable-click.editable-disabled:hover {
     }
 }
 #header_main {
-    background: #32a9de;
+    background: #32a9de !important;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     padding: 0 25px;
     height: 48px;
@@ -13207,7 +13213,8 @@ a.editable-click.editable-disabled:hover {
 .chat_box .chat_message_wrapper ul.chat_message > li {
     background: #ededed;
     padding: 8px 16px;
-    border-radius: 4px;
+    margin-bottom: 10px;
+    border-radius: 15px;
     position: relative;
     font-size: 13px;
     display: block;
@@ -13230,17 +13237,7 @@ a.editable-click.editable-disabled:hover {
     color: #727272;
     text-transform: uppercase;
 }
-.chat_box .chat_message_wrapper ul.chat_message > li:first-child:before {
-    position: absolute;
-    left: -14px;
-    top: 0;
-    content: "";
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 0 16px 16px 0;
-    border-color: transparent #ededed transparent transparent;
-}
+
 .chat_box .chat_message_wrapper ul.chat_message > li + li {
     margin-top: 4px;
 }
@@ -13432,7 +13429,7 @@ a.editable-click.editable-disabled:hover {
     width: 260px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     background: #fff;
-    border-radius: 2px;
+    border-radius: 10px;
     position: relative;
     box-sizing: border-box;
     padding: 36px 0 48px;
@@ -13444,6 +13441,7 @@ a.editable-click.editable-disabled:hover {
 }
 .chatbox_header {
     position: absolute;
+    background: #32a9de;
     top: 0;
     left: 0;
     right: 0;
@@ -13470,7 +13468,7 @@ a.editable-click.editable-disabled:hover {
 .chatbox_header .header_name {
     line-height: 40px;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 300 !important;
     display: inline-block;
     max-width: 180px;
     text-overflow: ellipsis;
@@ -13517,7 +13515,7 @@ a.editable-click.editable-disabled:hover {
     overflow: hidden;
 }
 .chatbox_content .chatbox_message .chatbox_avatar > img {
-    border-radius: 4px;
+    border-radius: 50%;
 }
 .chatbox_content .chatbox_message_content {
     margin: 0;
@@ -13538,7 +13536,7 @@ a.editable-click.editable-disabled:hover {
 }
 .chatbox_content .chatbox_message_content li > span {
     max-width: 80%;
-    border-radius: 4px;
+    border-radius: 10px;
     font-size: 13px;
     padding: 4px 8px;
     background: rgba(0, 0, 0, 0.085);
@@ -13555,7 +13553,7 @@ a.editable-click.editable-disabled:hover {
 }
 .chatbox_content .chatbox_message.own .chatbox_message_content li > span {
     max-width: 80%;
-    border-radius: 4px;
+    border-radius: 10px;
     font-size: 13px;
     padding: 4px 8px;
     background: #2196f3;
@@ -13590,7 +13588,7 @@ a.editable-click.editable-disabled:hover {
     opacity: 0;
 }
 .chatbox.cb_active .chatbox_header {
-    background: #1976d2;
+    background: #32a9de !important;
 }
 .chatbox.cb_active .chatbox_header,
 .chatbox.cb_active .chatbox_header .material-icons {
@@ -14760,9 +14758,16 @@ address p + p {
 .border-5{
     border-radius: 5px;
 }
+.md-card-list-item-date{
+    font-weight: bolder;
+    color: #000 !important;
+}
 /*****end mailbox edit******/
 
 /***** chat edit *****/
+.chat_body {
+    width: 93% !important;
+}
 .chat-toolbar{
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -14778,7 +14783,8 @@ address p + p {
 }
 .chat-content-left{
 
-    margin-right: 90px;
+    margin-right: 45px;
+    width: 65% !important;
 }
 .md-card-chat {
     padding: 20px;
@@ -14830,3 +14836,4 @@ address p + p {
 .page_content_snippet {
     padding-top: 40px;
 }
+/*******************************/

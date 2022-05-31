@@ -39,8 +39,12 @@
         <link rel="stylesheet" href="assets/css/ie.css" media="all">
     <![endif]-->
     <style>
+        .invoiceSection01{
+            margin-left: 0px !important;
+            margin-right: 20px !important;
+        }
         .header_double_height:after {
-            background: transparent;
+            background: transparent !important;
         }
         .invoiceSection01 .left{
             padding-top: 30px;
@@ -52,6 +56,7 @@
         }
         .invoiceSection01 .right{
             text-align: right;
+            padding-top: 20px;
         }
         .invoiceSection01 .right p {
             line-height: .5em;
@@ -67,6 +72,9 @@
         .invoiceSection02 .right {
             text-align: right;
             padding-right: 30px;
+        }
+        #invoice_add{
+            background: #1e88e5 !important;
         }
     </style>
 </head>
@@ -978,12 +986,26 @@
 
     <script id="invoice_form_template" type="text/x-handlebars-template">
         <form action="" class="uk-form-stacked">
-            <div class="md-card-toolbar">
-                <div class="md-card-toolbar-actions">
-                    <i class="md-icon material-icons">&#xE161;</i>
-                </div>popup
-                <input name="invoice_number" id="invoice_number" class="md-card-toolbar-input" type="text" value="" placeholder="Invoice number" />
-            </div>
+            <div class="uk-grid invoiceSection01" data-uk-grid-margin="">
+                            <div class="uk-width-medium-1-2 left uk-row-first">
+                                <div class="">
+                                    <div class="">
+                                        <img src="./assets/img/logo_small.png">
+                                        <p class="email">whispemailaddress@whisp.io</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="uk-width-medium-1-2 right">
+                                <div class="">
+                                    <div class="d-card-content">
+                                         <i class="md-icon material-icons">&#xE161;</i>
+                                        <p>2808 Robson St.</p>
+                                        <p>Vancouver, BC V6B 3K9</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
             <div class="md-card-content large-padding">
                 <div class="uk-grid" data-uk-grid-margin>
                     <div class="uk-width-medium-1-2">
