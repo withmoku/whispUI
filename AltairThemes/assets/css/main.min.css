@@ -12533,7 +12533,7 @@ a.editable-click.editable-disabled:hover {
     transform: translateY(0);
 }
 .top_bar_active {
-    padding-top: 88px;
+    padding-top: 75px;
 }
 .top_bar_active #header_main {
     box-shadow: none;
@@ -13026,7 +13026,7 @@ a.editable-click.editable-disabled:hover {
     min-height: 100%;
     overflow-y: hidden;
     overflow-x: auto;
-    background: #fff;
+    /*background: #fff;*/
     box-sizing: border-box;
     max-width: 100%;
     -webkit-overflow-scrolling: touch;
@@ -13046,7 +13046,7 @@ a.editable-click.editable-disabled:hover {
     padding: 46px 0 8px;
 }
 #scrum_board .scrum_column {
-    background: rgba(0, 0, 0, 0.085);
+    /*background: rgba(0, 0, 0, 0.085);*/
     padding: 8px;
     height: 100%;
     margin: 0 4px;
@@ -13069,7 +13069,7 @@ a.editable-click.editable-disabled:hover {
     font-weight: 500;
     font-size: 13px;
     text-transform: uppercase;
-    background: #fff;
+    /*background: #fff;*/
     line-height: 36px;
     box-sizing: border-box;
     text-overflow: ellipsis;
@@ -13095,17 +13095,21 @@ a.editable-click.editable-disabled:hover {
 .scrum_task {
     background: #fff;
     padding: 8px 8px 8px 12px;
-    border-left-width: 4px;
-    border-left-style: solid;
+    border-top-width: 8px;
+    border-top-style: solid;
+    margin-bottom:  25px;
+    border-radius:  10px;
 }
 .scrum_task.blocker {
-    border-left-color: #e53935;
+    border-top-color: #e53935;
 }
 .scrum_task.critical {
-    border-left-color: #ffa000;
+    border-top-color: #ffa000;
 }
 .scrum_task.minor {
-    border-left-color: #7cb342;
+    border-top-color: #7cb342;
+    
+
 }
 .scrum_task_title {
     font-size: 13px;
@@ -13114,7 +13118,7 @@ a.editable-click.editable-disabled:hover {
     text-transform: uppercase;
 }
 .scrum_task_description {
-    margin: 0 0 4px;
+    margin: 15px 0;
     font-size: 12px;
 }
 .scrum_task_info {
@@ -14758,6 +14762,7 @@ address p + p {
 }
 /*****end mailbox edit******/
 
+/***** chat edit *****/
 .chat-toolbar{
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -14781,4 +14786,26 @@ address p + p {
 
 .md-card-chat > ul >li {
     border-bottom:  1px solid;
+}
+/****** end chat edit ******/
+.scrumboard_content {
+    padding-top: 145px !important;
+}
+.scrum_task.minor {
+    border-top-color: #7cb342;
+}
+.scrum_task {
+    border-top-style: solid;
+}
+
+.top_bar_scrumboard {
+
+    background: none !important;
+    box-shadow: none !important;
+    margin-top: 25px;
+    /*position: inherit !important;*/
+}
+.top_bar_panel_scrumboard {
+    margin-right:  10% !important;
+    margin-left: 10% !important;
 }

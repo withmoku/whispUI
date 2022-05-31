@@ -40,7 +40,7 @@
     <![endif]-->
 
 </head>
-<body class="disable_transitions sidebar_main_open sidebar_main_swipe uk-height-1-1">
+<body class="disable_transitions sidebar_main_open sidebar_main_swipe uk-height-1-1 scrumboard_content">
     <!-- main header -->
     <header id="header_main">
         <div class="header_main_content">
@@ -564,38 +564,47 @@
     </aside><!-- main sidebar end -->
 
 
-	<div id="top_bar" class="top_bar_expandable">
-		<div class="top_bar_wrapper">
-			<div class="md-top-bar uk-flex">
-				<h3 class="top_bar_heading uk-flex-item-1">
-					Project Name
-				</h3>
-				<div class="uk-flex uk-flex-middle">
-					<a class="md-btn md-btn-primary md-btn-mini" href="javascript:void(0)" data-panel-toggle>Filters</a>
-				</div>
-			</div>
-		</div>
-		<div class="top_bar_panel">
-			<div class="uk-grid" data-uk-grid-margin>
-				<div class="uk-width-medium-1-4 uk-flex uk-flex-bottom">
-					<label>Filter 1</label>
-					<input type="text" class="md-input" />
-				</div>
-				<div class="uk-width-medium-1-4 uk-flex uk-flex-bottom">
-					<label>Filter 2</label>
-					<input type="text" class="md-input" />
-				</div>
-				<div class="uk-width-medium-1-4 uk-flex uk-flex-bottom">
-					<select id="select_filter" name="select_filter" multiple class="uk-width-1-1 uk-flex uk-flex-bottom">
-						<option value="">Select email...</option>
-					</select>
-				</div>
-				<div class="uk-width-medium-1-4 uk-flex uk-flex-bottom">
-					<a class="md-btn md-btn-primary md-btn-wave-light" href="javascript:void(0)">Filter</a>
-				</div>
-			</div>
-		</div>
-	</div>
+
+<div id="top_bar" class="top_bar_expandable top_bar_scrumboard">
+        <div class="md-top-bar ">
+            <div class="uk-width-large-8-10 uk-container-center uk-mailbox border-5">
+                <div class="uk-clearfix">
+                    <div class="top_bar_wrapper">
+            <div class="md-top-bar uk-flex">
+                <h3 class="top_bar_heading uk-flex-item-1">
+                    Whisp Project
+                </h3>
+                <div class="uk-flex uk-flex-middle">
+                    <a class="md-btn md-btn-primary md-btn-mini" href="javascript:void(0)" data-panel-toggle>Filters</a>
+                </div>
+            </div>
+        </div>
+        <div class="top_bar_panel top_bar_panel_scrumboard">
+            <div class="uk-grid" data-uk-grid-margin>
+                <div class="uk-width-medium-1-4 uk-flex uk-flex-bottom">
+                    <label>Filter 1</label>
+                    <input type="text" class="md-input" />
+                </div>
+                <div class="uk-width-medium-1-4 uk-flex uk-flex-bottom">
+                    <label>Filter 2</label>
+                    <input type="text" class="md-input" />
+                </div>
+                <div class="uk-width-medium-1-4 uk-flex uk-flex-bottom">
+                    <select id="select_filter" name="select_filter" multiple class="uk-width-1-1 uk-flex uk-flex-bottom">
+                        <option value="">Select email...</option>
+                    </select>
+                </div>
+                <div class="uk-width-medium-1-4 uk-flex uk-flex-bottom">
+                    <a class="md-btn md-btn-primary md-btn-wave-light" href="javascript:void(0)">Filter</a>
+                </div>
+            </div>
+        </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
 
     <div id="page_content" class="uk-height-1-1">
 
