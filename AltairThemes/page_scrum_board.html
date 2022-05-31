@@ -38,7 +38,11 @@
         <script type="text/javascript" src="bower_components/matchMedia/matchMedia.addListener.js"></script>
         <link rel="stylesheet" href="assets/css/ie.css" media="all">
     <![endif]-->
-
+    <style type="text/css">
+        #scrum_add{
+            background: #1e88e5 !important;
+        }
+    </style>
 </head>
 <body class="disable_transitions sidebar_main_open sidebar_main_swipe uk-height-1-1 scrumboard_content">
     <!-- main header -->
@@ -849,7 +853,7 @@
     </div>
 
     <div class="md-fab-wrapper">
-        <a class="md-fab md-fab-accent md-fab-wave" href="#new_task" data-uk-modal="{ center:true }">
+        <a  id="scrum_add" class="md-fab md-fab-accent md-fab-wave" href="#new_task" data-uk-modal="{ center:true }">
             <i class="material-icons">&#xE145;</i>
         </a>
     </div>

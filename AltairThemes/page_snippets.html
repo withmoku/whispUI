@@ -33,6 +33,11 @@
         <script type="text/javascript" src="bower_components/matchMedia/matchMedia.addListener.js"></script>
         <link rel="stylesheet" href="assets/css/ie.css" media="all">
     <![endif]-->
+    <style type="text/css">
+        #snippet_add{
+            background: #1e88e5 !important;
+        }
+    </style>
 </head>
 
 <body class="disable_transitions sidebar_main_open sidebar_main_swipe">
@@ -952,7 +957,7 @@ $(window).on('resize', function(e) {
         </div>
     </div>
     <div class="md-fab-wrapper">
-        <a class="md-fab md-fab-accent" href="#snippet_new" data-uk-modal="{center:true,bgclose:false,modal:false}">
+        <a id="snippet_add" class="md-fab md-fab-accent" href="#snippet_new" data-uk-modal="{center:true,bgclose:false,modal:false}">
             <i class="material-icons">&#xE150;</i>
         </a>
     </div>
