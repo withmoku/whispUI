@@ -89,6 +89,7 @@
         font-size: 15px !important;
         font-weight: 700;
     }
+
     .ul_contact li {
         border-bottom: 0px !important;
     }
@@ -103,42 +104,57 @@
         padding: 2px 0px;
     }
 
-    .uk_profile > li > a{
+    .uk_profile>li>a {
         background: gainsboro !important;
         /*margin-bottom: 8px !important;*/
         border-radius: 10px !important;
 
     }
-    .uk_profile > li {
+
+    .uk_profile>li {
         margin-right: 20px;
         margin-bottom: 25px;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         border-radius: 10px !important;
     }
-    #user_profile_tabs_content{
+
+    #user_profile_tabs_content {
         margin-top: 45px;
     }
+
     #user_profile_tabs_content li p {
         line-height: 2.3;
     }
-    .contact_icon{
+
+    .contact_icon {
         color: #32a9de !important;
     }
 
-    .ul_contact a{
+    .ul_contact a {
         color: #32a9de !important;
     }
+
     .timeline_content {
         font-size: 18px;
         font-weight: 900;
     }
-    #a_log{
+
+    #a_log {
         margin: 0px 0px 0px 0px !important;
         line-height: normal !important;
         font-size: 14px;
         font-weight: 400;
     }
-
+    .img_post{
+        width: 50px !important;
+    }
+    #img_post{
+        width: 100%;
+        height: 400px;
+    }
+    #img_post img{
+        width: 100%;
+    }
     </style>
 </head>
 
@@ -674,8 +690,8 @@
                             <div class="user_heading_content">
                                 <h2 class="heading_b uk-margin-bottom pr_profile"><span class="uk-text-truncate">Guadalupe Yundt</span><span class="sub-heading pr_profile pr_subheading">Land acquisition specialist</span>
                                     <span class="sub-heading pr_profile pr_location"><span class="material-icons">
-location_on
-</span>Palermo City, Sicily, Italy</span>
+                                            location_on
+                                        </span>Palermo City, Sicily, Italy</span>
                                 </h2>
                                 <ul class="user_stats">
                                     <li>
@@ -697,10 +713,10 @@ location_on
                                 <li><a href="#">Posts</a></li>
                             </ul>
                             <ul id="user_profile_tabs_content" class="uk-switcher uk-margin">
-
                                 <li>
                                     <h2>Summary</h2>
-                                    <p>Iste aut cupiditate nemo laborum est praesentium ut blanditiis est ipsam quia saepe autem et quis aperiam mollitia ipsum quos iste in nostrum quasi laboriosam et est non necessitatibus enim dolorem ullam officiis cum rerum mollitia quibusdam deleniti molestiae omnis sit cumque dolorem tenetur saepe eaque dolor qui omnis non eum accusantium illum dolores vel qui possimus aut aut quis ut consequatur perferendis qui eligendi rem ut recusandae corporis fugiat expedita sed voluptatem non aperiam sunt sed hic inventore. </p><div class="uk-grid uk-margin-medium-top uk-margin-large-bottom" data-uk-grid-margin>
+                                    <p>Iste aut cupiditate nemo laborum est praesentium ut blanditiis est ipsam quia saepe autem et quis aperiam mollitia ipsum quos iste in nostrum quasi laboriosam et est non necessitatibus enim dolorem ullam officiis cum rerum mollitia quibusdam deleniti molestiae omnis sit cumque dolorem tenetur saepe eaque dolor qui omnis non eum accusantium illum dolores vel qui possimus aut aut quis ut consequatur perferendis qui eligendi rem ut recusandae corporis fugiat expedita sed voluptatem non aperiam sunt sed hic inventore. </p>
+                                    <div class="uk-grid uk-margin-medium-top uk-margin-large-bottom" data-uk-grid-margin>
                                         <div class="uk-width-large-1-2">
                                             <h4 class="heading_c uk-margin-small-bottom">Contact</h4>
                                             <ul class="md-list md-list-addon ul_contact">
@@ -776,23 +792,23 @@ location_on
                                     <div class="timeline">
                                         <div class="timeline_item">
                                             <div class="timeline_icon timeline_icon_success"><i class="material-icons">&#xE85D;</i></div>
-                                            
                                             <div class="timeline_content">
                                                 <p id="a_log">9 Mar, 20:24</p>
-                                                Created ticket 
+                                                Created ticket
                                                 <a href="#"><strong>#3289</strong></a>
                                             </div>
                                         </div>
                                         <div class="timeline_item">
                                             <div class="timeline_icon timeline_icon_danger"><i class="material-icons">&#xE5CD;</i></div>
                                             <p id="a_log">15 Mar, 08:36</p>
-                                            <div class="timeline_content">Deleted post <a href="#"><p id="a_log">Aut blanditiis quia similique sint architecto voluptatem.</p></a></div>
+                                            <div class="timeline_content">Deleted post <a href="#">
+                                                    <p id="a_log">Aut blanditiis quia similique sint architecto voluptatem.</p>
+                                                </a></div>
                                         </div>
                                         <div class="timeline_item">
                                             <div class="timeline_icon"><i class="material-icons">&#xE410;</i></div>
-                                            
                                             <div class="timeline_content">
-                                                 <p id="a_log">15 Mar, 08:36</p>
+                                                <p id="a_log">15 Mar, 08:36</p>
                                                 Added photo
                                                 <div class="timeline_content_addon">
                                                     <img src="assets/img/gallery/Image16.jpg" alt="" />
@@ -801,9 +817,8 @@ location_on
                                         </div>
                                         <div class="timeline_item">
                                             <div class="timeline_icon timeline_icon_primary"><i class="material-icons">&#xE0B9;</i></div>
-                                            
                                             <div class="timeline_content">
-                                                 <p id="a_log">15 Mar, 08:36</p>
+                                                <p id="a_log">15 Mar, 08:36</p>
                                                 New comment on post <a href="#"><strong>Et qui laudantium.</strong></a>
                                                 <div class="timeline_content_addon">
                                                     <blockquote>
@@ -814,9 +829,8 @@ location_on
                                         </div>
                                         <div class="timeline_item">
                                             <div class="timeline_icon timeline_icon_warning"><i class="material-icons">&#xE7FE;</i></div>
-                                            
                                             <div class="timeline_content">
-                                                 <p id="a_log">15 Mar, 08:36</p>
+                                                <p id="a_log">15 Mar, 08:36</p>
                                                 Added to Friends
                                                 <div class="timeline_content_addon">
                                                     <ul class="md-list md-list-addon">
@@ -970,27 +984,18 @@ location_on
                                     </ul>
                                 </li>
                                 <li>
-                                    <ul class="md-list">
+                                    <ul class="md-list md-list-addon">
                                         <li>
-                                            <div class="md-list-content">
-                                                <span class="md-list-heading"><a href="#">Dolores dolores ut eos necessitatibus.</a></span>
-                                                <div class="uk-margin-small-top">
-                                                    <span class="uk-margin-right">
-                                                        <i class="material-icons">&#xE192;</i> <span class="uk-text-muted uk-text-small">08 Mar 2020</span>
-                                                    </span>
-                                                    <span class="uk-margin-right">
-                                                        <i class="material-icons">&#xE0B9;</i> <span class="uk-text-muted uk-text-small">9</span>
-                                                    </span>
-                                                    <span class="uk-margin-right">
-                                                        <i class="material-icons">&#xE417;</i> <span class="uk-text-muted uk-text-small">685</span>
-                                                    </span>
-                                                </div>
+                                            <div class="md-list-addon-element">
+                                                <img class="md-user-image md-list-addon-avatar img_post" src="assets/img/avatars/image-asset.jpeg" alt="">
                                             </div>
-                                        </li>
-                                        <li>
                                             <div class="md-list-content">
-                                                <span class="md-list-heading"><a href="#">Doloribus dolore animi sit quia exercitationem dolorem.</a></span>
-                                                <div class="uk-margin-small-top">
+                                                <span class="md-list-heading">Guadalupe Yundt</span>
+                                                <span class="uk-text-small uk-text-muted">Sicily, Italy</span>
+                                                <p>Doloribus dolore animi sit quia exercitationem dolorem. Doloribus dolore animi sit quia exercitationem dolorem.</p>
+                                                <div id="img_post"><img src="assets/img/asset46.png"></div>
+                                            </div>
+                                            <div class="uk-margin-small-top">
                                                     <span class="uk-margin-right">
                                                         <i class="material-icons">&#xE192;</i> <span class="uk-text-muted uk-text-small">16 Mar 2020</span>
                                                     </span>
@@ -1001,295 +1006,50 @@ location_on
                                                         <i class="material-icons">&#xE417;</i> <span class="uk-text-muted uk-text-small">122</span>
                                                     </span>
                                                 </div>
-                                            </div>
                                         </li>
                                         <li>
-                                            <div class="md-list-content">
-                                                <span class="md-list-heading"><a href="#">Qui nobis hic et praesentium quae quisquam totam.</a></span>
-                                                <div class="uk-margin-small-top">
-                                                    <span class="uk-margin-right">
-                                                        <i class="material-icons">&#xE192;</i> <span class="uk-text-muted uk-text-small">26 Mar 2020</span>
-                                                    </span>
-                                                    <span class="uk-margin-right">
-                                                        <i class="material-icons">&#xE0B9;</i> <span class="uk-text-muted uk-text-small">22</span>
-                                                    </span>
-                                                    <span class="uk-margin-right">
-                                                        <i class="material-icons">&#xE417;</i> <span class="uk-text-muted uk-text-small">388</span>
-                                                    </span>
-                                                </div>
+                                            <div class="md-list-addon-element">
+                                                <img class="md-user-image md-list-addon-avatar img_post" src="assets/img/avatars/image-asset.jpeg" alt="">
                                             </div>
-                                        </li>
-                                        <li>
                                             <div class="md-list-content">
-                                                <span class="md-list-heading"><a href="#">Dicta quo et velit eius cupiditate.</a></span>
-                                                <div class="uk-margin-small-top">
-                                                    <span class="uk-margin-right">
-                                                        <i class="material-icons">&#xE192;</i> <span class="uk-text-muted uk-text-small">26 Mar 2020</span>
-                                                    </span>
-                                                    <span class="uk-margin-right">
-                                                        <i class="material-icons">&#xE0B9;</i> <span class="uk-text-muted uk-text-small">11</span>
-                                                    </span>
-                                                    <span class="uk-margin-right">
-                                                        <i class="material-icons">&#xE417;</i> <span class="uk-text-muted uk-text-small">892</span>
-                                                    </span>
-                                                </div>
+                                                <span class="md-list-heading">Guadalupe Yundt</span>
+                                                <span class="uk-text-small uk-text-muted">Sicily, Italy</span>
+                                                <p>Doloribus dolore animi sit quia exercitationem dolorem. Doloribus dolore animi sit quia exercitationem dolorem.</p>
+                                                
                                             </div>
-                                        </li>
-                                        <li>
-                                            <div class="md-list-content">
-                                                <span class="md-list-heading"><a href="#">Inventore quia non quos iste facere necessitatibus quaerat.</a></span>
-                                                <div class="uk-margin-small-top">
-                                                    <span class="uk-margin-right">
-                                                        <i class="material-icons">&#xE192;</i> <span class="uk-text-muted uk-text-small">04 Mar 2020</span>
-                                                    </span>
-                                                    <span class="uk-margin-right">
-                                                        <i class="material-icons">&#xE0B9;</i> <span class="uk-text-muted uk-text-small">25</span>
-                                                    </span>
-                                                    <span class="uk-margin-right">
-                                                        <i class="material-icons">&#xE417;</i> <span class="uk-text-muted uk-text-small">781</span>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="md-list-content">
-                                                <span class="md-list-heading"><a href="#">Similique dolor harum amet ut ea sequi quibusdam.</a></span>
-                                                <div class="uk-margin-small-top">
-                                                    <span class="uk-margin-right">
-                                                        <i class="material-icons">&#xE192;</i> <span class="uk-text-muted uk-text-small">15 Mar 2020</span>
-                                                    </span>
-                                                    <span class="uk-margin-right">
-                                                        <i class="material-icons">&#xE0B9;</i> <span class="uk-text-muted uk-text-small">3</span>
-                                                    </span>
-                                                    <span class="uk-margin-right">
-                                                        <i class="material-icons">&#xE417;</i> <span class="uk-text-muted uk-text-small">482</span>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="md-list-content">
-                                                <span class="md-list-heading"><a href="#">Consequatur officiis ratione est nesciunt.</a></span>
-                                                <div class="uk-margin-small-top">
-                                                    <span class="uk-margin-right">
-                                                        <i class="material-icons">&#xE192;</i> <span class="uk-text-muted uk-text-small">24 Mar 2020</span>
-                                                    </span>
-                                                    <span class="uk-margin-right">
-                                                        <i class="material-icons">&#xE0B9;</i> <span class="uk-text-muted uk-text-small">19</span>
-                                                    </span>
-                                                    <span class="uk-margin-right">
-                                                        <i class="material-icons">&#xE417;</i> <span class="uk-text-muted uk-text-small">633</span>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="md-list-content">
-                                                <span class="md-list-heading"><a href="#">Distinctio illum eius labore aut soluta aperiam amet numquam.</a></span>
-                                                <div class="uk-margin-small-top">
-                                                    <span class="uk-margin-right">
-                                                        <i class="material-icons">&#xE192;</i> <span class="uk-text-muted uk-text-small">08 Mar 2020</span>
-                                                    </span>
-                                                    <span class="uk-margin-right">
-                                                        <i class="material-icons">&#xE0B9;</i> <span class="uk-text-muted uk-text-small">28</span>
-                                                    </span>
-                                                    <span class="uk-margin-right">
-                                                        <i class="material-icons">&#xE417;</i> <span class="uk-text-muted uk-text-small">358</span>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="md-list-content">
-                                                <span class="md-list-heading"><a href="#">Nisi ut a laborum et veniam et ducimus.</a></span>
-                                                <div class="uk-margin-small-top">
-                                                    <span class="uk-margin-right">
-                                                        <i class="material-icons">&#xE192;</i> <span class="uk-text-muted uk-text-small">17 Mar 2020</span>
-                                                    </span>
-                                                    <span class="uk-margin-right">
-                                                        <i class="material-icons">&#xE0B9;</i> <span class="uk-text-muted uk-text-small">19</span>
-                                                    </span>
-                                                    <span class="uk-margin-right">
-                                                        <i class="material-icons">&#xE417;</i> <span class="uk-text-muted uk-text-small">970</span>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="md-list-content">
-                                                <span class="md-list-heading"><a href="#">Occaecati quam tempora provident voluptas temporibus.</a></span>
-                                                <div class="uk-margin-small-top">
+                                            <div class="uk-margin-small-top">
                                                     <span class="uk-margin-right">
                                                         <i class="material-icons">&#xE192;</i> <span class="uk-text-muted uk-text-small">16 Mar 2020</span>
-                                                    </span>
-                                                    <span class="uk-margin-right">
-                                                        <i class="material-icons">&#xE0B9;</i> <span class="uk-text-muted uk-text-small">23</span>
-                                                    </span>
-                                                    <span class="uk-margin-right">
-                                                        <i class="material-icons">&#xE417;</i> <span class="uk-text-muted uk-text-small">110</span>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="md-list-content">
-                                                <span class="md-list-heading"><a href="#">Illum quisquam ab molestiae sunt hic magnam.</a></span>
-                                                <div class="uk-margin-small-top">
-                                                    <span class="uk-margin-right">
-                                                        <i class="material-icons">&#xE192;</i> <span class="uk-text-muted uk-text-small">04 Mar 2020</span>
                                                     </span>
                                                     <span class="uk-margin-right">
                                                         <i class="material-icons">&#xE0B9;</i> <span class="uk-text-muted uk-text-small">24</span>
                                                     </span>
                                                     <span class="uk-margin-right">
-                                                        <i class="material-icons">&#xE417;</i> <span class="uk-text-muted uk-text-small">298</span>
+                                                        <i class="material-icons">&#xE417;</i> <span class="uk-text-muted uk-text-small">122</span>
                                                     </span>
                                                 </div>
-                                            </div>
                                         </li>
                                         <li>
+                                            <div class="md-list-addon-element">
+                                                <img class="md-user-image md-list-addon-avatar img_post" src="assets/img/avatars/image-asset.jpeg" alt="">
+                                            </div>
                                             <div class="md-list-content">
-                                                <span class="md-list-heading"><a href="#">Vel et eos dignissimos.</a></span>
-                                                <div class="uk-margin-small-top">
+                                                <span class="md-list-heading">Guadalupe Yundt</span>
+                                                <span class="uk-text-small uk-text-muted">Sicily, Italy</span>
+                                                <p>Doloribus dolore animi sit quia exercitationem dolorem. Doloribus dolore animi sit quia exercitationem dolorem.</p>
+                                                
+                                            </div>
+                                            <div class="uk-margin-small-top">
                                                     <span class="uk-margin-right">
-                                                        <i class="material-icons">&#xE192;</i> <span class="uk-text-muted uk-text-small">15 Mar 2020</span>
+                                                        <i class="material-icons">&#xE192;</i> <span class="uk-text-muted uk-text-small">16 Mar 2020</span>
                                                     </span>
                                                     <span class="uk-margin-right">
-                                                        <i class="material-icons">&#xE0B9;</i> <span class="uk-text-muted uk-text-small">19</span>
+                                                        <i class="material-icons">&#xE0B9;</i> <span class="uk-text-muted uk-text-small">24</span>
                                                     </span>
                                                     <span class="uk-margin-right">
-                                                        <i class="material-icons">&#xE417;</i> <span class="uk-text-muted uk-text-small">179</span>
+                                                        <i class="material-icons">&#xE417;</i> <span class="uk-text-muted uk-text-small">122</span>
                                                     </span>
                                                 </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="md-list-content">
-                                                <span class="md-list-heading"><a href="#">Et qui at quo aut sapiente tenetur est molestias.</a></span>
-                                                <div class="uk-margin-small-top">
-                                                    <span class="uk-margin-right">
-                                                        <i class="material-icons">&#xE192;</i> <span class="uk-text-muted uk-text-small">27 Mar 2020</span>
-                                                    </span>
-                                                    <span class="uk-margin-right">
-                                                        <i class="material-icons">&#xE0B9;</i> <span class="uk-text-muted uk-text-small">2</span>
-                                                    </span>
-                                                    <span class="uk-margin-right">
-                                                        <i class="material-icons">&#xE417;</i> <span class="uk-text-muted uk-text-small">535</span>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="md-list-content">
-                                                <span class="md-list-heading"><a href="#">Fugiat tempora ducimus rem.</a></span>
-                                                <div class="uk-margin-small-top">
-                                                    <span class="uk-margin-right">
-                                                        <i class="material-icons">&#xE192;</i> <span class="uk-text-muted uk-text-small">19 Mar 2020</span>
-                                                    </span>
-                                                    <span class="uk-margin-right">
-                                                        <i class="material-icons">&#xE0B9;</i> <span class="uk-text-muted uk-text-small">22</span>
-                                                    </span>
-                                                    <span class="uk-margin-right">
-                                                        <i class="material-icons">&#xE417;</i> <span class="uk-text-muted uk-text-small">262</span>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="md-list-content">
-                                                <span class="md-list-heading"><a href="#">Magni ipsa minus culpa error ratione quia.</a></span>
-                                                <div class="uk-margin-small-top">
-                                                    <span class="uk-margin-right">
-                                                        <i class="material-icons">&#xE192;</i> <span class="uk-text-muted uk-text-small">26 Mar 2020</span>
-                                                    </span>
-                                                    <span class="uk-margin-right">
-                                                        <i class="material-icons">&#xE0B9;</i> <span class="uk-text-muted uk-text-small">7</span>
-                                                    </span>
-                                                    <span class="uk-margin-right">
-                                                        <i class="material-icons">&#xE417;</i> <span class="uk-text-muted uk-text-small">182</span>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="md-list-content">
-                                                <span class="md-list-heading"><a href="#">Voluptatum fuga id laboriosam.</a></span>
-                                                <div class="uk-margin-small-top">
-                                                    <span class="uk-margin-right">
-                                                        <i class="material-icons">&#xE192;</i> <span class="uk-text-muted uk-text-small">12 Mar 2020</span>
-                                                    </span>
-                                                    <span class="uk-margin-right">
-                                                        <i class="material-icons">&#xE0B9;</i> <span class="uk-text-muted uk-text-small">14</span>
-                                                    </span>
-                                                    <span class="uk-margin-right">
-                                                        <i class="material-icons">&#xE417;</i> <span class="uk-text-muted uk-text-small">340</span>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="md-list-content">
-                                                <span class="md-list-heading"><a href="#">Odio recusandae dignissimos accusamus saepe sunt dolorem accusantium.</a></span>
-                                                <div class="uk-margin-small-top">
-                                                    <span class="uk-margin-right">
-                                                        <i class="material-icons">&#xE192;</i> <span class="uk-text-muted uk-text-small">20 Mar 2020</span>
-                                                    </span>
-                                                    <span class="uk-margin-right">
-                                                        <i class="material-icons">&#xE0B9;</i> <span class="uk-text-muted uk-text-small">9</span>
-                                                    </span>
-                                                    <span class="uk-margin-right">
-                                                        <i class="material-icons">&#xE417;</i> <span class="uk-text-muted uk-text-small">710</span>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="md-list-content">
-                                                <span class="md-list-heading"><a href="#">Et ad vero animi delectus est ipsum.</a></span>
-                                                <div class="uk-margin-small-top">
-                                                    <span class="uk-margin-right">
-                                                        <i class="material-icons">&#xE192;</i> <span class="uk-text-muted uk-text-small">05 Mar 2020</span>
-                                                    </span>
-                                                    <span class="uk-margin-right">
-                                                        <i class="material-icons">&#xE0B9;</i> <span class="uk-text-muted uk-text-small">12</span>
-                                                    </span>
-                                                    <span class="uk-margin-right">
-                                                        <i class="material-icons">&#xE417;</i> <span class="uk-text-muted uk-text-small">586</span>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="md-list-content">
-                                                <span class="md-list-heading"><a href="#">Ut cumque dolor temporibus incidunt veritatis laudantium.</a></span>
-                                                <div class="uk-margin-small-top">
-                                                    <span class="uk-margin-right">
-                                                        <i class="material-icons">&#xE192;</i> <span class="uk-text-muted uk-text-small">20 Mar 2020</span>
-                                                    </span>
-                                                    <span class="uk-margin-right">
-                                                        <i class="material-icons">&#xE0B9;</i> <span class="uk-text-muted uk-text-small">16</span>
-                                                    </span>
-                                                    <span class="uk-margin-right">
-                                                        <i class="material-icons">&#xE417;</i> <span class="uk-text-muted uk-text-small">398</span>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="md-list-content">
-                                                <span class="md-list-heading"><a href="#">Vel omnis eos quia aut iste ipsam aut.</a></span>
-                                                <div class="uk-margin-small-top">
-                                                    <span class="uk-margin-right">
-                                                        <i class="material-icons">&#xE192;</i> <span class="uk-text-muted uk-text-small">29 Mar 2020</span>
-                                                    </span>
-                                                    <span class="uk-margin-right">
-                                                        <i class="material-icons">&#xE0B9;</i> <span class="uk-text-muted uk-text-small">20</span>
-                                                    </span>
-                                                    <span class="uk-margin-right">
-                                                        <i class="material-icons">&#xE417;</i> <span class="uk-text-muted uk-text-small">945</span>
-                                                    </span>
-                                                </div>
-                                            </div>
                                         </li>
                                     </ul>
                                 </li>
