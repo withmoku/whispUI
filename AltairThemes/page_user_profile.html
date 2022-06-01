@@ -1,109 +1,207 @@
 <!doctype html>
 <!--[if lte IE 9]> <html class="lte-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 9]><!--> <html lang="en"> <!--<![endif]-->
-
-
+<!--[if gt IE 9]><!-->
+<html lang="en">
+<!--<![endif]-->
 <!-- Mirrored from altair-html.tzdthemes.com/page_user_profile.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 28 Oct 2020 04:42:00 GMT -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,user-scalable=no,width=device-width">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- Remove Tap Highlight on Windows Phone IE -->
-    <meta name="msapplication-tap-highlight" content="no"/>
-
+    <meta name="msapplication-tap-highlight" content="no" />
     <link rel="icon" type="image/png" href="assets/img/favicon-16x16.png" sizes="16x16">
     <link rel="icon" type="image/png" href="assets/img/favicon-32x32.png" sizes="32x32">
-
     <title>Altair Admin v2.22.0</title>
-
-
     <!-- uikit -->
     <link rel="stylesheet" href="bower_components/uikit/css/uikit.almost-flat.min.css" media="all">
-
     <!-- flag icons -->
     <link rel="stylesheet" href="assets/icons/flags/flags.min.css" media="all">
-
     <!-- style switcher -->
     <link rel="stylesheet" href="assets/css/style_switcher.min.css" media="all">
-
     <!-- altair admin -->
     <link rel="stylesheet" href="assets/css/main.min.css" media="all">
-
     <!-- themes -->
     <link rel="stylesheet" href="assets/css/themes/themes_combined.min.css" media="all">
-
     <!-- matchMedia polyfill for testing media queries in JS -->
     <!--[if lte IE 9]>
         <script type="text/javascript" src="bower_components/matchMedia/matchMedia.js"></script>
         <script type="text/javascript" src="bower_components/matchMedia/matchMedia.addListener.js"></script>
         <link rel="stylesheet" href="assets/css/ie.css" media="all">
     <![endif]-->
+    <style type="text/css">
+    .pr_print {
+        bottom: 8px !important;
+        top: auto !important;
+    }
 
+    .pr_profile {
+        color: black !important;
+    }
+
+    .pr_heading {
+        background: #fff;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    .pr_content {
+        background: #fff0 !important;
+        box-shadow: none !important;
+    }
+
+    .pr_user_content {
+        background: #fff;
+        margin-top: 30px;
+    }
+
+    .user_heading_bg .bg_overlay:before {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    .pr_heading_profile {
+        background: #fff;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+
+    #page_print {
+        color: #6f7378 !important;
+    }
+
+    .heading_b {
+        font: 900 24px/45px Raleway, sans-serif !important;
+    }
+
+    ul.user_stats>li {
+        border-right: 1px solid #10263d;
+        /*padding-left: 25px !important;*/
+        padding-right: 25px !important;
+    }
+
+    ul.user_stats>li:last-child {
+        border-right: 0;
+    }
+
+    .heading_b .pr_subheading {
+        font-size: 15px !important;
+        font-weight: 700;
+    }
+    .ul_contact li {
+        border-bottom: 0px !important;
+    }
+
+    .heading_b .pr_location {
+        font-size: 14px !important;
+        font-weight: 400;
+        background: #eef1f5;
+        border-radius: 5px;
+        margin-top: 20px;
+        text-align: center;
+        padding: 2px 0px;
+    }
+
+    .uk_profile > li > a{
+        background: gainsboro !important;
+        /*margin-bottom: 8px !important;*/
+        border-radius: 10px !important;
+
+    }
+    .uk_profile > li {
+        margin-right: 20px;
+        margin-bottom: 25px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border-radius: 10px !important;
+    }
+    #user_profile_tabs_content{
+        margin-top: 45px;
+    }
+    #user_profile_tabs_content li p {
+        line-height: 2.3;
+    }
+    .contact_icon{
+        color: #32a9de !important;
+    }
+
+    .ul_contact a{
+        color: #32a9de !important;
+    }
+    .timeline_content {
+        font-size: 18px;
+        font-weight: 900;
+    }
+    #a_log{
+        margin: 0px 0px 0px 0px !important;
+        line-height: normal !important;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    </style>
 </head>
+
 <body class="disable_transitions sidebar_main_open sidebar_main_swipe">
     <!-- main header -->
     <header id="header_main">
         <div class="header_main_content">
             <nav class="uk-navbar">
-                                
                 <!-- main sidebar switch -->
                 <a href="#" id="sidebar_main_toggle" class="sSwitch sSwitch_left">
                     <span class="sSwitchIcon"></span>
                 </a>
-                
                 <!-- secondary sidebar switch -->
                 <a href="#" id="sidebar_secondary_toggle" class="sSwitch sSwitch_right sidebar_secondary_check">
                     <span class="sSwitchIcon"></span>
                 </a>
-                
-                    <div id="menu_top_dropdown" class="uk-float-left uk-hidden-small">
-                        <div class="uk-button-dropdown" data-uk-dropdown="{mode:'click'}">
-                            <a href="#" class="top_menu_toggle"><i class="material-icons md-24">&#xE8F0;</i></a>
-                            <div class="uk-dropdown uk-dropdown-width-3">
-                                <div class="uk-grid uk-dropdown-grid">
-                                    <div class="uk-width-2-3">
-                                        <div class="uk-grid uk-grid-width-medium-1-3 uk-margin-bottom uk-text-center">
-                                            <a href="page_mailbox.html" class="uk-margin-top">
-                                                <i class="material-icons md-36 md-color-light-green-600">&#xE158;</i>
-                                                <span class="uk-text-muted uk-display-block">Mailbox</span>
-                                            </a>
-                                            <a href="page_invoices.html" class="uk-margin-top">
-                                                <i class="material-icons md-36 md-color-purple-600">&#xE53E;</i>
-                                                <span class="uk-text-muted uk-display-block">Invoices</span>
-                                            </a>
-                                            <a href="page_chat.html" class="uk-margin-top">
-                                                <i class="material-icons md-36 md-color-cyan-600">&#xE0B9;</i>
-                                                <span class="uk-text-muted uk-display-block">Chat</span>
-                                            </a>
-                                            <a href="page_scrum_board.html" class="uk-margin-top">
-                                                <i class="material-icons md-36 md-color-red-600">&#xE85C;</i>
-                                                <span class="uk-text-muted uk-display-block">Scrum Board</span>
-                                            </a>
-                                            <a href="page_snippets.html" class="uk-margin-top">
-                                                <i class="material-icons md-36 md-color-blue-600">&#xE86F;</i>
-                                                <span class="uk-text-muted uk-display-block">Snippets</span>
-                                            </a>
-                                            <a href="page_user_profile.html" class="uk-margin-top">
-                                                <i class="material-icons md-36 md-color-orange-600">&#xE87C;</i>
-                                                <span class="uk-text-muted uk-display-block">User profile</span>
-                                            </a>
-                                        </div>
+                <div id="menu_top_dropdown" class="uk-float-left uk-hidden-small">
+                    <div class="uk-button-dropdown" data-uk-dropdown="{mode:'click'}">
+                        <a href="#" class="top_menu_toggle"><i class="material-icons md-24">&#xE8F0;</i></a>
+                        <div class="uk-dropdown uk-dropdown-width-3">
+                            <div class="uk-grid uk-dropdown-grid">
+                                <div class="uk-width-2-3">
+                                    <div class="uk-grid uk-grid-width-medium-1-3 uk-margin-bottom uk-text-center">
+                                        <a href="page_mailbox.html" class="uk-margin-top">
+                                            <i class="material-icons md-36 md-color-light-green-600">&#xE158;</i>
+                                            <span class="uk-text-muted uk-display-block">Mailbox</span>
+                                        </a>
+                                        <a href="page_invoices.html" class="uk-margin-top">
+                                            <i class="material-icons md-36 md-color-purple-600">&#xE53E;</i>
+                                            <span class="uk-text-muted uk-display-block">Invoices</span>
+                                        </a>
+                                        <a href="page_chat.html" class="uk-margin-top">
+                                            <i class="material-icons md-36 md-color-cyan-600">&#xE0B9;</i>
+                                            <span class="uk-text-muted uk-display-block">Chat</span>
+                                        </a>
+                                        <a href="page_scrum_board.html" class="uk-margin-top">
+                                            <i class="material-icons md-36 md-color-red-600">&#xE85C;</i>
+                                            <span class="uk-text-muted uk-display-block">Scrum Board</span>
+                                        </a>
+                                        <a href="page_snippets.html" class="uk-margin-top">
+                                            <i class="material-icons md-36 md-color-blue-600">&#xE86F;</i>
+                                            <span class="uk-text-muted uk-display-block">Snippets</span>
+                                        </a>
+                                        <a href="page_user_profile.html" class="uk-margin-top">
+                                            <i class="material-icons md-36 md-color-orange-600">&#xE87C;</i>
+                                            <span class="uk-text-muted uk-display-block">User profile</span>
+                                        </a>
                                     </div>
-                                    <div class="uk-width-1-3">
-                                        <ul class="uk-nav uk-nav-dropdown uk-panel">
-                                            <li class="uk-nav-header">Components</li>
-                                            <li><a href="components_accordion.html">Accordions</a></li>
-                                            <li><a href="components_buttons.html">Buttons</a></li>
-                                            <li><a href="components_notifications.html">Notifications</a></li>
-                                            <li><a href="components_sortable.html">Sortable</a></li>
-                                            <li><a href="components_tabs.html">Tabs</a></li>
-                                        </ul>
-                                    </div>
+                                </div>
+                                <div class="uk-width-1-3">
+                                    <ul class="uk-nav uk-nav-dropdown uk-panel">
+                                        <li class="uk-nav-header">Components</li>
+                                        <li><a href="components_accordion.html">Accordions</a></li>
+                                        <li><a href="components_buttons.html">Buttons</a></li>
+                                        <li><a href="components_notifications.html">Notifications</a></li>
+                                        <li><a href="components_sortable.html">Sortable</a></li>
+                                        <li><a href="components_tabs.html">Tabs</a></li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
-                
+                </div>
                 <div class="uk-navbar-flip">
                     <ul class="uk-navbar-nav user_actions">
                         <li><a href="#" id="full_screen_toggle" class="user_action_icon uk-visible-large"><i class="material-icons md-24 md-light">fullscreen</i></a></li>
@@ -130,7 +228,7 @@
                                                 </li>
                                                 <li>
                                                     <div class="md-list-addon-element">
-                                                        <img class="md-user-image md-list-addon-avatar" src="assets/img/avatars/avatar_07_tn.png" alt=""/>
+                                                        <img class="md-user-image md-list-addon-avatar" src="assets/img/avatars/avatar_07_tn.png" alt="" />
                                                     </div>
                                                     <div class="md-list-content">
                                                         <span class="md-list-heading"><a href="page_mailbox.html">Est ea commodi.</a></span>
@@ -148,7 +246,7 @@
                                                 </li>
                                                 <li>
                                                     <div class="md-list-addon-element">
-                                                        <img class="md-user-image md-list-addon-avatar" src="assets/img/avatars/avatar_02_tn.png" alt=""/>
+                                                        <img class="md-user-image md-list-addon-avatar" src="assets/img/avatars/avatar_02_tn.png" alt="" />
                                                     </div>
                                                     <div class="md-list-content">
                                                         <span class="md-list-heading"><a href="page_mailbox.html">Doloribus quo libero.</a></span>
@@ -157,7 +255,7 @@
                                                 </li>
                                                 <li>
                                                     <div class="md-list-addon-element">
-                                                        <img class="md-user-image md-list-addon-avatar" src="assets/img/avatars/avatar_09_tn.png" alt=""/>
+                                                        <img class="md-user-image md-list-addon-avatar" src="assets/img/avatars/avatar_09_tn.png" alt="" />
                                                     </div>
                                                     <div class="md-list-content">
                                                         <span class="md-list-heading"><a href="page_mailbox.html">Et qui.</a></span>
@@ -214,7 +312,7 @@
                             </div>
                         </li>
                         <li data-uk-dropdown="{mode:'click',pos:'bottom-right'}">
-                            <a href="#" class="user_action_image"><img class="md-user-image" src="assets/img/avatars/avatar_11_tn.png" alt=""/></a>
+                            <a href="#" class="user_action_image"><img class="md-user-image" src="assets/img/avatars/avatar_11_tn.png" alt="" /></a>
                             <div class="uk-dropdown uk-dropdown-small">
                                 <ul class="uk-nav js-uk-prevent">
                                     <li><a href="page_user_profile.html">My profile</a></li>
@@ -256,7 +354,6 @@
     </header><!-- main header end -->
     <!-- main sidebar -->
     <aside id="sidebar_main">
-        
         <div class="sidebar_main_header">
             <div class="sidebar_logo">
                 <a href="index-2.html" class="sSidebar_hide sidebar_logo_large">
@@ -274,7 +371,6 @@
                 </select>
             </div> -->
         </div>
-        
         <div class="menu_section">
             <ul>
                 <li title="Dashboard">
@@ -282,21 +378,18 @@
                         <span class="menu_icon"><i class="material-icons">&#xE871;</i></span>
                         <span class="menu_title">Dashboard</span>
                     </a>
-                    
                 </li>
                 <li title="Mailbox">
                     <a href="page_mailbox.html">
                         <span class="menu_icon"><i class="material-icons">&#xE158;</i></span>
                         <span class="menu_title">Mailbox</span>
                     </a>
-                    
                 </li>
                 <li title="Invoices">
                     <a href="page_invoices.html">
                         <span class="menu_icon"><i class="material-icons">&#xE53E;</i></span>
                         <span class="menu_title">Invoices</span>
                     </a>
-                    
                 </li>
                 <li title="Chats">
                     <a href="#">
@@ -307,35 +400,30 @@
                         <li><a href="page_chat.html">Regular Chat</a></li>
                         <li><a href="page_chat_small.html">Chatboxes</a></li>
                     </ul>
-                
                 </li>
                 <li title="Scrum Board">
                     <a href="page_scrum_board.html">
                         <span class="menu_icon"><i class="material-icons">&#xE85C;</i></span>
                         <span class="menu_title">Scrum Board</span>
                     </a>
-                    
                 </li>
                 <li title="Snippets">
                     <a href="page_snippets.html">
                         <span class="menu_icon"><i class="material-icons">&#xE86F;</i></span>
                         <span class="menu_title">Snippets</span>
                     </a>
-                    
                 </li>
                 <li class="current_section" title="User Profile">
                     <a href="page_user_profile.html">
                         <span class="menu_icon"><i class="material-icons">&#xE87C;</i></span>
                         <span class="menu_title">User Profile</span>
                     </a>
-                    
                 </li>
                 <li title="Sticky Notes">
                     <a href="page_sticky_notes.html">
                         <span class="menu_icon"><i class="material-icons">&#xE8F0;</i></span>
                         <span class="menu_title">Sticky Notes</span>
                     </a>
-                    
                 </li>
                 <li title="Forms">
                     <a href="#">
@@ -351,11 +439,10 @@
                         <li><a href="forms_validation.html">Validation</a></li>
                         <li><a href="forms_wizard.html">Wizard</a></li>
                         <li class="menu_subtitle">WYSIWYG Editors</li>
-                                <li><a href="forms_wysiwyg_ckeditor.html">CKeditor</a></li>
+                        <li><a href="forms_wysiwyg_ckeditor.html">CKeditor</a></li>
                         <li><a href="forms_wysiwyg_inline.html">Ckeditor Inline</a></li>
                         <li><a href="forms_wysiwyg_tinymce.html">TinyMCE</a></li>
-                            </ul>
-                
+                    </ul>
                 </li>
                 <li title="Layout">
                     <a href="#">
@@ -366,7 +453,6 @@
                         <li><a href="layout_top_menu.html">Top Menu</a></li>
                         <li><a href="layout_header_full.html">Full Header</a></li>
                     </ul>
-                
                 </li>
                 <li title="Kendo UI Widgets">
                     <a href="#">
@@ -390,7 +476,6 @@
                         <li><a href="kendoui_toolbar.html">Toolbar</a></li>
                         <li><a href="kendoui_window.html">Window</a></li>
                     </ul>
-                
                 </li>
                 <li title="Components">
                     <a href="#">
@@ -432,7 +517,6 @@
                         <li><a href="components_tooltips.html">Tooltips</a></li>
                         <li><a href="components_typography.html">Typography</a></li>
                     </ul>
-                
                 </li>
                 <li title="E-commerce">
                     <a href="#">
@@ -446,7 +530,6 @@
                         <li><a href="ecommerce_products_list.html">Products List</a></li>
                         <li><a href="ecommerce_payment.html">Payment Page</a></li>
                     </ul>
-                
                 </li>
                 <li title="Plugins">
                     <a href="#">
@@ -475,7 +558,6 @@
                         <li><a href="plugins_vector_maps.html">Vector Maps</a></li>
                         <li><a href="plugins_xeditable.html">X-editable</a></li>
                     </ul>
-                
                 </li>
                 <li title="Pages">
                     <a href="#">
@@ -504,18 +586,17 @@
                         <li><a href="page_user_edit.html">User edit</a></li>
                         <li><a href="page_quiz.html">Quiz</a></li>
                         <li class="menu_subtitle">Issue Tracker</li>
-                                <li><a href="page_issues_list.html">List View</a></li>
+                        <li><a href="page_issues_list.html">List View</a></li>
                         <li><a href="page_issue_details.html">Issue Details</a></li>
-                                <li class="menu_subtitle">Blog</li>
-                                <li><a href="page_blog_list.html">Blog List</a></li>
+                        <li class="menu_subtitle">Blog</li>
+                        <li><a href="page_blog_list.html">Blog List</a></li>
                         <li><a href="page_blog_article.html">Blog Article</a></li>
-                                <li class="menu_subtitle">Errors</li>
-                                <li><a href="error_404.html">Error 404</a></li>
+                        <li class="menu_subtitle">Errors</li>
+                        <li><a href="error_404.html">Error 404</a></li>
                         <li><a href="error_500.html">Error 500</a></li>
-                            </ul>
-                
+                    </ul>
                 </li>
-                                <li>
+                <li>
                     <a href="#">
                         <span class="menu_icon"><i class="material-icons">&#xE241;</i></span>
                         <span class="menu_title">Multi level</span>
@@ -562,79 +643,70 @@
             </ul>
         </div>
     </aside><!-- main sidebar end -->
-
     <div id="page_content">
         <div id="page_content_inner">
             <div class="uk-grid" data-uk-grid-margin data-uk-grid-match id="user_profile">
                 <div class="uk-width-large-7-10">
                     <div class="md-card">
-                        <div class="user_heading user_heading_bg" style="background-image: url('assets/img/gallery/Image10.jpg')">
+                        <div class="user_heading user_heading_bg pr_heading" style="background-image: url('assets/img/gallery/Image10.jpg')">
                             <div class="bg_overlay">
                                 <div class="user_heading_menu hidden-print">
+                                    <div class="uk-display-inline-block"><i style="color: white;" class="material-icons"></i></div>
                                     <div class="uk-display-inline-block" data-uk-dropdown="{pos:'left-top'}">
                                         <p>Edit Profile</p>
                                     </div>
-                                    <div class="uk-display-inline-block"><i style="color: white;" class="material-icons"></i></div>
                                 </div>
-                                
                                 <div class="user_heading_content">
-                                    
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="md-card">
-                        <div class="user_heading">
-                            <div class="user_heading_menu hidden-print">
-                                <div class="uk-display-inline-block" data-uk-dropdown="{pos:'left-top'}">
-                                    <i class="md-icon material-icons md-icon-light">&#xE5D4;</i>
-                                    <div class="uk-dropdown uk-dropdown-small">
-                                        <ul class="uk-nav">
-                                            <li><a href="#">Action 1</a></li>
-                                            <li><a href="#">Action 2</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
+                    <div class="md-card pr_content">
+                        <div class="user_heading pr_heading_profile">
+                            <div class="user_heading_menu hidden-print pr_print">
                                 <div class="uk-display-inline-block"><i class="md-icon md-icon-light material-icons" id="page_print">&#xE8ad;</i></div>
                             </div>
                             <div class="user_heading_avatar">
                                 <div class="thumbnail">
-                                    <img src="assets/img/avatars/image-asset.jpeg" alt="user avatar"/>
+                                    <img src="assets/img/avatars/image-asset.jpeg" alt="user avatar" />
                                 </div>
                             </div>
                             <div class="user_heading_content">
-                                <h2 class="heading_b uk-margin-bottom"><span class="uk-text-truncate">Guadalupe Yundt</span><span class="sub-heading">Land acquisition specialist</span></h2>
+                                <h2 class="heading_b uk-margin-bottom pr_profile"><span class="uk-text-truncate">Guadalupe Yundt</span><span class="sub-heading pr_profile pr_subheading">Land acquisition specialist</span>
+                                    <span class="sub-heading pr_profile pr_location"><span class="material-icons">
+location_on
+</span>Palermo City, Sicily, Italy</span>
+                                </h2>
                                 <ul class="user_stats">
                                     <li>
-                                        <h4 class="heading_a">2391 <span class="sub-heading">Posts</span></h4>
+                                        <h4 class="heading_a pr_profile">2391 <span class="sub-heading pr_profile">Posts</span></h4>
                                     </li>
                                     <li>
-                                        <h4 class="heading_a">120 <span class="sub-heading">Photos</span></h4>
+                                        <h4 class="heading_a pr_profile">120 <span class="sub-heading pr_profile">Photos</span></h4>
                                     </li>
                                     <li>
-                                        <h4 class="heading_a">284 <span class="sub-heading">Following</span></h4>
+                                        <h4 class="heading_a pr_profile">284 <span class="sub-heading pr_profile">Following</span></h4>
                                     </li>
                                 </ul>
                             </div>
-                            <a class="md-fab md-fab-small md-fab-accent hidden-print" href="page_user_edit.html">
-                                <i class="material-icons">&#xE150;</i>
-                            </a>
                         </div>
-                        <div class="user_content">
-                            <ul id="user_profile_tabs" class="uk-tab" data-uk-tab="{connect:'#user_profile_tabs_content', animation:'slide-horizontal'}" data-uk-sticky="{ top: 48, media: 960 }">
+                        <div class="user_content pr_user_content">
+                            <ul id="user_profile_tabs" class="uk-tab uk_profile" data-uk-tab="{connect:'#user_profile_tabs_content', animation:'slide-horizontal'}" data-uk-sticky="{ top: 48, media: 960 }">
                                 <li class="uk-active"><a href="#">About</a></li>
                                 <li><a href="#">Photos</a></li>
                                 <li><a href="#">Posts</a></li>
                             </ul>
                             <ul id="user_profile_tabs_content" class="uk-switcher uk-margin">
+
                                 <li>
-                                    Iste aut cupiditate nemo laborum est praesentium ut blanditiis est ipsam quia saepe autem et quis aperiam mollitia ipsum quos iste in nostrum quasi laboriosam et est non necessitatibus enim dolorem ullam officiis cum rerum mollitia quibusdam deleniti molestiae omnis sit cumque dolorem tenetur saepe eaque dolor qui omnis non eum accusantium illum dolores vel qui possimus aut aut quis ut consequatur perferendis qui eligendi rem ut recusandae corporis fugiat expedita sed voluptatem non aperiam sunt sed hic inventore.                                    <div class="uk-grid uk-margin-medium-top uk-margin-large-bottom" data-uk-grid-margin>
+                                    <h2>Summary</h2>
+                                    <p>Iste aut cupiditate nemo laborum est praesentium ut blanditiis est ipsam quia saepe autem et quis aperiam mollitia ipsum quos iste in nostrum quasi laboriosam et est non necessitatibus enim dolorem ullam officiis cum rerum mollitia quibusdam deleniti molestiae omnis sit cumque dolorem tenetur saepe eaque dolor qui omnis non eum accusantium illum dolores vel qui possimus aut aut quis ut consequatur perferendis qui eligendi rem ut recusandae corporis fugiat expedita sed voluptatem non aperiam sunt sed hic inventore. </p><div class="uk-grid uk-margin-medium-top uk-margin-large-bottom" data-uk-grid-margin>
                                         <div class="uk-width-large-1-2">
-                                            <h4 class="heading_c uk-margin-small-bottom">Contact Info</h4>
-                                            <ul class="md-list md-list-addon">
+                                            <h4 class="heading_c uk-margin-small-bottom">Contact</h4>
+                                            <ul class="md-list md-list-addon ul_contact">
                                                 <li>
                                                     <div class="md-list-addon-element">
-                                                        <i class="md-list-addon-icon material-icons">&#xE158;</i>
+                                                        <i class="md-list-addon-icon material-icons contact_icon">&#xE158;</i>
                                                     </div>
                                                     <div class="md-list-content">
                                                         <span class="md-list-heading"><a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="a2d8cbc7cfc78cc1d7d0d6cbd1e2c5cfc3cbce8cc1cdcf">[email&#160;protected]</a></span>
@@ -643,7 +715,7 @@
                                                 </li>
                                                 <li>
                                                     <div class="md-list-addon-element">
-                                                        <i class="md-list-addon-icon material-icons">&#xE0CD;</i>
+                                                        <i class="md-list-addon-icon material-icons contact_icon">&#xE0CD;</i>
                                                     </div>
                                                     <div class="md-list-content">
                                                         <span class="md-list-heading">412.764.2659 x9759</span>
@@ -652,7 +724,7 @@
                                                 </li>
                                                 <li>
                                                     <div class="md-list-addon-element">
-                                                        <i class="md-list-addon-icon uk-icon-facebook-official"></i>
+                                                        <i class="md-list-addon-icon uk-icon-facebook-official contact_icon"></i>
                                                     </div>
                                                     <div class="md-list-content">
                                                         <span class="md-list-heading">facebook.com/envato</span>
@@ -661,7 +733,7 @@
                                                 </li>
                                                 <li>
                                                     <div class="md-list-addon-element">
-                                                        <i class="md-list-addon-icon uk-icon-twitter"></i>
+                                                        <i class="md-list-addon-icon uk-icon-twitter contact_icon"></i>
                                                     </div>
                                                     <div class="md-list-content">
                                                         <span class="md-list-heading">twitter.com/envato</span>
@@ -672,7 +744,7 @@
                                         </div>
                                         <div class="uk-width-large-1-2">
                                             <h4 class="heading_c uk-margin-small-bottom">My groups</h4>
-                                            <ul class="md-list">
+                                            <ul class="md-list ul_contact">
                                                 <li>
                                                     <div class="md-list-content">
                                                         <span class="md-list-heading"><a href="#">Cloud Computing</a></span>
@@ -700,40 +772,38 @@
                                             </ul>
                                         </div>
                                     </div>
-                                    <h4 class="heading_c uk-margin-bottom">Timeline</h4>
+                                    <h4 class="heading_c uk-margin-bottom">Activity Log</h4>
                                     <div class="timeline">
                                         <div class="timeline_item">
                                             <div class="timeline_icon timeline_icon_success"><i class="material-icons">&#xE85D;</i></div>
-                                            <div class="timeline_date">
-                                                09 <span>Mar</span>
+                                            
+                                            <div class="timeline_content">
+                                                <p id="a_log">9 Mar, 20:24</p>
+                                                Created ticket 
+                                                <a href="#"><strong>#3289</strong></a>
                                             </div>
-                                            <div class="timeline_content">Created ticket <a href="#"><strong>#3289</strong></a></div>
                                         </div>
                                         <div class="timeline_item">
                                             <div class="timeline_icon timeline_icon_danger"><i class="material-icons">&#xE5CD;</i></div>
-                                            <div class="timeline_date">
-                                                15 <span>Mar</span>
-                                            </div>
-                                            <div class="timeline_content">Deleted post <a href="#"><strong>Aut blanditiis quia similique sint architecto voluptatem.</strong></a></div>
+                                            <p id="a_log">15 Mar, 08:36</p>
+                                            <div class="timeline_content">Deleted post <a href="#"><p id="a_log">Aut blanditiis quia similique sint architecto voluptatem.</p></a></div>
                                         </div>
                                         <div class="timeline_item">
                                             <div class="timeline_icon"><i class="material-icons">&#xE410;</i></div>
-                                            <div class="timeline_date">
-                                                19 <span>Mar</span>
-                                            </div>
+                                            
                                             <div class="timeline_content">
+                                                 <p id="a_log">15 Mar, 08:36</p>
                                                 Added photo
                                                 <div class="timeline_content_addon">
-                                                    <img src="assets/img/gallery/Image16.jpg" alt=""/>
+                                                    <img src="assets/img/gallery/Image16.jpg" alt="" />
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="timeline_item">
                                             <div class="timeline_icon timeline_icon_primary"><i class="material-icons">&#xE0B9;</i></div>
-                                            <div class="timeline_date">
-                                                21 <span>Mar</span>
-                                            </div>
+                                            
                                             <div class="timeline_content">
+                                                 <p id="a_log">15 Mar, 08:36</p>
                                                 New comment on post <a href="#"><strong>Et qui laudantium.</strong></a>
                                                 <div class="timeline_content_addon">
                                                     <blockquote>
@@ -744,16 +814,15 @@
                                         </div>
                                         <div class="timeline_item">
                                             <div class="timeline_icon timeline_icon_warning"><i class="material-icons">&#xE7FE;</i></div>
-                                            <div class="timeline_date">
-                                                29 <span>Mar</span>
-                                            </div>
+                                            
                                             <div class="timeline_content">
+                                                 <p id="a_log">15 Mar, 08:36</p>
                                                 Added to Friends
                                                 <div class="timeline_content_addon">
                                                     <ul class="md-list md-list-addon">
                                                         <li>
                                                             <div class="md-list-addon-element">
-                                                                <img class="md-user-image md-list-addon-avatar" src="assets/img/avatars/avatar_02_tn.png" alt=""/>
+                                                                <img class="md-user-image md-list-addon-avatar" src="assets/img/avatars/avatar_02_tn.png" alt="" />
                                                             </div>
                                                             <div class="md-list-content">
                                                                 <span class="md-list-heading">Pearline Schaden</span>
@@ -770,122 +839,122 @@
                                     <div id="user_profile_gallery" data-uk-check-display class="uk-grid-width-small-1-2 uk-grid-width-medium-1-3 uk-grid-width-large-1-4" data-uk-grid="{gutter: 4}">
                                         <div>
                                             <a href="assets/img/gallery/Image01.jpg" data-uk-lightbox="{group:'user-photos'}">
-                                                <img src="assets/img/gallery/Image01.jpg" alt=""/>
+                                                <img src="assets/img/gallery/Image01.jpg" alt="" />
                                             </a>
                                         </div>
                                         <div>
                                             <a href="assets/img/gallery/Image02.jpg" data-uk-lightbox="{group:'user-photos'}">
-                                                <img src="assets/img/gallery/Image02.jpg" alt=""/>
+                                                <img src="assets/img/gallery/Image02.jpg" alt="" />
                                             </a>
                                         </div>
                                         <div>
                                             <a href="assets/img/gallery/Image03.jpg" data-uk-lightbox="{group:'user-photos'}">
-                                                <img src="assets/img/gallery/Image03.jpg" alt=""/>
+                                                <img src="assets/img/gallery/Image03.jpg" alt="" />
                                             </a>
                                         </div>
                                         <div>
                                             <a href="assets/img/gallery/Image04.jpg" data-uk-lightbox="{group:'user-photos'}">
-                                                <img src="assets/img/gallery/Image04.jpg" alt=""/>
+                                                <img src="assets/img/gallery/Image04.jpg" alt="" />
                                             </a>
                                         </div>
                                         <div>
                                             <a href="assets/img/gallery/Image05.jpg" data-uk-lightbox="{group:'user-photos'}">
-                                                <img src="assets/img/gallery/Image05.jpg" alt=""/>
+                                                <img src="assets/img/gallery/Image05.jpg" alt="" />
                                             </a>
                                         </div>
                                         <div>
                                             <a href="assets/img/gallery/Image06.jpg" data-uk-lightbox="{group:'user-photos'}">
-                                                <img src="assets/img/gallery/Image06.jpg" alt=""/>
+                                                <img src="assets/img/gallery/Image06.jpg" alt="" />
                                             </a>
                                         </div>
                                         <div>
                                             <a href="assets/img/gallery/Image07.jpg" data-uk-lightbox="{group:'user-photos'}">
-                                                <img src="assets/img/gallery/Image07.jpg" alt=""/>
+                                                <img src="assets/img/gallery/Image07.jpg" alt="" />
                                             </a>
                                         </div>
                                         <div>
                                             <a href="assets/img/gallery/Image08.jpg" data-uk-lightbox="{group:'user-photos'}">
-                                                <img src="assets/img/gallery/Image08.jpg" alt=""/>
+                                                <img src="assets/img/gallery/Image08.jpg" alt="" />
                                             </a>
                                         </div>
                                         <div>
                                             <a href="assets/img/gallery/Image09.jpg" data-uk-lightbox="{group:'user-photos'}">
-                                                <img src="assets/img/gallery/Image09.jpg" alt=""/>
+                                                <img src="assets/img/gallery/Image09.jpg" alt="" />
                                             </a>
                                         </div>
                                         <div>
                                             <a href="assets/img/gallery/Image10.jpg" data-uk-lightbox="{group:'user-photos'}">
-                                                <img src="assets/img/gallery/Image10.jpg" alt=""/>
+                                                <img src="assets/img/gallery/Image10.jpg" alt="" />
                                             </a>
                                         </div>
                                         <div>
                                             <a href="assets/img/gallery/Image11.jpg" data-uk-lightbox="{group:'user-photos'}">
-                                                <img src="assets/img/gallery/Image11.jpg" alt=""/>
+                                                <img src="assets/img/gallery/Image11.jpg" alt="" />
                                             </a>
                                         </div>
                                         <div>
                                             <a href="assets/img/gallery/Image12.jpg" data-uk-lightbox="{group:'user-photos'}">
-                                                <img src="assets/img/gallery/Image12.jpg" alt=""/>
+                                                <img src="assets/img/gallery/Image12.jpg" alt="" />
                                             </a>
                                         </div>
                                         <div>
                                             <a href="assets/img/gallery/Image13.jpg" data-uk-lightbox="{group:'user-photos'}">
-                                                <img src="assets/img/gallery/Image13.jpg" alt=""/>
+                                                <img src="assets/img/gallery/Image13.jpg" alt="" />
                                             </a>
                                         </div>
                                         <div>
                                             <a href="assets/img/gallery/Image14.jpg" data-uk-lightbox="{group:'user-photos'}">
-                                                <img src="assets/img/gallery/Image14.jpg" alt=""/>
+                                                <img src="assets/img/gallery/Image14.jpg" alt="" />
                                             </a>
                                         </div>
                                         <div>
                                             <a href="assets/img/gallery/Image15.jpg" data-uk-lightbox="{group:'user-photos'}">
-                                                <img src="assets/img/gallery/Image15.jpg" alt=""/>
+                                                <img src="assets/img/gallery/Image15.jpg" alt="" />
                                             </a>
                                         </div>
                                         <div>
                                             <a href="assets/img/gallery/Image16.jpg" data-uk-lightbox="{group:'user-photos'}">
-                                                <img src="assets/img/gallery/Image16.jpg" alt=""/>
+                                                <img src="assets/img/gallery/Image16.jpg" alt="" />
                                             </a>
                                         </div>
                                         <div>
                                             <a href="assets/img/gallery/Image17.jpg" data-uk-lightbox="{group:'user-photos'}">
-                                                <img src="assets/img/gallery/Image17.jpg" alt=""/>
+                                                <img src="assets/img/gallery/Image17.jpg" alt="" />
                                             </a>
                                         </div>
                                         <div>
                                             <a href="assets/img/gallery/Image18.jpg" data-uk-lightbox="{group:'user-photos'}">
-                                                <img src="assets/img/gallery/Image18.jpg" alt=""/>
+                                                <img src="assets/img/gallery/Image18.jpg" alt="" />
                                             </a>
                                         </div>
                                         <div>
                                             <a href="assets/img/gallery/Image19.jpg" data-uk-lightbox="{group:'user-photos'}">
-                                                <img src="assets/img/gallery/Image19.jpg" alt=""/>
+                                                <img src="assets/img/gallery/Image19.jpg" alt="" />
                                             </a>
                                         </div>
                                         <div>
                                             <a href="assets/img/gallery/Image20.jpg" data-uk-lightbox="{group:'user-photos'}">
-                                                <img src="assets/img/gallery/Image20.jpg" alt=""/>
+                                                <img src="assets/img/gallery/Image20.jpg" alt="" />
                                             </a>
                                         </div>
                                         <div>
                                             <a href="assets/img/gallery/Image21.jpg" data-uk-lightbox="{group:'user-photos'}">
-                                                <img src="assets/img/gallery/Image21.jpg" alt=""/>
+                                                <img src="assets/img/gallery/Image21.jpg" alt="" />
                                             </a>
                                         </div>
                                         <div>
                                             <a href="assets/img/gallery/Image22.jpg" data-uk-lightbox="{group:'user-photos'}">
-                                                <img src="assets/img/gallery/Image22.jpg" alt=""/>
+                                                <img src="assets/img/gallery/Image22.jpg" alt="" />
                                             </a>
                                         </div>
                                         <div>
                                             <a href="assets/img/gallery/Image23.jpg" data-uk-lightbox="{group:'user-photos'}">
-                                                <img src="assets/img/gallery/Image23.jpg" alt=""/>
+                                                <img src="assets/img/gallery/Image23.jpg" alt="" />
                                             </a>
                                         </div>
                                         <div>
                                             <a href="assets/img/gallery/Image24.jpg" data-uk-lightbox="{group:'user-photos'}">
-                                                <img src="assets/img/gallery/Image24.jpg" alt=""/>
+                                                <img src="assets/img/gallery/Image24.jpg" alt="" />
                                             </a>
                                         </div>
                                     </div>
@@ -906,15 +975,15 @@
                                             <div class="md-list-content">
                                                 <span class="md-list-heading"><a href="#">Dolores dolores ut eos necessitatibus.</a></span>
                                                 <div class="uk-margin-small-top">
-                                                <span class="uk-margin-right">
-                                                    <i class="material-icons">&#xE192;</i> <span class="uk-text-muted uk-text-small">08 Mar 2020</span>
-                                                </span>
-                                                <span class="uk-margin-right">
-                                                    <i class="material-icons">&#xE0B9;</i> <span class="uk-text-muted uk-text-small">9</span>
-                                                </span>
-                                                <span class="uk-margin-right">
-                                                    <i class="material-icons">&#xE417;</i> <span class="uk-text-muted uk-text-small">685</span>
-                                                </span>
+                                                    <span class="uk-margin-right">
+                                                        <i class="material-icons">&#xE192;</i> <span class="uk-text-muted uk-text-small">08 Mar 2020</span>
+                                                    </span>
+                                                    <span class="uk-margin-right">
+                                                        <i class="material-icons">&#xE0B9;</i> <span class="uk-text-muted uk-text-small">9</span>
+                                                    </span>
+                                                    <span class="uk-margin-right">
+                                                        <i class="material-icons">&#xE417;</i> <span class="uk-text-muted uk-text-small">685</span>
+                                                    </span>
                                                 </div>
                                             </div>
                                         </li>
@@ -922,15 +991,15 @@
                                             <div class="md-list-content">
                                                 <span class="md-list-heading"><a href="#">Doloribus dolore animi sit quia exercitationem dolorem.</a></span>
                                                 <div class="uk-margin-small-top">
-                                                <span class="uk-margin-right">
-                                                    <i class="material-icons">&#xE192;</i> <span class="uk-text-muted uk-text-small">16 Mar 2020</span>
-                                                </span>
-                                                <span class="uk-margin-right">
-                                                    <i class="material-icons">&#xE0B9;</i> <span class="uk-text-muted uk-text-small">24</span>
-                                                </span>
-                                                <span class="uk-margin-right">
-                                                    <i class="material-icons">&#xE417;</i> <span class="uk-text-muted uk-text-small">122</span>
-                                                </span>
+                                                    <span class="uk-margin-right">
+                                                        <i class="material-icons">&#xE192;</i> <span class="uk-text-muted uk-text-small">16 Mar 2020</span>
+                                                    </span>
+                                                    <span class="uk-margin-right">
+                                                        <i class="material-icons">&#xE0B9;</i> <span class="uk-text-muted uk-text-small">24</span>
+                                                    </span>
+                                                    <span class="uk-margin-right">
+                                                        <i class="material-icons">&#xE417;</i> <span class="uk-text-muted uk-text-small">122</span>
+                                                    </span>
                                                 </div>
                                             </div>
                                         </li>
@@ -938,15 +1007,15 @@
                                             <div class="md-list-content">
                                                 <span class="md-list-heading"><a href="#">Qui nobis hic et praesentium quae quisquam totam.</a></span>
                                                 <div class="uk-margin-small-top">
-                                                <span class="uk-margin-right">
-                                                    <i class="material-icons">&#xE192;</i> <span class="uk-text-muted uk-text-small">26 Mar 2020</span>
-                                                </span>
-                                                <span class="uk-margin-right">
-                                                    <i class="material-icons">&#xE0B9;</i> <span class="uk-text-muted uk-text-small">22</span>
-                                                </span>
-                                                <span class="uk-margin-right">
-                                                    <i class="material-icons">&#xE417;</i> <span class="uk-text-muted uk-text-small">388</span>
-                                                </span>
+                                                    <span class="uk-margin-right">
+                                                        <i class="material-icons">&#xE192;</i> <span class="uk-text-muted uk-text-small">26 Mar 2020</span>
+                                                    </span>
+                                                    <span class="uk-margin-right">
+                                                        <i class="material-icons">&#xE0B9;</i> <span class="uk-text-muted uk-text-small">22</span>
+                                                    </span>
+                                                    <span class="uk-margin-right">
+                                                        <i class="material-icons">&#xE417;</i> <span class="uk-text-muted uk-text-small">388</span>
+                                                    </span>
                                                 </div>
                                             </div>
                                         </li>
@@ -954,15 +1023,15 @@
                                             <div class="md-list-content">
                                                 <span class="md-list-heading"><a href="#">Dicta quo et velit eius cupiditate.</a></span>
                                                 <div class="uk-margin-small-top">
-                                                <span class="uk-margin-right">
-                                                    <i class="material-icons">&#xE192;</i> <span class="uk-text-muted uk-text-small">26 Mar 2020</span>
-                                                </span>
-                                                <span class="uk-margin-right">
-                                                    <i class="material-icons">&#xE0B9;</i> <span class="uk-text-muted uk-text-small">11</span>
-                                                </span>
-                                                <span class="uk-margin-right">
-                                                    <i class="material-icons">&#xE417;</i> <span class="uk-text-muted uk-text-small">892</span>
-                                                </span>
+                                                    <span class="uk-margin-right">
+                                                        <i class="material-icons">&#xE192;</i> <span class="uk-text-muted uk-text-small">26 Mar 2020</span>
+                                                    </span>
+                                                    <span class="uk-margin-right">
+                                                        <i class="material-icons">&#xE0B9;</i> <span class="uk-text-muted uk-text-small">11</span>
+                                                    </span>
+                                                    <span class="uk-margin-right">
+                                                        <i class="material-icons">&#xE417;</i> <span class="uk-text-muted uk-text-small">892</span>
+                                                    </span>
                                                 </div>
                                             </div>
                                         </li>
@@ -970,15 +1039,15 @@
                                             <div class="md-list-content">
                                                 <span class="md-list-heading"><a href="#">Inventore quia non quos iste facere necessitatibus quaerat.</a></span>
                                                 <div class="uk-margin-small-top">
-                                                <span class="uk-margin-right">
-                                                    <i class="material-icons">&#xE192;</i> <span class="uk-text-muted uk-text-small">04 Mar 2020</span>
-                                                </span>
-                                                <span class="uk-margin-right">
-                                                    <i class="material-icons">&#xE0B9;</i> <span class="uk-text-muted uk-text-small">25</span>
-                                                </span>
-                                                <span class="uk-margin-right">
-                                                    <i class="material-icons">&#xE417;</i> <span class="uk-text-muted uk-text-small">781</span>
-                                                </span>
+                                                    <span class="uk-margin-right">
+                                                        <i class="material-icons">&#xE192;</i> <span class="uk-text-muted uk-text-small">04 Mar 2020</span>
+                                                    </span>
+                                                    <span class="uk-margin-right">
+                                                        <i class="material-icons">&#xE0B9;</i> <span class="uk-text-muted uk-text-small">25</span>
+                                                    </span>
+                                                    <span class="uk-margin-right">
+                                                        <i class="material-icons">&#xE417;</i> <span class="uk-text-muted uk-text-small">781</span>
+                                                    </span>
                                                 </div>
                                             </div>
                                         </li>
@@ -986,15 +1055,15 @@
                                             <div class="md-list-content">
                                                 <span class="md-list-heading"><a href="#">Similique dolor harum amet ut ea sequi quibusdam.</a></span>
                                                 <div class="uk-margin-small-top">
-                                                <span class="uk-margin-right">
-                                                    <i class="material-icons">&#xE192;</i> <span class="uk-text-muted uk-text-small">15 Mar 2020</span>
-                                                </span>
-                                                <span class="uk-margin-right">
-                                                    <i class="material-icons">&#xE0B9;</i> <span class="uk-text-muted uk-text-small">3</span>
-                                                </span>
-                                                <span class="uk-margin-right">
-                                                    <i class="material-icons">&#xE417;</i> <span class="uk-text-muted uk-text-small">482</span>
-                                                </span>
+                                                    <span class="uk-margin-right">
+                                                        <i class="material-icons">&#xE192;</i> <span class="uk-text-muted uk-text-small">15 Mar 2020</span>
+                                                    </span>
+                                                    <span class="uk-margin-right">
+                                                        <i class="material-icons">&#xE0B9;</i> <span class="uk-text-muted uk-text-small">3</span>
+                                                    </span>
+                                                    <span class="uk-margin-right">
+                                                        <i class="material-icons">&#xE417;</i> <span class="uk-text-muted uk-text-small">482</span>
+                                                    </span>
                                                 </div>
                                             </div>
                                         </li>
@@ -1002,15 +1071,15 @@
                                             <div class="md-list-content">
                                                 <span class="md-list-heading"><a href="#">Consequatur officiis ratione est nesciunt.</a></span>
                                                 <div class="uk-margin-small-top">
-                                                <span class="uk-margin-right">
-                                                    <i class="material-icons">&#xE192;</i> <span class="uk-text-muted uk-text-small">24 Mar 2020</span>
-                                                </span>
-                                                <span class="uk-margin-right">
-                                                    <i class="material-icons">&#xE0B9;</i> <span class="uk-text-muted uk-text-small">19</span>
-                                                </span>
-                                                <span class="uk-margin-right">
-                                                    <i class="material-icons">&#xE417;</i> <span class="uk-text-muted uk-text-small">633</span>
-                                                </span>
+                                                    <span class="uk-margin-right">
+                                                        <i class="material-icons">&#xE192;</i> <span class="uk-text-muted uk-text-small">24 Mar 2020</span>
+                                                    </span>
+                                                    <span class="uk-margin-right">
+                                                        <i class="material-icons">&#xE0B9;</i> <span class="uk-text-muted uk-text-small">19</span>
+                                                    </span>
+                                                    <span class="uk-margin-right">
+                                                        <i class="material-icons">&#xE417;</i> <span class="uk-text-muted uk-text-small">633</span>
+                                                    </span>
                                                 </div>
                                             </div>
                                         </li>
@@ -1018,15 +1087,15 @@
                                             <div class="md-list-content">
                                                 <span class="md-list-heading"><a href="#">Distinctio illum eius labore aut soluta aperiam amet numquam.</a></span>
                                                 <div class="uk-margin-small-top">
-                                                <span class="uk-margin-right">
-                                                    <i class="material-icons">&#xE192;</i> <span class="uk-text-muted uk-text-small">08 Mar 2020</span>
-                                                </span>
-                                                <span class="uk-margin-right">
-                                                    <i class="material-icons">&#xE0B9;</i> <span class="uk-text-muted uk-text-small">28</span>
-                                                </span>
-                                                <span class="uk-margin-right">
-                                                    <i class="material-icons">&#xE417;</i> <span class="uk-text-muted uk-text-small">358</span>
-                                                </span>
+                                                    <span class="uk-margin-right">
+                                                        <i class="material-icons">&#xE192;</i> <span class="uk-text-muted uk-text-small">08 Mar 2020</span>
+                                                    </span>
+                                                    <span class="uk-margin-right">
+                                                        <i class="material-icons">&#xE0B9;</i> <span class="uk-text-muted uk-text-small">28</span>
+                                                    </span>
+                                                    <span class="uk-margin-right">
+                                                        <i class="material-icons">&#xE417;</i> <span class="uk-text-muted uk-text-small">358</span>
+                                                    </span>
                                                 </div>
                                             </div>
                                         </li>
@@ -1034,15 +1103,15 @@
                                             <div class="md-list-content">
                                                 <span class="md-list-heading"><a href="#">Nisi ut a laborum et veniam et ducimus.</a></span>
                                                 <div class="uk-margin-small-top">
-                                                <span class="uk-margin-right">
-                                                    <i class="material-icons">&#xE192;</i> <span class="uk-text-muted uk-text-small">17 Mar 2020</span>
-                                                </span>
-                                                <span class="uk-margin-right">
-                                                    <i class="material-icons">&#xE0B9;</i> <span class="uk-text-muted uk-text-small">19</span>
-                                                </span>
-                                                <span class="uk-margin-right">
-                                                    <i class="material-icons">&#xE417;</i> <span class="uk-text-muted uk-text-small">970</span>
-                                                </span>
+                                                    <span class="uk-margin-right">
+                                                        <i class="material-icons">&#xE192;</i> <span class="uk-text-muted uk-text-small">17 Mar 2020</span>
+                                                    </span>
+                                                    <span class="uk-margin-right">
+                                                        <i class="material-icons">&#xE0B9;</i> <span class="uk-text-muted uk-text-small">19</span>
+                                                    </span>
+                                                    <span class="uk-margin-right">
+                                                        <i class="material-icons">&#xE417;</i> <span class="uk-text-muted uk-text-small">970</span>
+                                                    </span>
                                                 </div>
                                             </div>
                                         </li>
@@ -1050,15 +1119,15 @@
                                             <div class="md-list-content">
                                                 <span class="md-list-heading"><a href="#">Occaecati quam tempora provident voluptas temporibus.</a></span>
                                                 <div class="uk-margin-small-top">
-                                                <span class="uk-margin-right">
-                                                    <i class="material-icons">&#xE192;</i> <span class="uk-text-muted uk-text-small">16 Mar 2020</span>
-                                                </span>
-                                                <span class="uk-margin-right">
-                                                    <i class="material-icons">&#xE0B9;</i> <span class="uk-text-muted uk-text-small">23</span>
-                                                </span>
-                                                <span class="uk-margin-right">
-                                                    <i class="material-icons">&#xE417;</i> <span class="uk-text-muted uk-text-small">110</span>
-                                                </span>
+                                                    <span class="uk-margin-right">
+                                                        <i class="material-icons">&#xE192;</i> <span class="uk-text-muted uk-text-small">16 Mar 2020</span>
+                                                    </span>
+                                                    <span class="uk-margin-right">
+                                                        <i class="material-icons">&#xE0B9;</i> <span class="uk-text-muted uk-text-small">23</span>
+                                                    </span>
+                                                    <span class="uk-margin-right">
+                                                        <i class="material-icons">&#xE417;</i> <span class="uk-text-muted uk-text-small">110</span>
+                                                    </span>
                                                 </div>
                                             </div>
                                         </li>
@@ -1066,15 +1135,15 @@
                                             <div class="md-list-content">
                                                 <span class="md-list-heading"><a href="#">Illum quisquam ab molestiae sunt hic magnam.</a></span>
                                                 <div class="uk-margin-small-top">
-                                                <span class="uk-margin-right">
-                                                    <i class="material-icons">&#xE192;</i> <span class="uk-text-muted uk-text-small">04 Mar 2020</span>
-                                                </span>
-                                                <span class="uk-margin-right">
-                                                    <i class="material-icons">&#xE0B9;</i> <span class="uk-text-muted uk-text-small">24</span>
-                                                </span>
-                                                <span class="uk-margin-right">
-                                                    <i class="material-icons">&#xE417;</i> <span class="uk-text-muted uk-text-small">298</span>
-                                                </span>
+                                                    <span class="uk-margin-right">
+                                                        <i class="material-icons">&#xE192;</i> <span class="uk-text-muted uk-text-small">04 Mar 2020</span>
+                                                    </span>
+                                                    <span class="uk-margin-right">
+                                                        <i class="material-icons">&#xE0B9;</i> <span class="uk-text-muted uk-text-small">24</span>
+                                                    </span>
+                                                    <span class="uk-margin-right">
+                                                        <i class="material-icons">&#xE417;</i> <span class="uk-text-muted uk-text-small">298</span>
+                                                    </span>
                                                 </div>
                                             </div>
                                         </li>
@@ -1082,15 +1151,15 @@
                                             <div class="md-list-content">
                                                 <span class="md-list-heading"><a href="#">Vel et eos dignissimos.</a></span>
                                                 <div class="uk-margin-small-top">
-                                                <span class="uk-margin-right">
-                                                    <i class="material-icons">&#xE192;</i> <span class="uk-text-muted uk-text-small">15 Mar 2020</span>
-                                                </span>
-                                                <span class="uk-margin-right">
-                                                    <i class="material-icons">&#xE0B9;</i> <span class="uk-text-muted uk-text-small">19</span>
-                                                </span>
-                                                <span class="uk-margin-right">
-                                                    <i class="material-icons">&#xE417;</i> <span class="uk-text-muted uk-text-small">179</span>
-                                                </span>
+                                                    <span class="uk-margin-right">
+                                                        <i class="material-icons">&#xE192;</i> <span class="uk-text-muted uk-text-small">15 Mar 2020</span>
+                                                    </span>
+                                                    <span class="uk-margin-right">
+                                                        <i class="material-icons">&#xE0B9;</i> <span class="uk-text-muted uk-text-small">19</span>
+                                                    </span>
+                                                    <span class="uk-margin-right">
+                                                        <i class="material-icons">&#xE417;</i> <span class="uk-text-muted uk-text-small">179</span>
+                                                    </span>
                                                 </div>
                                             </div>
                                         </li>
@@ -1098,15 +1167,15 @@
                                             <div class="md-list-content">
                                                 <span class="md-list-heading"><a href="#">Et qui at quo aut sapiente tenetur est molestias.</a></span>
                                                 <div class="uk-margin-small-top">
-                                                <span class="uk-margin-right">
-                                                    <i class="material-icons">&#xE192;</i> <span class="uk-text-muted uk-text-small">27 Mar 2020</span>
-                                                </span>
-                                                <span class="uk-margin-right">
-                                                    <i class="material-icons">&#xE0B9;</i> <span class="uk-text-muted uk-text-small">2</span>
-                                                </span>
-                                                <span class="uk-margin-right">
-                                                    <i class="material-icons">&#xE417;</i> <span class="uk-text-muted uk-text-small">535</span>
-                                                </span>
+                                                    <span class="uk-margin-right">
+                                                        <i class="material-icons">&#xE192;</i> <span class="uk-text-muted uk-text-small">27 Mar 2020</span>
+                                                    </span>
+                                                    <span class="uk-margin-right">
+                                                        <i class="material-icons">&#xE0B9;</i> <span class="uk-text-muted uk-text-small">2</span>
+                                                    </span>
+                                                    <span class="uk-margin-right">
+                                                        <i class="material-icons">&#xE417;</i> <span class="uk-text-muted uk-text-small">535</span>
+                                                    </span>
                                                 </div>
                                             </div>
                                         </li>
@@ -1114,15 +1183,15 @@
                                             <div class="md-list-content">
                                                 <span class="md-list-heading"><a href="#">Fugiat tempora ducimus rem.</a></span>
                                                 <div class="uk-margin-small-top">
-                                                <span class="uk-margin-right">
-                                                    <i class="material-icons">&#xE192;</i> <span class="uk-text-muted uk-text-small">19 Mar 2020</span>
-                                                </span>
-                                                <span class="uk-margin-right">
-                                                    <i class="material-icons">&#xE0B9;</i> <span class="uk-text-muted uk-text-small">22</span>
-                                                </span>
-                                                <span class="uk-margin-right">
-                                                    <i class="material-icons">&#xE417;</i> <span class="uk-text-muted uk-text-small">262</span>
-                                                </span>
+                                                    <span class="uk-margin-right">
+                                                        <i class="material-icons">&#xE192;</i> <span class="uk-text-muted uk-text-small">19 Mar 2020</span>
+                                                    </span>
+                                                    <span class="uk-margin-right">
+                                                        <i class="material-icons">&#xE0B9;</i> <span class="uk-text-muted uk-text-small">22</span>
+                                                    </span>
+                                                    <span class="uk-margin-right">
+                                                        <i class="material-icons">&#xE417;</i> <span class="uk-text-muted uk-text-small">262</span>
+                                                    </span>
                                                 </div>
                                             </div>
                                         </li>
@@ -1130,15 +1199,15 @@
                                             <div class="md-list-content">
                                                 <span class="md-list-heading"><a href="#">Magni ipsa minus culpa error ratione quia.</a></span>
                                                 <div class="uk-margin-small-top">
-                                                <span class="uk-margin-right">
-                                                    <i class="material-icons">&#xE192;</i> <span class="uk-text-muted uk-text-small">26 Mar 2020</span>
-                                                </span>
-                                                <span class="uk-margin-right">
-                                                    <i class="material-icons">&#xE0B9;</i> <span class="uk-text-muted uk-text-small">7</span>
-                                                </span>
-                                                <span class="uk-margin-right">
-                                                    <i class="material-icons">&#xE417;</i> <span class="uk-text-muted uk-text-small">182</span>
-                                                </span>
+                                                    <span class="uk-margin-right">
+                                                        <i class="material-icons">&#xE192;</i> <span class="uk-text-muted uk-text-small">26 Mar 2020</span>
+                                                    </span>
+                                                    <span class="uk-margin-right">
+                                                        <i class="material-icons">&#xE0B9;</i> <span class="uk-text-muted uk-text-small">7</span>
+                                                    </span>
+                                                    <span class="uk-margin-right">
+                                                        <i class="material-icons">&#xE417;</i> <span class="uk-text-muted uk-text-small">182</span>
+                                                    </span>
                                                 </div>
                                             </div>
                                         </li>
@@ -1146,15 +1215,15 @@
                                             <div class="md-list-content">
                                                 <span class="md-list-heading"><a href="#">Voluptatum fuga id laboriosam.</a></span>
                                                 <div class="uk-margin-small-top">
-                                                <span class="uk-margin-right">
-                                                    <i class="material-icons">&#xE192;</i> <span class="uk-text-muted uk-text-small">12 Mar 2020</span>
-                                                </span>
-                                                <span class="uk-margin-right">
-                                                    <i class="material-icons">&#xE0B9;</i> <span class="uk-text-muted uk-text-small">14</span>
-                                                </span>
-                                                <span class="uk-margin-right">
-                                                    <i class="material-icons">&#xE417;</i> <span class="uk-text-muted uk-text-small">340</span>
-                                                </span>
+                                                    <span class="uk-margin-right">
+                                                        <i class="material-icons">&#xE192;</i> <span class="uk-text-muted uk-text-small">12 Mar 2020</span>
+                                                    </span>
+                                                    <span class="uk-margin-right">
+                                                        <i class="material-icons">&#xE0B9;</i> <span class="uk-text-muted uk-text-small">14</span>
+                                                    </span>
+                                                    <span class="uk-margin-right">
+                                                        <i class="material-icons">&#xE417;</i> <span class="uk-text-muted uk-text-small">340</span>
+                                                    </span>
                                                 </div>
                                             </div>
                                         </li>
@@ -1162,15 +1231,15 @@
                                             <div class="md-list-content">
                                                 <span class="md-list-heading"><a href="#">Odio recusandae dignissimos accusamus saepe sunt dolorem accusantium.</a></span>
                                                 <div class="uk-margin-small-top">
-                                                <span class="uk-margin-right">
-                                                    <i class="material-icons">&#xE192;</i> <span class="uk-text-muted uk-text-small">20 Mar 2020</span>
-                                                </span>
-                                                <span class="uk-margin-right">
-                                                    <i class="material-icons">&#xE0B9;</i> <span class="uk-text-muted uk-text-small">9</span>
-                                                </span>
-                                                <span class="uk-margin-right">
-                                                    <i class="material-icons">&#xE417;</i> <span class="uk-text-muted uk-text-small">710</span>
-                                                </span>
+                                                    <span class="uk-margin-right">
+                                                        <i class="material-icons">&#xE192;</i> <span class="uk-text-muted uk-text-small">20 Mar 2020</span>
+                                                    </span>
+                                                    <span class="uk-margin-right">
+                                                        <i class="material-icons">&#xE0B9;</i> <span class="uk-text-muted uk-text-small">9</span>
+                                                    </span>
+                                                    <span class="uk-margin-right">
+                                                        <i class="material-icons">&#xE417;</i> <span class="uk-text-muted uk-text-small">710</span>
+                                                    </span>
                                                 </div>
                                             </div>
                                         </li>
@@ -1178,15 +1247,15 @@
                                             <div class="md-list-content">
                                                 <span class="md-list-heading"><a href="#">Et ad vero animi delectus est ipsum.</a></span>
                                                 <div class="uk-margin-small-top">
-                                                <span class="uk-margin-right">
-                                                    <i class="material-icons">&#xE192;</i> <span class="uk-text-muted uk-text-small">05 Mar 2020</span>
-                                                </span>
-                                                <span class="uk-margin-right">
-                                                    <i class="material-icons">&#xE0B9;</i> <span class="uk-text-muted uk-text-small">12</span>
-                                                </span>
-                                                <span class="uk-margin-right">
-                                                    <i class="material-icons">&#xE417;</i> <span class="uk-text-muted uk-text-small">586</span>
-                                                </span>
+                                                    <span class="uk-margin-right">
+                                                        <i class="material-icons">&#xE192;</i> <span class="uk-text-muted uk-text-small">05 Mar 2020</span>
+                                                    </span>
+                                                    <span class="uk-margin-right">
+                                                        <i class="material-icons">&#xE0B9;</i> <span class="uk-text-muted uk-text-small">12</span>
+                                                    </span>
+                                                    <span class="uk-margin-right">
+                                                        <i class="material-icons">&#xE417;</i> <span class="uk-text-muted uk-text-small">586</span>
+                                                    </span>
                                                 </div>
                                             </div>
                                         </li>
@@ -1194,15 +1263,15 @@
                                             <div class="md-list-content">
                                                 <span class="md-list-heading"><a href="#">Ut cumque dolor temporibus incidunt veritatis laudantium.</a></span>
                                                 <div class="uk-margin-small-top">
-                                                <span class="uk-margin-right">
-                                                    <i class="material-icons">&#xE192;</i> <span class="uk-text-muted uk-text-small">20 Mar 2020</span>
-                                                </span>
-                                                <span class="uk-margin-right">
-                                                    <i class="material-icons">&#xE0B9;</i> <span class="uk-text-muted uk-text-small">16</span>
-                                                </span>
-                                                <span class="uk-margin-right">
-                                                    <i class="material-icons">&#xE417;</i> <span class="uk-text-muted uk-text-small">398</span>
-                                                </span>
+                                                    <span class="uk-margin-right">
+                                                        <i class="material-icons">&#xE192;</i> <span class="uk-text-muted uk-text-small">20 Mar 2020</span>
+                                                    </span>
+                                                    <span class="uk-margin-right">
+                                                        <i class="material-icons">&#xE0B9;</i> <span class="uk-text-muted uk-text-small">16</span>
+                                                    </span>
+                                                    <span class="uk-margin-right">
+                                                        <i class="material-icons">&#xE417;</i> <span class="uk-text-muted uk-text-small">398</span>
+                                                    </span>
                                                 </div>
                                             </div>
                                         </li>
@@ -1210,15 +1279,15 @@
                                             <div class="md-list-content">
                                                 <span class="md-list-heading"><a href="#">Vel omnis eos quia aut iste ipsam aut.</a></span>
                                                 <div class="uk-margin-small-top">
-                                                <span class="uk-margin-right">
-                                                    <i class="material-icons">&#xE192;</i> <span class="uk-text-muted uk-text-small">29 Mar 2020</span>
-                                                </span>
-                                                <span class="uk-margin-right">
-                                                    <i class="material-icons">&#xE0B9;</i> <span class="uk-text-muted uk-text-small">20</span>
-                                                </span>
-                                                <span class="uk-margin-right">
-                                                    <i class="material-icons">&#xE417;</i> <span class="uk-text-muted uk-text-small">945</span>
-                                                </span>
+                                                    <span class="uk-margin-right">
+                                                        <i class="material-icons">&#xE192;</i> <span class="uk-text-muted uk-text-small">29 Mar 2020</span>
+                                                    </span>
+                                                    <span class="uk-margin-right">
+                                                        <i class="material-icons">&#xE0B9;</i> <span class="uk-text-muted uk-text-small">20</span>
+                                                    </span>
+                                                    <span class="uk-margin-right">
+                                                        <i class="material-icons">&#xE417;</i> <span class="uk-text-muted uk-text-small">945</span>
+                                                    </span>
                                                 </div>
                                             </div>
                                         </li>
@@ -1267,7 +1336,7 @@
                             <ul class="md-list md-list-addon uk-margin-bottom">
                                 <li>
                                     <div class="md-list-addon-element">
-                                        <img class="md-user-image md-list-addon-avatar" src="assets/img/avatars/avatar_02_tn.png" alt=""/>
+                                        <img class="md-user-image md-list-addon-avatar" src="assets/img/avatars/avatar_02_tn.png" alt="" />
                                     </div>
                                     <div class="md-list-content">
                                         <span class="md-list-heading">Prof. Brandon Klein</span>
@@ -1276,7 +1345,7 @@
                                 </li>
                                 <li>
                                     <div class="md-list-addon-element">
-                                        <img class="md-user-image md-list-addon-avatar" src="assets/img/avatars/avatar_07_tn.png" alt=""/>
+                                        <img class="md-user-image md-list-addon-avatar" src="assets/img/avatars/avatar_07_tn.png" alt="" />
                                     </div>
                                     <div class="md-list-content">
                                         <span class="md-list-heading">Prof. Douglas Hahn</span>
@@ -1285,7 +1354,7 @@
                                 </li>
                                 <li>
                                     <div class="md-list-addon-element">
-                                        <img class="md-user-image md-list-addon-avatar" src="assets/img/avatars/avatar_06_tn.png" alt=""/>
+                                        <img class="md-user-image md-list-addon-avatar" src="assets/img/avatars/avatar_06_tn.png" alt="" />
                                     </div>
                                     <div class="md-list-content">
                                         <span class="md-list-heading">Myles Jast MD</span>
@@ -1300,9 +1369,9 @@
             </div>
         </div>
     </div>
-
     <!-- google web fonts -->
-    <script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+    <script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script>
         WebFontConfig = {
             google: {
                 families: [
@@ -1321,15 +1390,12 @@
             s.parentNode.insertBefore(wf, s);
         })();
     </script>
-
     <!-- common functions -->
     <script src="assets/js/common.min.js"></script>
     <!-- uikit functions -->
     <script src="assets/js/uikit_custom.min.js"></script>
     <!-- altair common functions/helpers -->
     <script src="assets/js/altair_admin_common.min.js"></script>
-
-
     <script>
         $(function() {
             if(isHighDensity()) {
@@ -1344,7 +1410,6 @@
             altair_helpers.ie_fix();
         });
     </script>
-
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
                 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -1353,7 +1418,6 @@
         ga('create', 'UA-65191727-1', 'auto');
         ga('send', 'pageview');
     </script>
-
     <div id="style_switcher">
         <div id="style_switcher_toggle"><i class="material-icons">&#xE8B8;</i></div>
         <div class="uk-margin-medium-bottom">
@@ -1431,145 +1495,144 @@
             </p>
         </div>
     </div>
-
     <script>
-        $(function() {
-            var $switcher = $('#style_switcher'),
-                $switcher_toggle = $('#style_switcher_toggle'),
-                $theme_switcher = $('#theme_switcher'),
-                $mini_sidebar_toggle = $('#style_sidebar_mini'),
-                $slim_sidebar_toggle = $('#style_sidebar_slim'),
-                $boxed_layout_toggle = $('#style_layout_boxed'),
-                $accordion_mode_toggle = $('#accordion_mode_main_menu'),
-                $html = $('html'),
-                $body = $('body');
+    $(function() {
+        var $switcher = $('#style_switcher'),
+            $switcher_toggle = $('#style_switcher_toggle'),
+            $theme_switcher = $('#theme_switcher'),
+            $mini_sidebar_toggle = $('#style_sidebar_mini'),
+            $slim_sidebar_toggle = $('#style_sidebar_slim'),
+            $boxed_layout_toggle = $('#style_layout_boxed'),
+            $accordion_mode_toggle = $('#accordion_mode_main_menu'),
+            $html = $('html'),
+            $body = $('body');
 
 
-            $switcher_toggle.click(function(e) {
-                e.preventDefault();
-                $switcher.toggleClass('switcher_active');
-            });
+        $switcher_toggle.click(function(e) {
+            e.preventDefault();
+            $switcher.toggleClass('switcher_active');
+        });
 
-            $theme_switcher.children('li').click(function(e) {
-                e.preventDefault();
-                var $this = $(this),
-                    this_theme = $this.attr('data-app-theme');
+        $theme_switcher.children('li').click(function(e) {
+            e.preventDefault();
+            var $this = $(this),
+                this_theme = $this.attr('data-app-theme');
 
-                $theme_switcher.children('li').removeClass('active_theme');
-                $(this).addClass('active_theme');
-                $html
-                    .removeClass('app_theme_a app_theme_b app_theme_c app_theme_d app_theme_e app_theme_f app_theme_g app_theme_h app_theme_i app_theme_dark')
-                    .addClass(this_theme);
+            $theme_switcher.children('li').removeClass('active_theme');
+            $(this).addClass('active_theme');
+            $html
+                .removeClass('app_theme_a app_theme_b app_theme_c app_theme_d app_theme_e app_theme_f app_theme_g app_theme_h app_theme_i app_theme_dark')
+                .addClass(this_theme);
 
-                if(this_theme == '') {
-                    localStorage.removeItem('altair_theme');
-                    $('#kendoCSS').attr('href','bower_components/kendo-ui/styles/kendo.material.min.css');
+            if (this_theme == '') {
+                localStorage.removeItem('altair_theme');
+                $('#kendoCSS').attr('href', 'bower_components/kendo-ui/styles/kendo.material.min.css');
+            } else {
+                localStorage.setItem("altair_theme", this_theme);
+                if (this_theme == 'app_theme_dark') {
+                    $('#kendoCSS').attr('href', 'bower_components/kendo-ui/styles/kendo.materialblack.min.css')
                 } else {
-                    localStorage.setItem("altair_theme", this_theme);
-                    if(this_theme == 'app_theme_dark') {
-                        $('#kendoCSS').attr('href','bower_components/kendo-ui/styles/kendo.materialblack.min.css')
-                    } else {
-                        $('#kendoCSS').attr('href','bower_components/kendo-ui/styles/kendo.material.min.css');
-                    }
+                    $('#kendoCSS').attr('href', 'bower_components/kendo-ui/styles/kendo.material.min.css');
                 }
-
-            });
-
-            // hide style switcher
-            $document.on('click keyup', function(e) {
-                if( $switcher.hasClass('switcher_active') ) {
-                    if (
-                        ( !$(e.target).closest($switcher).length )
-                        || ( e.keyCode == 27 )
-                    ) {
-                        $switcher.removeClass('switcher_active');
-                    }
-                }
-            });
-
-            // get theme from local storage
-            if(localStorage.getItem("altair_theme") !== null) {
-                $theme_switcher.children('li[data-app-theme='+localStorage.getItem("altair_theme")+']').click();
             }
+
+        });
+
+        // hide style switcher
+        $document.on('click keyup', function(e) {
+            if ($switcher.hasClass('switcher_active')) {
+                if (
+                    (!$(e.target).closest($switcher).length) ||
+                    (e.keyCode == 27)
+                ) {
+                    $switcher.removeClass('switcher_active');
+                }
+            }
+        });
+
+        // get theme from local storage
+        if (localStorage.getItem("altair_theme") !== null) {
+            $theme_switcher.children('li[data-app-theme=' + localStorage.getItem("altair_theme") + ']').click();
+        }
 
 
         // toggle mini sidebar
 
-            // change input's state to checked if mini sidebar is active
-            if((localStorage.getItem("altair_sidebar_mini") !== null && localStorage.getItem("altair_sidebar_mini") == '1') || $body.hasClass('sidebar_mini')) {
-                $mini_sidebar_toggle.iCheck('check');
-            }
+        // change input's state to checked if mini sidebar is active
+        if ((localStorage.getItem("altair_sidebar_mini") !== null && localStorage.getItem("altair_sidebar_mini") == '1') || $body.hasClass('sidebar_mini')) {
+            $mini_sidebar_toggle.iCheck('check');
+        }
 
-            $mini_sidebar_toggle
-                .on('ifChecked', function(event){
-                    $switcher.removeClass('switcher_active');
-                    localStorage.setItem("altair_sidebar_mini", '1');
-                    localStorage.removeItem('altair_sidebar_slim');
-                    location.reload(true);
-                })
-                .on('ifUnchecked', function(event){
-                    $switcher.removeClass('switcher_active');
-                    localStorage.removeItem('altair_sidebar_mini');
-                    location.reload(true);
-                });
+        $mini_sidebar_toggle
+            .on('ifChecked', function(event) {
+                $switcher.removeClass('switcher_active');
+                localStorage.setItem("altair_sidebar_mini", '1');
+                localStorage.removeItem('altair_sidebar_slim');
+                location.reload(true);
+            })
+            .on('ifUnchecked', function(event) {
+                $switcher.removeClass('switcher_active');
+                localStorage.removeItem('altair_sidebar_mini');
+                location.reload(true);
+            });
 
         // toggle slim sidebar
 
-            // change input's state to checked if mini sidebar is active
-            if((localStorage.getItem("altair_sidebar_slim") !== null && localStorage.getItem("altair_sidebar_slim") == '1') || $body.hasClass('sidebar_slim')) {
-                $slim_sidebar_toggle.iCheck('check');
-            }
+        // change input's state to checked if mini sidebar is active
+        if ((localStorage.getItem("altair_sidebar_slim") !== null && localStorage.getItem("altair_sidebar_slim") == '1') || $body.hasClass('sidebar_slim')) {
+            $slim_sidebar_toggle.iCheck('check');
+        }
 
-            $slim_sidebar_toggle
-                .on('ifChecked', function(event){
-                    $switcher.removeClass('switcher_active');
-                    localStorage.setItem("altair_sidebar_slim", '1');
-                    localStorage.removeItem('altair_sidebar_mini');
-                    location.reload(true);
-                })
-                .on('ifUnchecked', function(event){
-                    $switcher.removeClass('switcher_active');
-                    localStorage.removeItem('altair_sidebar_slim');
-                    location.reload(true);
-                });
+        $slim_sidebar_toggle
+            .on('ifChecked', function(event) {
+                $switcher.removeClass('switcher_active');
+                localStorage.setItem("altair_sidebar_slim", '1');
+                localStorage.removeItem('altair_sidebar_mini');
+                location.reload(true);
+            })
+            .on('ifUnchecked', function(event) {
+                $switcher.removeClass('switcher_active');
+                localStorage.removeItem('altair_sidebar_slim');
+                location.reload(true);
+            });
 
         // toggle boxed layout
 
-            if((localStorage.getItem("altair_layout") !== null && localStorage.getItem("altair_layout") == 'boxed') || $body.hasClass('boxed_layout')) {
-                $boxed_layout_toggle.iCheck('check');
-                $body.addClass('boxed_layout');
-                $(window).resize();
-            }
+        if ((localStorage.getItem("altair_layout") !== null && localStorage.getItem("altair_layout") == 'boxed') || $body.hasClass('boxed_layout')) {
+            $boxed_layout_toggle.iCheck('check');
+            $body.addClass('boxed_layout');
+            $(window).resize();
+        }
 
-            $boxed_layout_toggle
-                .on('ifChecked', function(event){
-                    $switcher.removeClass('switcher_active');
-                    localStorage.setItem("altair_layout", 'boxed');
-                    location.reload(true);
-                })
-                .on('ifUnchecked', function(event){
-                    $switcher.removeClass('switcher_active');
-                    localStorage.removeItem('altair_layout');
-                    location.reload(true);
-                });
+        $boxed_layout_toggle
+            .on('ifChecked', function(event) {
+                $switcher.removeClass('switcher_active');
+                localStorage.setItem("altair_layout", 'boxed');
+                location.reload(true);
+            })
+            .on('ifUnchecked', function(event) {
+                $switcher.removeClass('switcher_active');
+                localStorage.removeItem('altair_layout');
+                location.reload(true);
+            });
 
         // main menu accordion mode
-            if($sidebar_main.hasClass('accordion_mode')) {
-                $accordion_mode_toggle.iCheck('check');
-            }
+        if ($sidebar_main.hasClass('accordion_mode')) {
+            $accordion_mode_toggle.iCheck('check');
+        }
 
-            $accordion_mode_toggle
-                .on('ifChecked', function(){
-                    $sidebar_main.addClass('accordion_mode');
-                })
-                .on('ifUnchecked', function(){
-                    $sidebar_main.removeClass('accordion_mode');
-                });
+        $accordion_mode_toggle
+            .on('ifChecked', function() {
+                $sidebar_main.addClass('accordion_mode');
+            })
+            .on('ifUnchecked', function() {
+                $sidebar_main.removeClass('accordion_mode');
+            });
 
 
-        });
+    });
     </script>
 </body>
-
 <!-- Mirrored from altair-html.tzdthemes.com/page_user_profile.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 28 Oct 2020 04:43:44 GMT -->
+
 </html>

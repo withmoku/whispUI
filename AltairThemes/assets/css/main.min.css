@@ -2106,7 +2106,7 @@ html[dir="rtl"] .uk-slider > * {
 }
 .uk-tab > li.uk-active > a {
     background: 0 0 !important;
-    border-bottom-color: #2196f3;
+    /*border-bottom-color: #2196f3;*/
 }
 .uk-tab > li.uk-disabled > a,
 .uk-tab > li.uk-disabled > a:focus,
@@ -11793,6 +11793,7 @@ a.editable-click.editable-disabled:hover {
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: contain;
+    background-size: 100% 225px;
 }
 #sidebar_main,
 #sidebar_main *,
@@ -12839,7 +12840,7 @@ a.editable-click.editable-disabled:hover {
     content: "\e315";
 }
 .user_heading {
-    padding: 0px 35px 25px;
+    padding: 0px 35px 0px;
     background: #1976d2;
     color: #fff;
     position: relative;
@@ -12878,7 +12879,7 @@ a.editable-click.editable-disabled:hover {
     padding: 0;
 }
 .user_heading_bg .bg_overlay {
-    padding: 60px;
+    padding: 80px;
     position: relative;
 }
 .user_heading_bg .bg_overlay:before {
@@ -12925,7 +12926,7 @@ a.editable-click.editable-disabled:hover {
     height: 150px;
     line-height: 74px;
     border-radius: 50%;
-    border: 2px solid #fff;
+    border: 5px solid #fff;
     background-color: #ededed;
     overflow: hidden;
     box-sizing: border-box;
@@ -12993,7 +12994,7 @@ a.editable-click.editable-disabled:hover {
     list-style: none;
 }
 .user_heading_content .user_stats li {
-    margin-right: 48px;
+    margin-left: 48px;
     float: left;
 }
 @media only screen and (max-width: 959px) {
@@ -13011,8 +13012,8 @@ a.editable-click.editable-disabled:hover {
 }
 .user_heading_menu {
     position: absolute;
-    top: 8px;
-    right: 8px;
+    top: 18px;
+    right: 25px;
 }
 .user_heading .md-fab,
 .user_heading .md-fab-wrapper {
@@ -14324,7 +14325,7 @@ h6 {
 }
 .heading_a {
     margin: 0;
-    font: 400 18px/24px Roboto, sans-serif;
+    font: 900 18px/24px Roboto, sans-serif;
 }
 .heading_a .sub-heading {
     font-weight: 300;
