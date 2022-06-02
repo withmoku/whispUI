@@ -5859,7 +5859,7 @@ textarea.md-input {
     font: 400 15px/18px Roboto, sans-serif;
     box-shadow: inset 0 -1px 0 transparent;
     box-sizing: border-box;
-    padding: 12px 4px;
+    padding: 12px 20px;
     background: 0 0;
     width: 100%;
     display: block;
@@ -6178,7 +6178,7 @@ textarea.no_autosize {
 }
 .md-input-wrapper {
     position: relative;
-    padding-top: 4px;
+    padding-top: 0px;
     width: 100%;
     display: block;
 }
@@ -7404,7 +7404,7 @@ button.md-icon {
     z-index: 10;
 }
 .icheckbox_md {
-    border: 2px solid rgba(0, 0, 0, 0.54);
+    border: 2px solid rgba(0, 0, 0, 0.30);
     border-radius: 2px;
     width: 18px;
     height: 18px;
@@ -7418,8 +7418,8 @@ button.md-icon {
     font-size: 18px;
     color: #fff;
     position: absolute;
-    left: -1px;
-    top: -4px;
+    left: 1px;
+    top: -2px;
     line-height: 1.42857143;
 }
 .icheckbox_md.checked,
@@ -8368,10 +8368,10 @@ body.CodeMirror-fullscreen-active .CodeMirror-fullscreen #code_editor_close {
     border-radius: 20px;
     cursor: pointer;
     display: inline-block;
-    height: 14px;
+    height: 24px;
     position: relative;
     vertical-align: middle;
-    width: 38px;
+    width: 48px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -8388,14 +8388,14 @@ body.CodeMirror-fullscreen-active .CodeMirror-fullscreen #code_editor_close {
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.55);
     height: 20px;
     position: absolute;
-    top: 0;
+    top: 1px;
     width: 20px;
-    margin-top: -3px;
+    /*margin-top: -3px;*/
     transition: background 0.2s cubic-bezier(0.4, 0, 0.2, 1), left 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
 }
 .switchery-small {
     width: 32px;
-    height: 9px;
+    height: 15px;
     margin: 4px 1px;
 }
 .switchery-small > small {
@@ -8405,11 +8405,12 @@ body.CodeMirror-fullscreen-active .CodeMirror-fullscreen #code_editor_close {
 }
 .switchery-large {
     width: 48px;
+    height: 28px;
 }
 .switchery-large > small {
     height: 24px;
     width: 24px;
-    top: -3px;
+    /*top: -3px;*/
 }
 .irs {
     position: relative;
