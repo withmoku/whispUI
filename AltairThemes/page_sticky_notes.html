@@ -38,19 +38,60 @@
     .uk-badge-default {}
 
     .uk-badge-warning {
-        background:#F97577;
+        background: #F97577;
     }
 
     .uk-badge-danger {
-        background:#ff69b4;
+        background: #ff69b4;
     }
 
     .uk-badge-success {
-        background:#a2ffe0;
+        background: #a2ffe0;
     }
 
     .uk-badge-primary {
-        background:#32a9de;
+        background: #32a9de;
+    }
+    #top_bar {
+        background: #fff0 !important;
+        box-shadow: none !important;
+        position: relative;
+        top: 0;
+    }
+    .top_left{
+        margin-left: 20px !important;
+    }
+    .checkbox_round {
+        width: 1.3em;
+        height: 1.3em;
+        background-color: white;
+        border-radius: 50%;
+        vertical-align: middle;
+        border: 1px solid #ddd;
+        appearance: none;
+        -webkit-appearance: none;
+        outline: none;
+        cursor: pointer;
+    }
+
+    .sticky_label {
+        width: 100% !important;
+    }
+
+    .li_small {
+        width: 130.312px !important;
+    }
+    .li_large{
+        width: 630.312px !important;
+        left: 850px !important;
+        border-bottom: none !important;
+        z-index: 90;
+    }
+    #top_bar .top_bar_nav > li {
+        border-bottom: 1px solid;
+    }
+    .uk-slider{
+        position: absolute;
     }
     </style>
 </head>
@@ -270,19 +311,19 @@
         <div class="sidebar_main_header">
             <div class="sidebar_logo">
                 <a href="index-2.html" class="sSidebar_hide sidebar_logo_large">
-                    <img class="logo_regular" src="assets/img/logo_main.png" alt="" height="15" width="71" />
-                    <img class="logo_light" src="assets/img/logo_main_white.png" alt="" height="15" width="71" />
+                    <img class="logo_regular" src="assets/img/whisp-logo.png" alt="" />
+                    <img class="logo_light" src="assets/img/whisp-logo.png" alt="" />
                 </a>
                 <a href="index-2.html" class="sSidebar_show sidebar_logo_small">
-                    <img class="logo_regular" src="assets/img/logo_main_small.png" alt="" height="32" width="32" />
-                    <img class="logo_light" src="assets/img/logo_main_small_light.png" alt="" height="32" width="32" />
+                    <img class="logo_regular" src="assets/img/whisp-logo.png" alt="" height="32" width="32" />
+                    <img class="logo_light" src="assets/img/whisp-logo.png" alt="" height="32" width="32" />
                 </a>
             </div>
-            <div class="sidebar_actions">
+            <!-- <div class="sidebar_actions">
                 <select id="lang_switcher" name="lang_switcher">
                     <option value="gb" selected>English</option>
                 </select>
-            </div>
+            </div> -->
         </div>
         <div class="menu_section">
             <ul>
@@ -558,29 +599,39 @@
     </aside><!-- main sidebar end -->
     <div id="top_bar">
         <div class="md-top-bar">
-            <div class="uk-width-large-8-10 uk-container-center">
+            <div class="uk-width-large-8-10 uk-container-center sticky_label">
                 <div class="uk-slidenav-position" data-uk-slider="{infinite: false}">
                     <div class="uk-slider-container">
-                        <ul class="uk-slider uk-grid-width-small-1-6 top_bar_nav" id="notes_grid_filter">
-                            <li class="uk-active" data-uk-filter="">
+                        <div class="uk-grid">
+                        <ul class="uk-slider uk-grid-width-small-1-6 top_bar_nav top_left" id="notes_grid_filter">
+                            <li class="uk-active li_small" data-uk-filter="">
                                 <a href="#">All</a>
                             </li>
-                            <li data-uk-filter="label-1">
+                            <li data-uk-filter="label-1" class="li_small">
                                 <a href="#"><span class="uk-badge uk-badge-default">Label 1</span></a>
                             </li>
-                            <li data-uk-filter="label-2">
+                            <li data-uk-filter="label-2" class="li_small">
                                 <a href="#"><span class="uk-badge uk-badge-warning">Label 2</span></a>
                             </li>
-                            <li data-uk-filter="label-3">
+                            <li data-uk-filter="label-3" class="li_small">
                                 <a href="#"><span class="uk-badge uk-badge-danger">Label 3</span></a>
                             </li>
-                            <li data-uk-filter="label-4">
+                            <li data-uk-filter="label-4" class="li_small">
                                 <a href="#"><span class="uk-badge uk-badge-success">Label 4</span></a>
                             </li>
-                            <li data-uk-filter="label-5">
+                            <li data-uk-filter="label-5" class="li_small">
                                 <a href="#"><span class="uk-badge uk-badge-primary">Label 5</span></a>
                             </li>
+                            <li class="li_large">
+                                <div class="md-card">
+                                    <div class="md-card-content">
+                                        <span class="note_form_text">Add note</span>
+                                        <div id="note_form"></div>
+                                    </div>
+                                </div>
+                            </li>
                         </ul>
+                    </div>
                     </div>
                     <a href="#" class="uk-slidenav uk-slidenav-previous" data-uk-slider-item="previous"></a>
                     <a href="#" class="uk-slidenav uk-slidenav-next" data-uk-slider-item="next"></a>
@@ -590,7 +641,7 @@
     </div>
     <div id="page_content">
         <div id="page_content_inner">
-            <div class="uk-grid">
+            <!-- <div class="uk-grid">
                 <div class="uk-width-medium-3-5 uk-width-large-2-5 uk-container-center">
                     <div class="md-card">
                         <div class="md-card-content">
@@ -599,7 +650,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <div class="uk-grid-width-small-1-2 uk-grid-width-medium-1-4 uk-container-center uk-margin-large-top" data-uk-grid="{gutter: 20, controls: '#notes_grid_filter'}" id="notes_grid"></div>
         </div>
     </div>
@@ -625,7 +676,7 @@
                         <ul class="uk-list">
                             {{#each checklist }}
                             <li class="uk-margin-small-top">
-                                <input type="checkbox" id="checkbox_{{#if id}}{{id}}{{else}}{{@../index}}_{{@index}}{{/if}}" data-md-icheck {{#if checked}}checked{{/if}}/>
+                                <input type="checkbox" class="checkbox_round" id="checkbox_{{#if id}}{{id}}{{else}}{{@../index}}_{{@index}}{{/if}}" data-md-icheck {{#if checked}}checked{{/if}}/>
                                 <label for="checkbox_{{#if id}}{{id}}{{else}}{{@../index}}_{{@index}}{{/if}}" class="inline-label">{{title}}</label>
                             </li>
                             {{/each}}

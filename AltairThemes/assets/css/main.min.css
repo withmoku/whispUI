@@ -7418,8 +7418,8 @@ button.md-icon {
     font-size: 18px;
     color: #fff;
     position: absolute;
-    left: -2px;
-    top: -6px;
+    left: -1px;
+    top: -4px;
     line-height: 1.42857143;
 }
 .icheckbox_md.checked,
