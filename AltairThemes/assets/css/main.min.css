@@ -787,55 +787,64 @@ fieldset + * {
 }
 .uk-accordion-title {
     background: rgba(153, 153, 153, 0.2);
-    border-radius: 0;
+    border-radius: 5px;
     border: none;
     margin: 0 0 4px;
     font-size: 15px;
     font-weight: 400;
-    padding: 8px 24px 8px 16px;
+    padding: 8px 34px 8px 16px;
     position: relative;
 }
 .uk-accordion-title:after {
     content: "\e313";
     font-family: "Material Icons";
-    font-size: 18px;
+    font-size: 22px;
     position: absolute;
     top: 8px;
     right: 8px;
     display: block;
     color: #727272;
     transition: transform 280ms;
+    border-radius: 50%;
+    background: #5bbae4;
+    height: 22px;
+    color: #fff;
 }
 .uk-accordion-title.uk-active:after {
     transform: rotate(-180deg);
 }
 .uk-accordion-title-primary {
-    background: #2196f3;
+    background: #32a9de;
     color: #fff;
+
 }
 .uk-accordion-title-primary:after {
-    color: #fff;
+    background: #fff !important;
+    color: #32a9de;
 }
 .uk-accordion-title-danger {
-    background: #e53935;
+    background: #f97577;
     color: #fff;
 }
 .uk-accordion-title-danger:after {
-    color: #fff;
+    color: #f97577;
+    background: #fff !important;
 }
 .uk-accordion-title-success {
-    background: #7cb342;
+    background: #00ffa9;
     color: #fff;
 }
 .uk-accordion-title-success:after {
-    color: #fff;
+    color: #00ffa9;
+    background: #fff !important;
 }
 .uk-accordion-title-warning {
-    background: #ffa000;
+    background: #ff69b4;
     color: #fff;
 }
 .uk-accordion-title-warning:after {
-    color: #fff;
+    color: #ff69b4;
+    background: #fff !important;
 }
 .uk-accordion-content {
     padding: 16px;
