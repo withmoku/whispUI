@@ -38,7 +38,21 @@
         <script type="text/javascript" src="bower_components/matchMedia/matchMedia.addListener.js"></script>
         <link rel="stylesheet" href="assets/css/ie.css" media="all">
     <![endif]-->
-
+    <style type="text/css">
+        .md-card{
+            border-radius: 0px !important;
+            box-shadow: none !important;
+        }
+        .anim_content{
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .anim_content .md-card-list > ul > li {
+            box-shadow: none !important;
+            border-bottom: 2px solid;
+        }
+    </style>
 </head>
 <body class="disable_transitions sidebar_main_open sidebar_main_swipe">
     <!-- main header -->
@@ -634,7 +648,7 @@
                 </div>
                 <div class="uk-width-xlarge-1-2">
                     <h3 class="heading_a uk-margin-bottom">Hierarchical Slide</h3>
-                    <div class="md-card-list-wrapper">
+                    <div class="md-card-list-wrapper anim_content">
                         <div class="md-card-list">
                             <ul class="hierarchical_slide" id="hierarchical-slide">
                                                                     <li>
