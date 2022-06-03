@@ -9612,6 +9612,7 @@ div.ganttview .ui-resizable-w {
     display: block;
     width: 100%;
     overflow: hidden;
+    border-radius: 10px;
 }
 .tabcontrol a,
 .wizard a {
@@ -9642,7 +9643,7 @@ div.ganttview .ui-resizable-w {
     position: relative;
     display: block;
     width: 100%;
-    background: #2196f3;
+    background: #32a9de;
 }
 .wizard > .steps .number {
     font-size: 14px;
@@ -9691,7 +9692,7 @@ div.ganttview .ui-resizable-w {
 @media only screen and (min-width: 960px) {
     .wizard > .steps > ul > li + li a {
         border-top: none;
-        border-right: 1px solid rgba(0, 0, 0, 0.15);
+        /*border-right: 1px solid rgba(0, 0, 0, 0.15);*/
     }
 }
 .wizard > .steps > ul > li a {
@@ -9710,7 +9711,7 @@ div.ganttview .ui-resizable-w {
     .wizard > .steps > ul > li a,
     .wizard > .steps > ul > li a:active,
     .wizard > .steps > ul > li a:hover {
-        padding: 16px;
+        padding: 26px;
     }
 }
 .wizard > .steps > ul > li.disabled a,
@@ -9722,7 +9723,7 @@ div.ganttview .ui-resizable-w {
 .wizard > .steps > ul > li.current a,
 .wizard > .steps > ul > li.current a:active,
 .wizard > .steps > ul > li.current a:hover {
-    background: #51adf6;
+    background: #5bbae4;
     color: #fff;
     cursor: default;
 }
