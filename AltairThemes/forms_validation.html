@@ -38,6 +38,19 @@
         <script type="text/javascript" src="bower_components/matchMedia/matchMedia.addListener.js"></script>
         <link rel="stylesheet" href="assets/css/ie.css" media="all">
     <![endif]-->
+        <style type="text/css">
+            .full_border{
+                border-width: 1px 1px 1px !important;
+            }
+            .no_abso{
+                position: initial !important;
+            }
+            .btn-validate{
+                background: #32a9de;
+                border-radius: 10px;
+                padding: 2px 50px !important;
+            }
+        </style>
 
 </head>
 <body class="disable_transitions sidebar_main_open sidebar_main_swipe">
@@ -260,19 +273,19 @@
         <div class="sidebar_main_header">
             <div class="sidebar_logo">
                 <a href="index-2.html" class="sSidebar_hide sidebar_logo_large">
-                    <img class="logo_regular" src="assets/img/logo_main.png" alt="" height="15" width="71"/>
-                    <img class="logo_light" src="assets/img/logo_main_white.png" alt="" height="15" width="71"/>
+                    <img class="logo_regular" src="assets/img/whisp-logo.png" alt="" />
+                    <img class="logo_light" src="assets/img/whisp-logo.png" alt="" />
                 </a>
                 <a href="index-2.html" class="sSidebar_show sidebar_logo_small">
-                    <img class="logo_regular" src="assets/img/logo_main_small.png" alt="" height="32" width="32"/>
-                    <img class="logo_light" src="assets/img/logo_main_small_light.png" alt="" height="32" width="32"/>
+                    <img class="logo_regular" src="assets/img/whisp-logo.png" alt="" height="32" width="32" />
+                    <img class="logo_light" src="assets/img/whisp-logo.png" alt="" height="32" width="32" />
                 </a>
             </div>
-            <div class="sidebar_actions">
+            <!-- <div class="sidebar_actions">
                 <select id="lang_switcher" name="lang_switcher">
                     <option value="gb" selected>English</option>
                 </select>
-            </div>
+            </div> -->
         </div>
         
         <div class="menu_section">
@@ -655,14 +668,14 @@
                         <div class="uk-grid">
                             <div class="uk-width-1-1">
                                 <div class="parsley-row">
-                                    <label for="message">Message (20 chars min, 100 max)</label>
-                                    <textarea class="md-input" name="message" cols="10" rows="8" data-parsley-trigger="keyup" data-parsley-minlength="20" data-parsley-maxlength="100" data-parsley-validation-threshold="10" data-parsley-minlength-message = "Come on! You need to enter at least a 20 caracters long comment.."></textarea>
+                                    <label class="no_abso" for="message">Message (20 chars min, 100 max)</label>
+                                    <textarea class="md-input full_border" name="message" cols="10" rows="8" data-parsley-trigger="keyup" data-parsley-minlength="20" data-parsley-maxlength="100" data-parsley-validation-threshold="10" data-parsley-minlength-message = "Come on! You need to enter at least a 20 caracters long comment.."></textarea>
                                 </div>
                             </div>
                         </div>
                         <div class="uk-grid">
                             <div class="uk-width-1-1">
-                                <button type="submit" class="md-btn md-btn-primary">Submit</button>
+                                <button type="submit" class="md-btn md-btn-primary btn-validate">Submit</button>
                             </div>
                         </div>
                     </form>
