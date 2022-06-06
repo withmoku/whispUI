@@ -38,7 +38,23 @@
         <script type="text/javascript" src="bower_components/matchMedia/matchMedia.addListener.js"></script>
         <link rel="stylesheet" href="assets/css/ie.css" media="all">
     <![endif]-->
-
+    <style type="text/css">
+        .md-btn{
+            border-bottom: 1px solid !important;
+            border: 0px 0px 1px !important;
+            box-shadow: none !important;
+            width: 75% !important;
+            text-align: start;
+        }
+        .uk-button-dropdown{
+            display: inline !important;
+        }
+        .md-btn > i.material-icons {
+            float: right;
+        }
+       
+       
+    </style>
 </head>
 <body class="disable_transitions sidebar_main_open sidebar_main_swipe">
     <!-- main header -->
@@ -571,7 +587,7 @@
                     <h3 class="heading_a">Dropdowns</h3>
                     <div class="uk-grid" data-uk-grid-margin>
                         <div class="uk-width-medium-1-4">
-                            <div class="uk-button-dropdown" data-uk-dropdown>
+                            <div class="uk-button-dropdown uk-drp" data-uk-dropdown>
                                 <button class="md-btn">Hover me <i class="material-icons">&#xE313;</i></button>
                                 <div class="uk-dropdown">
                                     <ul class="uk-nav uk-nav-dropdown">
