@@ -38,6 +38,92 @@
         <script type="text/javascript" src="bower_components/matchMedia/matchMedia.addListener.js"></script>
         <link rel="stylesheet" href="assets/css/ie.css" media="all">
     <![endif]-->
+    <style type="text/css">
+        .md-btn{
+            box-shadow: none;
+            border: 1px solid #96a0b55e;
+            border-radius: 10px;
+            padding: 5px 35px;
+        }
+         .md-btn-flat-primary {
+            color:#32a9de;
+         }
+        .md-btn-primary{
+            background: #32a9de;
+            border: 0px;
+        }
+        .md-btn-warning{
+            background: #fdcb6e;
+            border: 0px;
+        }
+        .md-btn-danger{
+            background: #d63031;
+            border: 0px;
+        }
+        .md-btn-success{
+            background: #00b894;
+            border: 0px;
+        }
+        .disabled{
+            border: 0px;
+        }
+        .md-btn-flat{
+            border: 0px;
+        }
+        .md-btn-group > .md-btn-primary{
+            border: 1px solid white;
+        }
+        
+        .md-btn-circle-mini {
+            height: 36px !important;
+            border-radius: 50%;
+            /*padding: 5px 15px;*/
+             background: #fff !important;
+              padding: 5px 10px;
+        }
+        .md-btn-circle-small {
+            height: 48px !important;
+            border-radius: 50%;
+            padding: 10px 0px !important;
+             background: #fff !important;
+        }
+        .md-btn-circle-reg {
+            height: 64px !important;
+            border-radius: 50%;
+            padding: 15px 0px !important;
+             background: #fff !important;
+        }
+        .md-btn-circle-large{
+            height: 72px !important;
+            border-radius: 50%;
+            padding: 15px 0px !important;
+             background: #fff !important;
+        }
+        .md-btn-circle-mini > i {
+            font-size: 12px !important;
+        }
+        .md-btn-facebook{
+            border: 1px solid #3c5a9a;
+        }
+        .md-btn-facebook > i{
+            color: #3c5a9a !important;
+        }
+        .md-btn-twitter{
+            padding: 5px 12px;
+            border: 1px solid #1da1f2;
+        }
+        .md-btn-twitter > i{
+            color: #1da1f2 !important;
+        }
+        .md-btn-gplus{
+            padding: 5px 10px;
+            border: 1px solid #dc4e41;
+        }
+        .md-btn-gplus > i{
+            color: #dc4e41 !important;
+        }
+        
+    </style>
 
 </head>
 <body class="disable_transitions sidebar_main_open sidebar_main_swipe">
@@ -694,24 +780,24 @@
                             </div>
                             <div class="uk-grid uk-grid-width-1-1 uk-grid-width-large-1-4">
                                 <div>
-                                    <a href="javascript:void(0)" class="md-btn md-btn-facebook md-btn-mini md-btn-icon"><i class="uk-icon-facebook no_margin"></i></a>
-                                    <a href="javascript:void(0)" class="md-btn md-btn-twitter md-btn-mini md-btn-icon"><i class="uk-icon-twitter no_margin"></i></a>
-                                    <a href="javascript:void(0)" class="md-btn md-btn-gplus md-btn-mini md-btn-icon"><i class="uk-icon-google-plus no_margin"></i></a>
+                                    <a href="javascript:void(0)" class="md-btn md-btn-facebook md-btn-mini md-btn-icon md-btn-circle-mini"><i class="uk-icon-facebook no_margin"></i></a>
+                                    <a href="javascript:void(0)" class="md-btn md-btn-twitter md-btn-mini md-btn-icon md-btn-circle-mini"><i class="uk-icon-twitter no_margin"></i></a>
+                                    <a href="javascript:void(0)" class="md-btn md-btn-gplus md-btn-mini md-btn-icon md-btn-circle-mini"><i class="uk-icon-google-plus no_margin"></i></a>
                                 </div>
                                 <div>
-                                    <a href="javascript:void(0)" class="md-btn md-btn-facebook md-btn-small md-btn-icon"><i class="uk-icon-facebook no_margin"></i></a>
-                                    <a href="javascript:void(0)" class="md-btn md-btn-twitter md-btn-small md-btn-icon"><i class="uk-icon-twitter no_margin"></i></a>
-                                    <a href="javascript:void(0)" class="md-btn md-btn-gplus md-btn-small md-btn-icon"><i class="uk-icon-google-plus no_margin"></i></a>
+                                    <a href="javascript:void(0)" class="md-btn md-btn-facebook md-btn-small md-btn-icon md-btn-circle-small"><i class="uk-icon-facebook no_margin"></i></a>
+                                    <a href="javascript:void(0)" class="md-btn md-btn-twitter md-btn-small md-btn-icon md-btn-circle-small"><i class="uk-icon-twitter no_margin"></i></a>
+                                    <a href="javascript:void(0)" class="md-btn md-btn-gplus md-btn-small md-btn-icon md-btn-circle-small"><i class="uk-icon-google-plus no_margin"></i></a>
                                 </div>
                                 <div>
-                                    <a href="javascript:void(0)" class="md-btn md-btn-facebook md-btn-icon"><i class="uk-icon-facebook no_margin"></i></a>
-                                    <a href="javascript:void(0)" class="md-btn md-btn-twitter md-btn-icon"><i class="uk-icon-twitter no_margin"></i></a>
-                                    <a href="javascript:void(0)" class="md-btn md-btn-gplus md-btn-icon"><i class="uk-icon-google-plus no_margin"></i></a>
+                                    <a href="javascript:void(0)" class="md-btn md-btn-facebook md-btn-icon md-btn-circle-reg"><i class="uk-icon-facebook no_margin"></i></a>
+                                    <a href="javascript:void(0)" class="md-btn md-btn-twitter md-btn-icon md-btn-circle-reg"><i class="uk-icon-twitter no_margin"></i></a>
+                                    <a href="javascript:void(0)" class="md-btn md-btn-gplus md-btn-icon md-btn-circle-reg"><i class="uk-icon-google-plus no_margin"></i></a>
                                 </div>
                                 <div>
-                                    <a href="javascript:void(0)" class="md-btn md-btn-facebook md-btn-icon md-btn-large"><i class="uk-icon-facebook no_margin"></i></a>
-                                    <a href="javascript:void(0)" class="md-btn md-btn-twitter md-btn-icon md-btn-large"><i class="uk-icon-twitter no_margin"></i></a>
-                                    <a href="javascript:void(0)" class="md-btn md-btn-gplus md-btn-icon md-btn-large"><i class="uk-icon-google-plus no_margin"></i></a>
+                                    <a href="javascript:void(0)" class="md-btn md-btn-facebook md-btn-icon md-btn-large md-btn-circle-large"><i class="uk-icon-facebook no_margin"></i></a>
+                                    <a href="javascript:void(0)" class="md-btn md-btn-twitter md-btn-icon md-btn-large md-btn-circle-large"><i class="uk-icon-twitter no_margin"></i></a>
+                                    <a href="javascript:void(0)" class="md-btn md-btn-gplus md-btn-icon md-btn-large md-btn-circle-large"><i class="uk-icon-google-plus no_margin"></i></a>
                                 </div>
                             </div>
                         </div>
