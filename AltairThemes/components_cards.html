@@ -1,109 +1,175 @@
 <!doctype html>
 <!--[if lte IE 9]> <html class="lte-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 9]><!--> <html lang="en"> <!--<![endif]-->
-
-
+<!--[if gt IE 9]><!-->
+<html lang="en">
+<!--<![endif]-->
 <!-- Mirrored from altair-html.tzdthemes.com/components_cards.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 28 Oct 2020 04:44:41 GMT -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,user-scalable=no,width=device-width">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- Remove Tap Highlight on Windows Phone IE -->
-    <meta name="msapplication-tap-highlight" content="no"/>
-
+    <meta name="msapplication-tap-highlight" content="no" />
     <link rel="icon" type="image/png" href="assets/img/favicon-16x16.png" sizes="16x16">
     <link rel="icon" type="image/png" href="assets/img/favicon-32x32.png" sizes="32x32">
-
     <title>Altair Admin v2.22.0</title>
-
-
     <!-- uikit -->
     <link rel="stylesheet" href="bower_components/uikit/css/uikit.almost-flat.min.css" media="all">
-
     <!-- flag icons -->
     <link rel="stylesheet" href="assets/icons/flags/flags.min.css" media="all">
-
     <!-- style switcher -->
     <link rel="stylesheet" href="assets/css/style_switcher.min.css" media="all">
-
     <!-- altair admin -->
     <link rel="stylesheet" href="assets/css/main.min.css" media="all">
-
     <!-- themes -->
     <link rel="stylesheet" href="assets/css/themes/themes_combined.min.css" media="all">
-
     <!-- matchMedia polyfill for testing media queries in JS -->
     <!--[if lte IE 9]>
         <script type="text/javascript" src="bower_components/matchMedia/matchMedia.js"></script>
         <script type="text/javascript" src="bower_components/matchMedia/matchMedia.addListener.js"></script>
         <link rel="stylesheet" href="assets/css/ie.css" media="all">
     <![endif]-->
+    <style type="text/css">
+    .md-icon {
+        color: #32a9de;
+    }
 
+    .md-btn {
+        border: 1px solid #32a9de;
+        border-radius: 10px;
+    }
+    .md-update{
+        border: none;
+    }
+
+    .md-btn-send {
+        border: 0px !important;
+    }
+
+    .selectize-control.single .selectize-input {
+        border-width: 1px 1px 1px;
+    }
+
+    .md-btn>i.material-icons {
+        background: #32a9de;
+        border-radius: 50%;
+        padding: 6px;
+        margin-top: 0px !important;
+        color: #fff;
+    }
+
+    .switchery {
+        height: 20px;
+    }
+
+    .switchery-small>small {
+        top: 1px;
+    }
+
+    .md-card-overlay-content {
+        background: #32a9de !important;
+
+    }
+
+    .md-card-overlay-content i,
+    .md-card-overlay-content h3 {
+        color: #fff !important;
+    }
+    .md-card-danger,
+    .md-card-primary,
+    .md-card-success,
+    .md-card-warning {
+        border-top: 4px solid transparent !important;
+        border-left: none;
+    }
+    .md-card-success {
+        border-top-color: #9effdf !important;
+        border-top-color: none;
+    }
+    .md-card-primary {
+        border-top-color: #b7dffe !important;
+        border-top-color: none;
+    }
+    .md-card-danger {
+        border-top-color: #ffafb7 !important;
+        border-top-color: none;
+    }
+    .md-card-warning {
+        border-top-color: #feda9a !important;
+        border-top-color: none;
+    }
+    .md-progress{
+        height: 20px !important;
+        margin-bottom: 10px;
+        border-bottom: none !important;
+        border-radius: 10px;
+    }
+
+
+    </style>
 </head>
+
 <body class="disable_transitions sidebar_main_open sidebar_main_swipe">
     <!-- main header -->
     <header id="header_main">
         <div class="header_main_content">
             <nav class="uk-navbar">
-                                
                 <!-- main sidebar switch -->
                 <a href="#" id="sidebar_main_toggle" class="sSwitch sSwitch_left">
                     <span class="sSwitchIcon"></span>
                 </a>
-                
                 <!-- secondary sidebar switch -->
                 <a href="#" id="sidebar_secondary_toggle" class="sSwitch sSwitch_right sidebar_secondary_check">
                     <span class="sSwitchIcon"></span>
                 </a>
-                
-                    <div id="menu_top_dropdown" class="uk-float-left uk-hidden-small">
-                        <div class="uk-button-dropdown" data-uk-dropdown="{mode:'click'}">
-                            <a href="#" class="top_menu_toggle"><i class="material-icons md-24">&#xE8F0;</i></a>
-                            <div class="uk-dropdown uk-dropdown-width-3">
-                                <div class="uk-grid uk-dropdown-grid">
-                                    <div class="uk-width-2-3">
-                                        <div class="uk-grid uk-grid-width-medium-1-3 uk-margin-bottom uk-text-center">
-                                            <a href="page_mailbox.html" class="uk-margin-top">
-                                                <i class="material-icons md-36 md-color-light-green-600">&#xE158;</i>
-                                                <span class="uk-text-muted uk-display-block">Mailbox</span>
-                                            </a>
-                                            <a href="page_invoices.html" class="uk-margin-top">
-                                                <i class="material-icons md-36 md-color-purple-600">&#xE53E;</i>
-                                                <span class="uk-text-muted uk-display-block">Invoices</span>
-                                            </a>
-                                            <a href="page_chat.html" class="uk-margin-top">
-                                                <i class="material-icons md-36 md-color-cyan-600">&#xE0B9;</i>
-                                                <span class="uk-text-muted uk-display-block">Chat</span>
-                                            </a>
-                                            <a href="page_scrum_board.html" class="uk-margin-top">
-                                                <i class="material-icons md-36 md-color-red-600">&#xE85C;</i>
-                                                <span class="uk-text-muted uk-display-block">Scrum Board</span>
-                                            </a>
-                                            <a href="page_snippets.html" class="uk-margin-top">
-                                                <i class="material-icons md-36 md-color-blue-600">&#xE86F;</i>
-                                                <span class="uk-text-muted uk-display-block">Snippets</span>
-                                            </a>
-                                            <a href="page_user_profile.html" class="uk-margin-top">
-                                                <i class="material-icons md-36 md-color-orange-600">&#xE87C;</i>
-                                                <span class="uk-text-muted uk-display-block">User profile</span>
-                                            </a>
-                                        </div>
+                <div id="menu_top_dropdown" class="uk-float-left uk-hidden-small">
+                    <div class="uk-button-dropdown" data-uk-dropdown="{mode:'click'}">
+                        <a href="#" class="top_menu_toggle"><i class="material-icons md-24">&#xE8F0;</i></a>
+                        <div class="uk-dropdown uk-dropdown-width-3">
+                            <div class="uk-grid uk-dropdown-grid">
+                                <div class="uk-width-2-3">
+                                    <div class="uk-grid uk-grid-width-medium-1-3 uk-margin-bottom uk-text-center">
+                                        <a href="page_mailbox.html" class="uk-margin-top">
+                                            <i class="material-icons md-36 md-color-light-green-600">&#xE158;</i>
+                                            <span class="uk-text-muted uk-display-block">Mailbox</span>
+                                        </a>
+                                        <a href="page_invoices.html" class="uk-margin-top">
+                                            <i class="material-icons md-36 md-color-purple-600">&#xE53E;</i>
+                                            <span class="uk-text-muted uk-display-block">Invoices</span>
+                                        </a>
+                                        <a href="page_chat.html" class="uk-margin-top">
+                                            <i class="material-icons md-36 md-color-cyan-600">&#xE0B9;</i>
+                                            <span class="uk-text-muted uk-display-block">Chat</span>
+                                        </a>
+                                        <a href="page_scrum_board.html" class="uk-margin-top">
+                                            <i class="material-icons md-36 md-color-red-600">&#xE85C;</i>
+                                            <span class="uk-text-muted uk-display-block">Scrum Board</span>
+                                        </a>
+                                        <a href="page_snippets.html" class="uk-margin-top">
+                                            <i class="material-icons md-36 md-color-blue-600">&#xE86F;</i>
+                                            <span class="uk-text-muted uk-display-block">Snippets</span>
+                                        </a>
+                                        <a href="page_user_profile.html" class="uk-margin-top">
+                                            <i class="material-icons md-36 md-color-orange-600">&#xE87C;</i>
+                                            <span class="uk-text-muted uk-display-block">User profile</span>
+                                        </a>
                                     </div>
-                                    <div class="uk-width-1-3">
-                                        <ul class="uk-nav uk-nav-dropdown uk-panel">
-                                            <li class="uk-nav-header">Components</li>
-                                            <li><a href="components_accordion.html">Accordions</a></li>
-                                            <li><a href="components_buttons.html">Buttons</a></li>
-                                            <li><a href="components_notifications.html">Notifications</a></li>
-                                            <li><a href="components_sortable.html">Sortable</a></li>
-                                            <li><a href="components_tabs.html">Tabs</a></li>
-                                        </ul>
-                                    </div>
+                                </div>
+                                <div class="uk-width-1-3">
+                                    <ul class="uk-nav uk-nav-dropdown uk-panel">
+                                        <li class="uk-nav-header">Components</li>
+                                        <li><a href="components_accordion.html">Accordions</a></li>
+                                        <li><a href="components_buttons.html">Buttons</a></li>
+                                        <li><a href="components_notifications.html">Notifications</a></li>
+                                        <li><a href="components_sortable.html">Sortable</a></li>
+                                        <li><a href="components_tabs.html">Tabs</a></li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
-                
+                </div>
                 <div class="uk-navbar-flip">
                     <ul class="uk-navbar-nav user_actions">
                         <li><a href="#" id="full_screen_toggle" class="user_action_icon uk-visible-large"><i class="material-icons md-24 md-light">fullscreen</i></a></li>
@@ -130,7 +196,7 @@
                                                 </li>
                                                 <li>
                                                     <div class="md-list-addon-element">
-                                                        <img class="md-user-image md-list-addon-avatar" src="assets/img/avatars/avatar_07_tn.png" alt=""/>
+                                                        <img class="md-user-image md-list-addon-avatar" src="assets/img/avatars/avatar_07_tn.png" alt="" />
                                                     </div>
                                                     <div class="md-list-content">
                                                         <span class="md-list-heading"><a href="page_mailbox.html">Eveniet rem.</a></span>
@@ -148,7 +214,7 @@
                                                 </li>
                                                 <li>
                                                     <div class="md-list-addon-element">
-                                                        <img class="md-user-image md-list-addon-avatar" src="assets/img/avatars/avatar_02_tn.png" alt=""/>
+                                                        <img class="md-user-image md-list-addon-avatar" src="assets/img/avatars/avatar_02_tn.png" alt="" />
                                                     </div>
                                                     <div class="md-list-content">
                                                         <span class="md-list-heading"><a href="page_mailbox.html">Est non pariatur.</a></span>
@@ -157,7 +223,7 @@
                                                 </li>
                                                 <li>
                                                     <div class="md-list-addon-element">
-                                                        <img class="md-user-image md-list-addon-avatar" src="assets/img/avatars/avatar_09_tn.png" alt=""/>
+                                                        <img class="md-user-image md-list-addon-avatar" src="assets/img/avatars/avatar_09_tn.png" alt="" />
                                                     </div>
                                                     <div class="md-list-content">
                                                         <span class="md-list-heading"><a href="page_mailbox.html">Iste ducimus quia.</a></span>
@@ -214,7 +280,7 @@
                             </div>
                         </li>
                         <li data-uk-dropdown="{mode:'click',pos:'bottom-right'}">
-                            <a href="#" class="user_action_image"><img class="md-user-image" src="assets/img/avatars/avatar_11_tn.png" alt=""/></a>
+                            <a href="#" class="user_action_image"><img class="md-user-image" src="assets/img/avatars/avatar_11_tn.png" alt="" /></a>
                             <div class="uk-dropdown uk-dropdown-small">
                                 <ul class="uk-nav js-uk-prevent">
                                     <li><a href="page_user_profile.html">My profile</a></li>
@@ -256,16 +322,15 @@
     </header><!-- main header end -->
     <!-- main sidebar -->
     <aside id="sidebar_main">
-        
         <div class="sidebar_main_header">
             <div class="sidebar_logo">
                 <a href="index-2.html" class="sSidebar_hide sidebar_logo_large">
-                    <img class="logo_regular" src="assets/img/logo_main.png" alt="" height="15" width="71"/>
-                    <img class="logo_light" src="assets/img/logo_main_white.png" alt="" height="15" width="71"/>
+                    <img class="logo_regular" src="assets/img/logo_main.png" alt="" height="15" width="71" />
+                    <img class="logo_light" src="assets/img/logo_main_white.png" alt="" height="15" width="71" />
                 </a>
                 <a href="index-2.html" class="sSidebar_show sidebar_logo_small">
-                    <img class="logo_regular" src="assets/img/logo_main_small.png" alt="" height="32" width="32"/>
-                    <img class="logo_light" src="assets/img/logo_main_small_light.png" alt="" height="32" width="32"/>
+                    <img class="logo_regular" src="assets/img/logo_main_small.png" alt="" height="32" width="32" />
+                    <img class="logo_light" src="assets/img/logo_main_small_light.png" alt="" height="32" width="32" />
                 </a>
             </div>
             <div class="sidebar_actions">
@@ -274,7 +339,6 @@
                 </select>
             </div>
         </div>
-        
         <div class="menu_section">
             <ul>
                 <li title="Dashboard">
@@ -282,21 +346,18 @@
                         <span class="menu_icon"><i class="material-icons">&#xE871;</i></span>
                         <span class="menu_title">Dashboard</span>
                     </a>
-                    
                 </li>
                 <li title="Mailbox">
                     <a href="page_mailbox.html">
                         <span class="menu_icon"><i class="material-icons">&#xE158;</i></span>
                         <span class="menu_title">Mailbox</span>
                     </a>
-                    
                 </li>
                 <li title="Invoices">
                     <a href="page_invoices.html">
                         <span class="menu_icon"><i class="material-icons">&#xE53E;</i></span>
                         <span class="menu_title">Invoices</span>
                     </a>
-                    
                 </li>
                 <li title="Chats">
                     <a href="#">
@@ -307,35 +368,30 @@
                         <li><a href="page_chat.html">Regular Chat</a></li>
                         <li><a href="page_chat_small.html">Chatboxes</a></li>
                     </ul>
-                
                 </li>
                 <li title="Scrum Board">
                     <a href="page_scrum_board.html">
                         <span class="menu_icon"><i class="material-icons">&#xE85C;</i></span>
                         <span class="menu_title">Scrum Board</span>
                     </a>
-                    
                 </li>
                 <li title="Snippets">
                     <a href="page_snippets.html">
                         <span class="menu_icon"><i class="material-icons">&#xE86F;</i></span>
                         <span class="menu_title">Snippets</span>
                     </a>
-                    
                 </li>
                 <li title="User Profile">
                     <a href="page_user_profile.html">
                         <span class="menu_icon"><i class="material-icons">&#xE87C;</i></span>
                         <span class="menu_title">User Profile</span>
                     </a>
-                    
                 </li>
                 <li title="Sticky Notes">
                     <a href="page_sticky_notes.html">
                         <span class="menu_icon"><i class="material-icons">&#xE8F0;</i></span>
                         <span class="menu_title">Sticky Notes</span>
                     </a>
-                    
                 </li>
                 <li title="Forms">
                     <a href="#">
@@ -351,11 +407,10 @@
                         <li><a href="forms_validation.html">Validation</a></li>
                         <li><a href="forms_wizard.html">Wizard</a></li>
                         <li class="menu_subtitle">WYSIWYG Editors</li>
-                                <li><a href="forms_wysiwyg_ckeditor.html">CKeditor</a></li>
+                        <li><a href="forms_wysiwyg_ckeditor.html">CKeditor</a></li>
                         <li><a href="forms_wysiwyg_inline.html">Ckeditor Inline</a></li>
                         <li><a href="forms_wysiwyg_tinymce.html">TinyMCE</a></li>
-                            </ul>
-                
+                    </ul>
                 </li>
                 <li title="Layout">
                     <a href="#">
@@ -366,7 +421,6 @@
                         <li><a href="layout_top_menu.html">Top Menu</a></li>
                         <li><a href="layout_header_full.html">Full Header</a></li>
                     </ul>
-                
                 </li>
                 <li title="Kendo UI Widgets">
                     <a href="#">
@@ -390,7 +444,6 @@
                         <li><a href="kendoui_toolbar.html">Toolbar</a></li>
                         <li><a href="kendoui_window.html">Window</a></li>
                     </ul>
-                
                 </li>
                 <li title="Components">
                     <a href="#">
@@ -432,7 +485,6 @@
                         <li><a href="components_tooltips.html">Tooltips</a></li>
                         <li><a href="components_typography.html">Typography</a></li>
                     </ul>
-                
                 </li>
                 <li title="E-commerce">
                     <a href="#">
@@ -446,7 +498,6 @@
                         <li><a href="ecommerce_products_list.html">Products List</a></li>
                         <li><a href="ecommerce_payment.html">Payment Page</a></li>
                     </ul>
-                
                 </li>
                 <li title="Plugins">
                     <a href="#">
@@ -475,7 +526,6 @@
                         <li><a href="plugins_vector_maps.html">Vector Maps</a></li>
                         <li><a href="plugins_xeditable.html">X-editable</a></li>
                     </ul>
-                
                 </li>
                 <li title="Pages">
                     <a href="#">
@@ -504,18 +554,17 @@
                         <li><a href="page_user_edit.html">User edit</a></li>
                         <li><a href="page_quiz.html">Quiz</a></li>
                         <li class="menu_subtitle">Issue Tracker</li>
-                                <li><a href="page_issues_list.html">List View</a></li>
+                        <li><a href="page_issues_list.html">List View</a></li>
                         <li><a href="page_issue_details.html">Issue Details</a></li>
-                                <li class="menu_subtitle">Blog</li>
-                                <li><a href="page_blog_list.html">Blog List</a></li>
+                        <li class="menu_subtitle">Blog</li>
+                        <li><a href="page_blog_list.html">Blog List</a></li>
                         <li><a href="page_blog_article.html">Blog Article</a></li>
-                                <li class="menu_subtitle">Errors</li>
-                                <li><a href="error_404.html">Error 404</a></li>
+                        <li class="menu_subtitle">Errors</li>
+                        <li><a href="error_404.html">Error 404</a></li>
                         <li><a href="error_500.html">Error 500</a></li>
-                            </ul>
-                
+                    </ul>
                 </li>
-                                <li>
+                <li>
                     <a href="#">
                         <span class="menu_icon"><i class="material-icons">&#xE241;</i></span>
                         <span class="menu_title">Multi level</span>
@@ -562,10 +611,8 @@
             </ul>
         </div>
     </aside><!-- main sidebar end -->
-
     <div id="page_content">
         <div id="page_content_inner">
-
             <div class="uk-grid">
                 <div class="uk-width-medium-3-5">
                     <div class="md-card">
@@ -588,7 +635,7 @@
                             </h3>
                         </div>
                         <div class="md-card-content">
-                            Qui mollitia cum veritatis maxime vel nesciunt ab voluptatem in quibusdam vel praesentium eius explicabo molestiae neque sit ratione qui harum est ad odio enim rerum quaerat fugiat vel rerum qui est quam voluptas qui aperiam dolores rerum est voluptate harum est corrupti voluptatem qui est sequi iure eum est ex et accusamus amet non cumque asperiores doloribus consequatur eos voluptatem optio eos in repellat sapiente debitis quia animi error at et incidunt ut quaerat minus adipisci ipsa eaque et et ex beatae eos non delectus porro quo id iste minus quis nam in sed voluptas odit officia consequatur voluptatem et facere facere ullam enim aspernatur qui molestiae quam rerum at maiores quam aut quibusdam et aut quaerat magnam minus ut quas facilis ducimus praesentium tempore est dolorum dignissimos nobis dolorum libero quia iste architecto repellendus temporibus cumque qui modi dolore repudiandae modi et nobis rerum cumque iste natus ducimus deleniti numquam qui vel deleniti ut minima temporibus natus aut id aspernatur autem omnis eum consequatur et quos quam et sunt enim maiores deleniti voluptatibus voluptatem fugiat totam dolorum voluptates error quia praesentium earum earum quia eos cupiditate non consequuntur voluptate at adipisci quia repellendus culpa necessitatibus nihil dolores et reiciendis fugiat tempore velit sit quis.                            <div class="md-card-fullscreen-content">
+                            Qui mollitia cum veritatis maxime vel nesciunt ab voluptatem in quibusdam vel praesentium eius explicabo molestiae neque sit ratione qui harum est ad odio enim rerum quaerat fugiat vel rerum qui est quam voluptas qui aperiam dolores rerum est voluptate harum est corrupti voluptatem qui est sequi iure eum est ex et accusamus amet non cumque asperiores doloribus consequatur eos voluptatem optio eos in repellat sapiente debitis quia animi error at et incidunt ut quaerat minus adipisci ipsa eaque et et ex beatae eos non delectus porro quo id iste minus quis nam in sed voluptas odit officia consequatur voluptatem et facere facere ullam enim aspernatur qui molestiae quam rerum at maiores quam aut quibusdam et aut quaerat magnam minus ut quas facilis ducimus praesentium tempore est dolorum dignissimos nobis dolorum libero quia iste architecto repellendus temporibus cumque qui modi dolore repudiandae modi et nobis rerum cumque iste natus ducimus deleniti numquam qui vel deleniti ut minima temporibus natus aut id aspernatur autem omnis eum consequatur et quos quam et sunt enim maiores deleniti voluptatibus voluptatem fugiat totam dolorum voluptates error quia praesentium earum earum quia eos cupiditate non consequuntur voluptate at adipisci quia repellendus culpa necessitatibus nihil dolores et reiciendis fugiat tempore velit sit quis. <div class="md-card-fullscreen-content">
                                 <div>
                                     <button class="md-btn" data-uk-tooltip="{cls:'card-fullscreen-tooltip'}" title="Top tooltip">Top</button>
                                 </div>
@@ -686,13 +733,12 @@
                     </div>
                 </div>
             </div>
-
             <div class="uk-grid uk-grid-width-medium-1-2" data-uk-grid-margin>
                 <div>
                     <div class="md-card">
                         <div class="md-card-toolbar">
                             <div class="md-card-toolbar-actions">
-                                <a href="#" class="md-btn md-btn-small md-btn-flat md-btn-flat-primary uk-float-right uk-margin-small-left"><i class="material-icons">&#xE163;</i></a>
+                                <a href="#" class="md-btn md-btn-small md-btn-flat md-btn-flat-primary uk-float-right uk-margin-small-left md-btn-send"><i class="material-icons">&#xE163;</i></a>
                                 <div class="uk-float-right">
                                     <select id="select_toolbar" data-md-selectize>
                                         <option value="">Select...</option>
@@ -707,7 +753,7 @@
                             </h3>
                         </div>
                         <div class="md-card-content">
-                            Dolore et ea deleniti cum exercitationem velit ut ut culpa molestias necessitatibus dolores rerum omnis ut dolorem velit molestiae dolor alias ab vel veniam itaque id est ex id nisi laborum repudiandae ut et velit eum qui nihil quisquam voluptatem non et quidem cum ducimus similique autem laborum labore maiores non sint consequuntur ab et reiciendis repellendus qui est eos nemo aliquam repellendus omnis qui qui ab eius blanditiis quo ex aperiam nemo voluptatibus molestiae illum provident totam fugit consectetur voluptates nihil quaerat ut voluptatibus qui fugiat velit autem ex.                        </div>
+                            Dolore et ea deleniti cum exercitationem velit ut ut culpa molestias necessitatibus dolores rerum omnis ut dolorem velit molestiae dolor alias ab vel veniam itaque id est ex id nisi laborum repudiandae ut et velit eum qui nihil quisquam voluptatem non et quidem cum ducimus similique autem laborum labore maiores non sint consequuntur ab et reiciendis repellendus qui est eos nemo aliquam repellendus omnis qui qui ab eius blanditiis quo ex aperiam nemo voluptatibus molestiae illum provident totam fugit consectetur voluptates nihil quaerat ut voluptatibus qui fugiat velit autem ex. </div>
                     </div>
                 </div>
                 <div>
@@ -723,11 +769,10 @@
                             </h3>
                         </div>
                         <div class="md-card-content">
-                            Eligendi omnis corrupti est et facilis et cumque est quae velit et inventore voluptatem modi ut itaque ut facilis perferendis qui autem ab sint maiores ipsum assumenda tempora consectetur et accusamus ut aut in dolorem impedit autem eos.                        </div>
+                            Eligendi omnis corrupti est et facilis et cumque est quae velit et inventore voluptatem modi ut itaque ut facilis perferendis qui autem ab sint maiores ipsum assumenda tempora consectetur et accusamus ut aut in dolorem impedit autem eos. </div>
                     </div>
                 </div>
             </div>
-
             <div class="uk-grid uk-grid-width-medium-1-2" data-uk-grid-margin>
                 <div>
                     <div class="md-card">
@@ -741,7 +786,7 @@
                             </h3>
                         </div>
                         <div class="md-card-content">
-                            Nihil deserunt ipsa similique adipisci aut aspernatur libero ipsum maiores omnis ut corrupti dolorem et eius non iusto reprehenderit aperiam nihil aspernatur numquam repudiandae soluta dolorem dolor similique dolores labore iste sint consequuntur deleniti et atque et error quis ad ut ad adipisci et ipsum ea necessitatibus explicabo nobis sit possimus eius odit illum fugit ea et voluptatum doloremque repellendus quia qui dolor nihil vitae.                        </div>
+                            Nihil deserunt ipsa similique adipisci aut aspernatur libero ipsum maiores omnis ut corrupti dolorem et eius non iusto reprehenderit aperiam nihil aspernatur numquam repudiandae soluta dolorem dolor similique dolores labore iste sint consequuntur deleniti et atque et error quis ad ut ad adipisci et ipsum ea necessitatibus explicabo nobis sit possimus eius odit illum fugit ea et voluptatum doloremque repellendus quia qui dolor nihil vitae. </div>
                     </div>
                 </div>
                 <div>
@@ -749,8 +794,8 @@
                         <div class="md-card-toolbar">
                             <div class="md-card-toolbar-actions">
                                 <div class="uk-margin-small-top">
-                                    <input type="checkbox" data-switchery data-switchery-size="small" data-switchery-color="#d32f2f" checked id="switch_demo_card" />
-                                    <label for="switch_demo_card" class="inline-label">Label</label>
+                                    <input type="checkbox" data-switchery data-switchery-size="small" data-switchery-color="#16a085" checked id="switch_demo_card" />
+                                    <label for="switch_demo_card" class="inline-label">Labels</label>
                                 </div>
                             </div>
                             <h3 class="md-card-toolbar-heading-text">
@@ -758,11 +803,10 @@
                             </h3>
                         </div>
                         <div class="md-card-content">
-                            Id nisi rerum excepturi consequatur aliquam et qui fugiat harum culpa delectus aut dolore rerum neque et rerum saepe qui cum reiciendis distinctio accusantium sed sed omnis velit iusto repudiandae mollitia voluptate perferendis in non id eligendi molestiae modi dolor dolorem non facere.                        </div>
+                            Id nisi rerum excepturi consequatur aliquam et qui fugiat harum culpa delectus aut dolore rerum neque et rerum saepe qui cum reiciendis distinctio accusantium sed sed omnis velit iusto repudiandae mollitia voluptate perferendis in non id eligendi molestiae modi dolor dolorem non facere. </div>
                     </div>
                 </div>
             </div>
-
             <div class="uk-grid uk-grid-width-1-1">
                 <div>
                     <div class="md-card">
@@ -788,7 +832,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="uk-grid uk-grid-width-medium-1-3" data-uk-grid-margin>
                 <div>
                     <div class="md-card md-card-hover md-card-overlay">
@@ -839,7 +882,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="uk-grid uk-grid-width-medium-1-3" data-uk-grid-margin>
                 <div>
                     <div class="md-card md-card-primary">
@@ -870,11 +912,10 @@
                     </div>
                 </div>
             </div>
-
             <div class="uk-grid uk-grid-width-medium-1-3" data-uk-grid-margin>
                 <div>
                     <div class="md-card" id="random_progress">
-                        <div class="md-card-toolbar" data-toolbar-progress="12" data-toolbar-progress-steps="true">
+                        <div class="md-card-toolbar" data-toolbar-progress-steps="true">
                             <div class="md-card-toolbar-actions">
                                 <i class="md-icon material-icons md-card-fullscreen-activate">&#xE5D0;</i>
                                 <i class="md-icon material-icons">&#xE5D5;</i>
@@ -882,9 +923,12 @@
                             <h3 class="md-card-toolbar-heading-text">
                                 Card Progress <span id="progress_value">12</span>%
                             </h3>
+
                         </div>
                         <div class="md-card-content">
-                            <a href="#" class="md-btn md-btn-small md-btn-success md-btn-wave-light" id="randomize">Update</a>
+                            <div class="md-card-toolbar md-progress" data-toolbar-progress="12" data-toolbar-progress-steps="true">
+                        </div>
+                            <a href="#" class="md-btn md-btn-small md-btn-success md-btn-wave-light md-update" id="randomize">Update</a>
                             <p class="uk-margin-top">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                 Accusantium ad at dolor, explicabo labore quaerat quibusdam quisquam quos, repellendus
@@ -896,7 +940,7 @@
                 </div>
                 <div>
                     <div class="md-card">
-                        <div class="md-card-toolbar md-bg-light-green-100" data-toolbar-progress="62">
+                        <div class="md-card-toolbar" data-toolbar-progress="true">
                             <div class="md-card-toolbar-actions">
                                 <i class="md-icon material-icons md-card-fullscreen-activate">&#xE5D0;</i>
                                 <i class="md-icon material-icons">&#xE5D5;</i>
@@ -906,13 +950,15 @@
                             </h3>
                         </div>
                         <div class="md-card-content">
+                            <div class="md-card-toolbar md-progress" data-toolbar-progress="62" data-toolbar-progress-steps="true">
+                        </div>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad at dolor, explicabo labore quaerat quibusdam quisquam quos, repellendus repudiandae sunt, tempora temporibus. Aliquam deleniti et necessitatibus omnis quibusdam voluptates.
                         </div>
                     </div>
                 </div>
                 <div>
                     <div class="md-card">
-                        <div class="md-card-toolbar md-bg-deep-orange-100" data-toolbar-progress="33">
+                        <div class="md-card-toolbar" data-toolbar-progress="true">
                             <div class="md-card-toolbar-actions">
                                 <i class="md-icon material-icons md-card-fullscreen-activate">&#xE5D0;</i>
                                 <i class="md-icon material-icons">&#xE5D5;</i>
@@ -922,15 +968,15 @@
                             </h3>
                         </div>
                         <div class="md-card-content">
+                            <div class="md-card-toolbar md-progress" data-toolbar-progress="33" data-toolbar-progress-steps="true">
+                        </div>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad at dolor, explicabo labore quaerat quibusdam quisquam quos, repellendus repudiandae sunt, tempora temporibus. Aliquam deleniti et necessitatibus omnis quibusdam voluptates.
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
-
     <!-- google web fonts -->
     <script>
         WebFontConfig = {
@@ -951,19 +997,15 @@
             s.parentNode.insertBefore(wf, s);
         })();
     </script>
-
     <!-- common functions -->
     <script src="assets/js/common.min.js"></script>
     <!-- uikit functions -->
     <script src="assets/js/uikit_custom.min.js"></script>
     <!-- altair common functions/helpers -->
     <script src="assets/js/altair_admin_common.min.js"></script>
-
     <!-- page specific plugins -->
-
     <!--  cards component functions -->
     <script src="assets/js/pages/components_cards.min.js"></script>
-    
     <script>
         $(function() {
             if(isHighDensity()) {
@@ -978,7 +1020,6 @@
             altair_helpers.ie_fix();
         });
     </script>
-
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
                 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -987,7 +1028,6 @@
         ga('create', 'UA-65191727-1', 'auto');
         ga('send', 'pageview');
     </script>
-
     <div id="style_switcher">
         <div id="style_switcher_toggle"><i class="material-icons">&#xE8B8;</i></div>
         <div class="uk-margin-medium-bottom">
@@ -1065,145 +1105,144 @@
             </p>
         </div>
     </div>
-
     <script>
-        $(function() {
-            var $switcher = $('#style_switcher'),
-                $switcher_toggle = $('#style_switcher_toggle'),
-                $theme_switcher = $('#theme_switcher'),
-                $mini_sidebar_toggle = $('#style_sidebar_mini'),
-                $slim_sidebar_toggle = $('#style_sidebar_slim'),
-                $boxed_layout_toggle = $('#style_layout_boxed'),
-                $accordion_mode_toggle = $('#accordion_mode_main_menu'),
-                $html = $('html'),
-                $body = $('body');
+    $(function() {
+        var $switcher = $('#style_switcher'),
+            $switcher_toggle = $('#style_switcher_toggle'),
+            $theme_switcher = $('#theme_switcher'),
+            $mini_sidebar_toggle = $('#style_sidebar_mini'),
+            $slim_sidebar_toggle = $('#style_sidebar_slim'),
+            $boxed_layout_toggle = $('#style_layout_boxed'),
+            $accordion_mode_toggle = $('#accordion_mode_main_menu'),
+            $html = $('html'),
+            $body = $('body');
 
 
-            $switcher_toggle.click(function(e) {
-                e.preventDefault();
-                $switcher.toggleClass('switcher_active');
-            });
+        $switcher_toggle.click(function(e) {
+            e.preventDefault();
+            $switcher.toggleClass('switcher_active');
+        });
 
-            $theme_switcher.children('li').click(function(e) {
-                e.preventDefault();
-                var $this = $(this),
-                    this_theme = $this.attr('data-app-theme');
+        $theme_switcher.children('li').click(function(e) {
+            e.preventDefault();
+            var $this = $(this),
+                this_theme = $this.attr('data-app-theme');
 
-                $theme_switcher.children('li').removeClass('active_theme');
-                $(this).addClass('active_theme');
-                $html
-                    .removeClass('app_theme_a app_theme_b app_theme_c app_theme_d app_theme_e app_theme_f app_theme_g app_theme_h app_theme_i app_theme_dark')
-                    .addClass(this_theme);
+            $theme_switcher.children('li').removeClass('active_theme');
+            $(this).addClass('active_theme');
+            $html
+                .removeClass('app_theme_a app_theme_b app_theme_c app_theme_d app_theme_e app_theme_f app_theme_g app_theme_h app_theme_i app_theme_dark')
+                .addClass(this_theme);
 
-                if(this_theme == '') {
-                    localStorage.removeItem('altair_theme');
-                    $('#kendoCSS').attr('href','bower_components/kendo-ui/styles/kendo.material.min.css');
+            if (this_theme == '') {
+                localStorage.removeItem('altair_theme');
+                $('#kendoCSS').attr('href', 'bower_components/kendo-ui/styles/kendo.material.min.css');
+            } else {
+                localStorage.setItem("altair_theme", this_theme);
+                if (this_theme == 'app_theme_dark') {
+                    $('#kendoCSS').attr('href', 'bower_components/kendo-ui/styles/kendo.materialblack.min.css')
                 } else {
-                    localStorage.setItem("altair_theme", this_theme);
-                    if(this_theme == 'app_theme_dark') {
-                        $('#kendoCSS').attr('href','bower_components/kendo-ui/styles/kendo.materialblack.min.css')
-                    } else {
-                        $('#kendoCSS').attr('href','bower_components/kendo-ui/styles/kendo.material.min.css');
-                    }
+                    $('#kendoCSS').attr('href', 'bower_components/kendo-ui/styles/kendo.material.min.css');
                 }
-
-            });
-
-            // hide style switcher
-            $document.on('click keyup', function(e) {
-                if( $switcher.hasClass('switcher_active') ) {
-                    if (
-                        ( !$(e.target).closest($switcher).length )
-                        || ( e.keyCode == 27 )
-                    ) {
-                        $switcher.removeClass('switcher_active');
-                    }
-                }
-            });
-
-            // get theme from local storage
-            if(localStorage.getItem("altair_theme") !== null) {
-                $theme_switcher.children('li[data-app-theme='+localStorage.getItem("altair_theme")+']').click();
             }
+
+        });
+
+        // hide style switcher
+        $document.on('click keyup', function(e) {
+            if ($switcher.hasClass('switcher_active')) {
+                if (
+                    (!$(e.target).closest($switcher).length) ||
+                    (e.keyCode == 27)
+                ) {
+                    $switcher.removeClass('switcher_active');
+                }
+            }
+        });
+
+        // get theme from local storage
+        if (localStorage.getItem("altair_theme") !== null) {
+            $theme_switcher.children('li[data-app-theme=' + localStorage.getItem("altair_theme") + ']').click();
+        }
 
 
         // toggle mini sidebar
 
-            // change input's state to checked if mini sidebar is active
-            if((localStorage.getItem("altair_sidebar_mini") !== null && localStorage.getItem("altair_sidebar_mini") == '1') || $body.hasClass('sidebar_mini')) {
-                $mini_sidebar_toggle.iCheck('check');
-            }
+        // change input's state to checked if mini sidebar is active
+        if ((localStorage.getItem("altair_sidebar_mini") !== null && localStorage.getItem("altair_sidebar_mini") == '1') || $body.hasClass('sidebar_mini')) {
+            $mini_sidebar_toggle.iCheck('check');
+        }
 
-            $mini_sidebar_toggle
-                .on('ifChecked', function(event){
-                    $switcher.removeClass('switcher_active');
-                    localStorage.setItem("altair_sidebar_mini", '1');
-                    localStorage.removeItem('altair_sidebar_slim');
-                    location.reload(true);
-                })
-                .on('ifUnchecked', function(event){
-                    $switcher.removeClass('switcher_active');
-                    localStorage.removeItem('altair_sidebar_mini');
-                    location.reload(true);
-                });
+        $mini_sidebar_toggle
+            .on('ifChecked', function(event) {
+                $switcher.removeClass('switcher_active');
+                localStorage.setItem("altair_sidebar_mini", '1');
+                localStorage.removeItem('altair_sidebar_slim');
+                location.reload(true);
+            })
+            .on('ifUnchecked', function(event) {
+                $switcher.removeClass('switcher_active');
+                localStorage.removeItem('altair_sidebar_mini');
+                location.reload(true);
+            });
 
         // toggle slim sidebar
 
-            // change input's state to checked if mini sidebar is active
-            if((localStorage.getItem("altair_sidebar_slim") !== null && localStorage.getItem("altair_sidebar_slim") == '1') || $body.hasClass('sidebar_slim')) {
-                $slim_sidebar_toggle.iCheck('check');
-            }
+        // change input's state to checked if mini sidebar is active
+        if ((localStorage.getItem("altair_sidebar_slim") !== null && localStorage.getItem("altair_sidebar_slim") == '1') || $body.hasClass('sidebar_slim')) {
+            $slim_sidebar_toggle.iCheck('check');
+        }
 
-            $slim_sidebar_toggle
-                .on('ifChecked', function(event){
-                    $switcher.removeClass('switcher_active');
-                    localStorage.setItem("altair_sidebar_slim", '1');
-                    localStorage.removeItem('altair_sidebar_mini');
-                    location.reload(true);
-                })
-                .on('ifUnchecked', function(event){
-                    $switcher.removeClass('switcher_active');
-                    localStorage.removeItem('altair_sidebar_slim');
-                    location.reload(true);
-                });
+        $slim_sidebar_toggle
+            .on('ifChecked', function(event) {
+                $switcher.removeClass('switcher_active');
+                localStorage.setItem("altair_sidebar_slim", '1');
+                localStorage.removeItem('altair_sidebar_mini');
+                location.reload(true);
+            })
+            .on('ifUnchecked', function(event) {
+                $switcher.removeClass('switcher_active');
+                localStorage.removeItem('altair_sidebar_slim');
+                location.reload(true);
+            });
 
         // toggle boxed layout
 
-            if((localStorage.getItem("altair_layout") !== null && localStorage.getItem("altair_layout") == 'boxed') || $body.hasClass('boxed_layout')) {
-                $boxed_layout_toggle.iCheck('check');
-                $body.addClass('boxed_layout');
-                $(window).resize();
-            }
+        if ((localStorage.getItem("altair_layout") !== null && localStorage.getItem("altair_layout") == 'boxed') || $body.hasClass('boxed_layout')) {
+            $boxed_layout_toggle.iCheck('check');
+            $body.addClass('boxed_layout');
+            $(window).resize();
+        }
 
-            $boxed_layout_toggle
-                .on('ifChecked', function(event){
-                    $switcher.removeClass('switcher_active');
-                    localStorage.setItem("altair_layout", 'boxed');
-                    location.reload(true);
-                })
-                .on('ifUnchecked', function(event){
-                    $switcher.removeClass('switcher_active');
-                    localStorage.removeItem('altair_layout');
-                    location.reload(true);
-                });
+        $boxed_layout_toggle
+            .on('ifChecked', function(event) {
+                $switcher.removeClass('switcher_active');
+                localStorage.setItem("altair_layout", 'boxed');
+                location.reload(true);
+            })
+            .on('ifUnchecked', function(event) {
+                $switcher.removeClass('switcher_active');
+                localStorage.removeItem('altair_layout');
+                location.reload(true);
+            });
 
         // main menu accordion mode
-            if($sidebar_main.hasClass('accordion_mode')) {
-                $accordion_mode_toggle.iCheck('check');
-            }
+        if ($sidebar_main.hasClass('accordion_mode')) {
+            $accordion_mode_toggle.iCheck('check');
+        }
 
-            $accordion_mode_toggle
-                .on('ifChecked', function(){
-                    $sidebar_main.addClass('accordion_mode');
-                })
-                .on('ifUnchecked', function(){
-                    $sidebar_main.removeClass('accordion_mode');
-                });
+        $accordion_mode_toggle
+            .on('ifChecked', function() {
+                $sidebar_main.addClass('accordion_mode');
+            })
+            .on('ifUnchecked', function() {
+                $sidebar_main.removeClass('accordion_mode');
+            });
 
 
-        });
+    });
     </script>
 </body>
-
 <!-- Mirrored from altair-html.tzdthemes.com/components_cards.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 28 Oct 2020 04:44:42 GMT -->
+
 </html>
