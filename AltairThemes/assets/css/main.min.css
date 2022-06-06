@@ -12762,13 +12762,13 @@ a.editable-click.editable-disabled:hover {
 #breadcrumbs > li span {
     position: relative;
     display: block;
-    font-size: 16px;
+    font-size: 14px;
     padding: 8px 0;
     line-height: 24px;
 }
 #breadcrumbs > li + li a,
 #breadcrumbs > li + li span {
-    padding-left: 40px;
+    padding-left: 55px;
 }
 #breadcrumbs > li + li a:before,
 #breadcrumbs > li + li span:before {
