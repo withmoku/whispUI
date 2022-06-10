@@ -14918,6 +14918,30 @@ html {
     padding-right: 200px;
 }
 
+.mdCardDyGrid {
+    border-top: solid 8px #ff69b4;
+}
+
+.mdCardDyGrid .md-card-content {
+    font-size: 12px;
+}
+
+.ukActiveDynaGridWrap .uk-active {
+    background: #ffffff !important;
+}
+
+.ukActiveDynaGridWrap .uk-active > * {
+    background: #32a9de !important;
+}
+
+#header_main .header_main_search_close {
+    background: #001932 !important;
+}
+
+#header_main .header_main_search_input {
+    background: #f2f2f2 !important;
+}
+
 /*END*/
 
 
