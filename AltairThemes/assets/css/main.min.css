@@ -1,3 +1,20 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 body{
     font-family: 'Raleway', sans-serif !important;
@@ -14865,3 +14882,43 @@ address p + p {
     padding-top: 40px;
 }
 /*******************************/
+/*ADD CSS*/
+#header_main .sSwitch:before, 
+#header_main .sSwitch .sSwitchIcon, #header_main .sSwitch .sSwitchIcon:after, #header_main .sSwitch .sSwitchIcon:before 
+{
+    background: #000000 !important;
+}
+
+#menu_top_dropdown .top_menu_toggle .material-icons,
+.material-icons.md-light {
+    color: #000000 !important;
+}
+
+#header_main {
+    background: transparent !important;
+    position: relative !important;
+    box-shadow: unset !important;
+    padding-bottom: 100px;
+}
+
+body {
+    background: transparent !important;
+    padding-top: 0px !important;
+}
+
+html {
+    background: url(https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/628b9142d1af69d07ea1e861.png) !important;
+    background-repeat: no-repeat !important;
+    background-position: 100% 0% !important;
+    background-color: #ffffff !important;
+}
+
+.uk-navbar-flip {
+    float: right;
+    padding-right: 200px;
+}
+
+/*END*/
+
+
+
