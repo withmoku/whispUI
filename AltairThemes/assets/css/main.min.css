@@ -1,25 +1,32 @@
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 body{
     font-family: 'Raleway', sans-serif !important;
    
 }
+.uk-navbar{
+    margin-top: 20px;
+}
+.top-menu>li{
+    box-shadow: rgb(0 0 0 / 16%) 0px 1px 4px !important;
+    margin-right: 15px;
+    background: #fff;
+    border-radius: 10px;
+}
+/*.top-menu>li:first-child{
+    margin-top: 7px;
+}*/
+.header_search{
+    position: relative;
+}
+.header_main_search_btn{
+    width: 50px;
+    color: #000000 !important;
+}
+.header_main_search_input{
+    padding-right: 100px !important;
+}
+
 [class*="uk-animation-"] {
     -webkit-animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -11523,7 +11530,7 @@ a.editable-click.editable-disabled:hover {
     line-height: 44px;
     font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
     box-sizing: border-box;
-    height: 48px;
+    /*height: 48px;*/
     z-index: auto;
     cursor: pointer;
 }
@@ -11597,7 +11604,7 @@ a.editable-click.editable-disabled:hover {
     display: block;
     position: relative;
     text-align: center;
-    padding-top: 4px;
+    /*padding-top: 4px;*/
 }
 #header_main .user_actions .user_action_icon:focus,
 #header_main .user_actions .user_action_icon:hover {
@@ -11730,11 +11737,11 @@ a.editable-click.editable-disabled:hover {
     box-sizing: border-box;
     border-radius: 0;
     vertical-align: top;
-    padding: 6px 15px;
+    /*padding: 6px 15px;*/
     font-size: 16px;
     height: auto;
     background: rgba(255, 255, 255, 0.2);
-    color: #fff;
+    color: #000000;
 }
 #header_main .header_main_search_btn {
     position: absolute;
@@ -14915,7 +14922,7 @@ html {
 
 .uk-navbar-flip {
     float: right;
-    padding-right: 200px;
+    /*padding-right: 200px;*/
 }
 
 .mdCardDyGrid {
@@ -14939,7 +14946,7 @@ html {
 }
 
 #header_main .header_main_search_input {
-    background: #f2f2f2 !important;
+    /*background: #f2f2f2 !important;*/
 }
 
 /*END*/
