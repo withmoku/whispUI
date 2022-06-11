@@ -606,7 +606,11 @@
                                             <td class="uk-width-3-10 uk-text-nowrap">Sample Event1</td>
                                             <td class="uk-width-2-10 uk-text-nowrap">Wheel</td>
                                             <td class="uk-width-3-10">
-                                                <input type="checkbox" data-switchery checked id="switch_demo_1" />
+                                                <!--<input type="checkbox" data-switchery checked id="switch_demo_1" />-->
+                                                <label class="switchCampaignPage">
+                                                    <input id="remember" type="checkbox">
+                                                    <span class="slider round"></span>
+                                                </label>
                                             </td>
                                             <td class="uk-width-2-10 uk-text-right uk-text-muted"><a>Edit <i style="color: #1e88e5;" class="material-icons"></i></a></td>
                                         </tr>
@@ -614,7 +618,11 @@
                                             <td class="uk-width-3-10 uk-text-nowrap">Sample Event2</td>
                                             <td class="uk-width-2-10 uk-text-nowrap">QR</td>
                                             <td class="uk-width-3-10">
-                                                <input type="checkbox" data-switchery id="switch_demo_1" />
+                                                <!--<input type="checkbox" data-switchery id="switch_demo_1" />-->
+                                                <label class="switchCampaignPage">
+                                                    <input id="remember" type="checkbox">
+                                                    <span class="slider round"></span>
+                                                </label>
                                             </td>
                                             <td class="uk-width-2-10 uk-text-right uk-text-muted"><a>Edit <i style="color: #1e88e5;" class="material-icons"></i></a></td>
                                         </tr>
@@ -622,7 +630,11 @@
                                             <td class="uk-width-3-10 uk-text-nowrap">Sample Event3</td>
                                             <td class="uk-width-2-10 uk-text-nowrap">Floating Text</td>
                                             <td class="uk-width-3-10">
-                                                <input type="checkbox" data-switchery checked id="switch_demo_1" />
+                                                <!--<input type="checkbox" data-switchery checked id="switch_demo_1" />-->
+                                                <label class="switchCampaignPage">
+                                                    <input id="remember" type="checkbox">
+                                                    <span class="slider round"></span>
+                                                </label>
                                             </td>
                                             <td class="uk-width-2-10 uk-text-right uk-text-muted"><a>Edit <i style="color: #1e88e5;" class="material-icons"></i></a></td>
                                         </tr>
@@ -630,7 +642,11 @@
                                             <td class="uk-width-3-10 uk-text-nowrap">Sample Event4</td>
                                             <td class="uk-width-2-10 uk-text-nowrap">Floating Button</td>
                                             <td class="uk-width-3-10">
-                                                <input type="checkbox" data-switchery id="switch_demo_1" />
+                                                <!--<input type="checkbox" data-switchery id="switch_demo_1" />-->
+                                                <label class="switchCampaignPage">
+                                                    <input id="remember" type="checkbox">
+                                                    <span class="slider round"></span>
+                                                </label>
                                             </td>
                                             <td class="uk-width-2-10 uk-text-right uk-text-muted"><a>Edit <i style="color: #1e88e5;" class="material-icons"></i></a></td>
                                         </tr>
@@ -638,13 +654,33 @@
                                             <td class="uk-width-3-10 uk-text-nowrap">Sample Event5</td>
                                             <td class="uk-width-2-10 uk-text-nowrap">QR</td>
                                             <td class="uk-width-3-10">
-                                                <input type="checkbox" data-switchery id="switch_demo_1" />
+                                                <!--<input type="checkbox" data-switchery id="switch_demo_1" />-->
+                                                <label class="switchCampaignPage">
+                                                    <input id="remember" type="checkbox">
+                                                    <span class="slider round"></span>
+                                                </label>
                                             </td>
                                             <td class="uk-width-2-10 uk-text-right uk-text-muted"><a>Edit <i style="color: #1e88e5;" class="material-icons"></i></a></td>
                                         </tr>
                                        
                                     </tbody>
                                 </table>
+                                <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+                                <script>
+                                $(document).ready(function () {
+                                    //using jQuery code
+                                    $('#wheelPreview').hide();
+                                    $('#remember').on('change', function (e) {
+                                        if (e.currentTarget.checked) {
+                                            console.log("advance track check");
+                                            $('#wheelPreview').show();
+                                        } else {
+                                            console.log("advance track uncheck");
+                                            $('#wheelPreview').hide();
+                                        }
+                                    })
+                                })
+                                </script>
                     </div>
                 </div>
                 <div>

@@ -15017,6 +15017,66 @@ html {
      background: transparent !important;
      height: 100px;
  }
+
+ .switchCampaignPage {
+    position: relative;
+    display: inline-block;
+    width: 55px;
+    height: 28px;
+  }
+  
+  .switchCampaignPage input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .switchCampaignPage .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #c1272d;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .switchCampaignPage .slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .switchCampaignPage input:checked + .slider {
+    background-color: #39b54a;
+  }
+  
+  .switchCampaignPage input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  .switchCampaignPage input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .switchCampaignPage .slider.round {
+    border-radius: 34px;
+  }
+  
+  .switchCampaignPage .slider.round:before {
+    border-radius: 50%;
+  }
  
 /*END*/
 
