@@ -331,8 +331,6 @@
             //using jQuery code
             $('#wheelPreview').hide();
             $('#QrDarkWrap').hide();
-            $('#floaterWrap').hide();
-            $('#floatingButtonWrap').hide();
             
             $('#remember').on('change', function (e) {
                 if (e.currentTarget.checked) {
@@ -341,36 +339,6 @@
                 } else {
                     console.log("advance track uncheck");
                     $('#wheelPreview').hide();
-                }
-            });
-
-            $('#btnqrdark').on('change', function (e) {
-                if (e.currentTarget.checked) {
-                    console.log("advance track check");
-                    $('#QrDarkWrap').show();
-                } else {
-                    console.log("advance track uncheck");
-                    $('#QrDarkWrap').hide();
-                }
-            });
-
-            $('#btnfloater').on('change', function (e) {
-                if (e.currentTarget.checked) {
-                    console.log("advance track check");
-                    $('#floaterWrap').show();
-                } else {
-                    console.log("advance track uncheck");
-                    $('#floaterWrap').hide();
-                }
-            });
-
-            $('#btnfloatingbutton').on('change', function (e) {
-                if (e.currentTarget.checked) {
-                    console.log("advance track check");
-                    $('#floatingButtonWrap').show();
-                } else {
-                    console.log("advance track uncheck");
-                    $('#floatingButtonWrap').hide();
                 }
             });
         })
@@ -919,7 +887,7 @@
                                         <td class="uk-width-2-10 uk-text-nowrap">
                                             <!--<input type="checkbox" data-switchery checked id="switch_demo_1" style='display: none' />-->
                                             <label class="switchCampaignPage">
-                                                <input id="checkbox" type="checkbox" checked>
+                                                <input id="checkbox" type="checkbox">
                                                 <span class="slider round"></span>
                                             </label>
                                         </td>
@@ -932,7 +900,7 @@
                                         <td class="uk-width-2-10 uk-text-nowrap">
                                             <!--<input type="checkbox" data-switchery id="switch_demo_1" style="display:none" />-->
                                             <label class="switchCampaignPage">
-                                                <input type="checkbox" id='btnqrdark'>
+                                                <input id="checkbox" type="checkbox" id='btnqrdark'>
                                                 <span class="slider round"></span>
                                             </label>
                                         </td>
@@ -945,7 +913,7 @@
                                         <td class="uk-width-2-10 uk-text-nowrap">
                                             <!--<input type="checkbox" data-switchery id="switch_demo_1" style='display: none'/>-->
                                             <label class="switchCampaignPage">
-                                                <input id="btnfloater" type="checkbox">
+                                                <input id="checkbox" type="checkbox">
                                                 <span class="slider round"></span>
                                             </label>
                                         </td>
@@ -958,7 +926,7 @@
                                         <td class="uk-width-2-10 uk-text-nowrap">
                                             <!--<input type="checkbox" data-switchery id="switch_demo_1" />-->
                                             <label class="switchCampaignPage">
-                                                <input id="btnfloatingbutton" type="checkbox">
+                                                <input id="checkbox" type="checkbox">
                                                 <span class="slider round"></span>
                                             </label></td>
                                         <td class="uk-width-3-10">
@@ -980,8 +948,8 @@
                 </div>
                 <div class="uk-grid uk-grid-small uk-grid-width-1 uk-grid-width-medium-1-1 uk-grid-width-large-1-1 uk-grid-width-xlarge-1-1">
                     <div class="md-card">
-                        <ul class="md-card-content uk-grid no-left mdCardContentAdd" data-uk-grid="{gutter: 20, controls: '#notes_grid_filter'}" id="">
-                            <li class="uk-active" data-uk-filter="label-1" id="wrapWheelcampaign">
+                        <ul class="md-card-content uk-grid no-left" data-uk-grid="{gutter: 20, controls: '#notes_grid_filter'}">
+                            <li class="uk-active" data-uk-filter="label-1">
                                 <div class="md-card-hover md-card-overlay">
                                     <h4>Advance Tracking</h4>
                                         <label class="switchCampaignPage">
@@ -1034,7 +1002,7 @@
 
                                 </div>
                             </li>
-                            <li data-uk-filter="label-3" style="display: none1;" id="floaterWrap">
+                            <li data-uk-filter="label-3" style="display: none;">
                                 <div class="md-card-hover md-card-overlay">
                                     <h4>Advance Tracking</h4>
                                     <input type="checkbox" class="input-whisp" data-switchery checked data-switchery-color="#1e88e5" id="switch_demo_2" />
@@ -1047,7 +1015,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li data-uk-filter="label-4" style="display: none1;" id="floatingButtonWrap">
+                            <li data-uk-filter="label-4" style="display: none;">
                                 <div class="md-card-hover md-card-overlay">
                                     <h4>Advance Tracking</h4>
                                     <input type="checkbox" class="input-whisp" data-switchery checked data-switchery-color="#1e88e5" id="switch_demo_2" />

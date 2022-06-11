@@ -15082,12 +15082,32 @@ html {
       padding-top: 10px;
   }
 
+  #wrapWheelcampaign, #QrDarkWrap, #floaterWrap, #floatingButtonWrap{
+      position: unset !important;
+      width: 100%;
+      display: block;
+      padding-top: 20px;
+  }
+
+  .mdCardContentAdd {
+      height: unset !important;
+  }
 
   /*RESPOSNSIVE*/
+  @media screen and (min-width: 1366px) {
+    html {
+        background-size: 30% 17% !important;
+    }    
+  }
+  @media screen and (min-width: 1500px) {
+    html {
+        background-size: 27% 17% !important;
+    }    
+  }
   @media screen and (min-width: 1700px) {
     .mcCardPhone {
         width: 90% !important;
-    }
+    } 
   }
 /*END*/
 
