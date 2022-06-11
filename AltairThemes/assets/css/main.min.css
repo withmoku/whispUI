@@ -14981,7 +14981,7 @@ html {
 }
 
 #header_main .uk-navbar .uk-navbar-nav > li > a {
-    height: 40px !important;
+    height: 44px !important;
 }
 
 .uk-navbar-flip li:first-child a {
@@ -15076,6 +15076,10 @@ html {
   
   .switchCampaignPage .slider.round:before {
     border-radius: 50%;
+  }
+
+  #header_main .uk-navbar .uk-navbar-nav {
+      padding-top: 10px;
   }
  
 /*END*/
