@@ -264,19 +264,19 @@
         <div class="sidebar_main_header">
             <div class="sidebar_logo">
                 <a href="index-2.html" class="sSidebar_hide sidebar_logo_large">
-                    <img class="logo_regular" src="assets/img/logo_main.png" alt="" height="15" width="71"/>
-                    <img class="logo_light" src="assets/img/logo_main_white.png" alt="" height="15" width="71"/>
+                    <img class="logo_regular" src="assets/img/whisp-logo.png" alt="" />
+                    <img class="logo_light" src="assets/img/whisp-logo.png" alt="" />
                 </a>
                 <a href="index-2.html" class="sSidebar_show sidebar_logo_small">
-                    <img class="logo_regular" src="assets/img/logo_main_small.png" alt="" height="32" width="32"/>
-                    <img class="logo_light" src="assets/img/logo_main_small_light.png" alt="" height="32" width="32"/>
+                    <img class="logo_regular" src="assets/img/whisp-logo.png" alt="" height="32" width="32" />
+                    <img class="logo_light" src="assets/img/whisp-logo.png" alt="" height="32" width="32" />
                 </a>
             </div>
-            <div class="sidebar_actions">
+            <!-- <div class="sidebar_actions">
                 <select id="lang_switcher" name="lang_switcher">
                     <option value="gb" selected>English</option>
                 </select>
-            </div>
+            </div> -->
         </div>
         
         <div class="menu_section">
@@ -340,6 +340,16 @@
                         <span class="menu_title">Sticky Notes</span>
                     </a>
                     
+                </li>
+                <li title="Campaign">
+                    <a href="#">
+                        <span class="menu_icon"><i class="material-icons">&#xE8D2;</i></span>
+                        <span class="menu_title">Campaign</span>
+                    </a>
+                    <ul>
+                        <li class="act_item"><a href="page_campaign.html">View</a></li>
+                        <li><a href="page_campaign_add.html">Add</a></li>
+                    </ul>
                 </li>
                 <li title="Forms">
                     <a href="#">
@@ -577,7 +587,7 @@
                             <form class="uk-form-stacked">
                                 <div class="uk-form-row">
                                     <label for="kUI_automplete" class="uk-form-label">Choose shipping countries:</label>
-                                    <input id="kUI_automplete" class="uk-width-1-1" />
+                                    <input class="uk-width-1-1 md-input" />
                                 </div>
                             </form>
                         </div>
@@ -620,14 +630,14 @@ var autoComplete = $(selector).kendoAutoComplete({
                     </div>
                 </div>
             </div>
-            <div class="md-card">
+            <div class="md-card md-30">
                 <div class="md-card-content">
                     <div class="uk-grid" data-uk-grid-margin>
                         <div class="uk-width-large-1-2">
                             <form class="uk-form-stacked">
                                 <div class="uk-form-row">
                                     <label for="kUI_automplete_template" class="uk-form-label">Contacts:</label>
-                                    <input id="kUI_automplete_template" class="uk-width-1-1" />
+                                    <input class=" md-input" />
                                     <span class="uk-form-help-block">Hint: type "am" or "wi"</span>
                                 </div>
                             </form>
