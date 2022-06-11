@@ -15081,7 +15081,14 @@ html {
   #header_main .uk-navbar .uk-navbar-nav {
       padding-top: 10px;
   }
- 
+
+
+  /*RESPOSNSIVE*/
+  @media screen and (min-width: 1700px) {
+    .mcCardPhone {
+        width: 90% !important;
+    }
+  }
 /*END*/
 
 
