@@ -14,6 +14,10 @@
     <link rel="icon" type="image/png" href="assets/img/favicon-16x16.png" sizes="16x16">
     <link rel="icon" type="image/png" href="assets/img/favicon-32x32.png" sizes="32x32">
     <title>Altair Admin v2.22.0</title>
+    <!-- additional styles for plugins -->
+    <!-- kendo UI -->
+    <link rel="stylesheet" href="bower_components/kendo-ui/styles/kendo.common-material.min.css" />
+    <link rel="stylesheet" href="bower_components/kendo-ui/styles/kendo.material.min.css" id="kendoCSS" />
     <!-- uikit -->
     <link rel="stylesheet" href="bower_components/uikit/css/uikit.almost-flat.min.css" media="all">
     <!-- flag icons -->
@@ -31,6 +35,17 @@
         <link rel="stylesheet" href="assets/css/ie.css" media="all">
     <![endif]-->
     <style type="text/css">
+    :root {
+        --overlayBackground: #26A9E0 !important;
+        --wheelSliceBG1: #19CBC8 !important;
+        --wheelSliceText1: #fff;
+        --wheelSliceBG2: #32A9DE !important;
+        --wheelSliceText2: #fff;
+        --wheelSliceBG3: #00172F !important;
+        --wheelSliceText3: #fff;
+
+    }
+
     #page_content_inner {
         padding: 45px 85px 100px;
     }
@@ -40,6 +55,7 @@
         background: none;
         box-shadow: none;
         padding: 25px 85px;
+        position: absolute;
     }
 
     #menu_top>li>a {
@@ -52,19 +68,259 @@
         margin-left: 20px;
     }
 
+    .md-card-content {
+        margin-left: 0px !important;
+    }
+
     .full_border {
         border-radius: 10px !important;
         border-width: 1px 1px 1px !important;
     }
-    .md-card{
+
+    .md-card {
         padding: 30px;
     }
-    .uk-table-hover tbody tr:hover{
+
+    .uk-table-hover tbody tr:hover {
         font-weight: 900;
     }
-    .md-btn{
+
+    .md-btn {
         border-radius: 10px;
+        margin-top: 20px;
     }
+
+    .input_button {
+        padding: 14px 4px 0px 4px !important;
+    }
+
+    .input-whisp,
+    .switchery {
+        margin-bottom: 20px;
+    }
+
+    .md_third {
+        text-align: center;
+    }
+
+    .gg-wheel {
+        height: 300px;
+        width: 300px;
+        /*position: absolute;*/
+        top: 50%;
+        left: 50%;
+        /*transform: translate(-50%, -85%);*/
+        border-radius: 50%;
+        z-index: 2;
+        box-shadow: 0 0 20px 8px rgba(0, 0, 0, 0.13);
+    }
+
+    @media only screen and (min-width: 600px) {
+        .gg-wheel {
+            height: 400px;
+            width: 400px;
+            /*position: absolute;*/
+            top: 170%;
+            left: 90%;
+            /*transform: translate(-50%, -50%);*/
+        }
+    }
+
+    .gg-wheel:after {
+        content: '';
+        display: inline-block;
+        left: -15px;
+        width: 330px;
+        height: 330px;
+        position: relative;
+        top: -15px;
+        /*border: 1px solid white;*/
+        border-radius: 50%;
+    }
+
+    @media only screen and (min-width: 600px) {
+        .gg-wheel:after {
+            width: 430px;
+            height: 430px;
+        }
+    }
+
+    .gg-wheel__center {
+        content: '';
+        height: 40px;
+        width: 40px;
+        border: 11px solid #ff69b4;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 20;
+        border-radius: 50%;
+        background: #fff;
+        pointer-events: none;
+    }
+
+    .gg-wheel__center:before {
+        content: '';
+        height: 0;
+        width: 0;
+        position: absolute;
+        left: 50%;
+        top: 0px;
+        border-top: 30px solid transparent;
+        border-right: 23px solid transparent;
+        border-bottom: 30px solid #ff69b4;
+        border-left: 25px solid transparent;
+        transform: translate(-50%, -100%);
+    }
+
+    .gg-wheel__center:after {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        margin: auto;
+        top: -8px;
+        right: 0;
+        bottom: 0;
+        left: 3px;
+        width: 55px;
+        height: 55px;
+        background-color: transparent;
+        border-radius: 50%;
+        /*box-shadow: -2px 6px 0px 0px #d0d0d0;*/
+    }
+
+    .gg-list {
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        list-style: none;
+        height: 100%;
+        overflow: hidden;
+        border-radius: 50%;
+        margin: 0;
+        padding: 0;
+        transition: 8s cubic-bezier(0.165, 0.84, 0.44, 1);
+        background: #000;
+        border: 1px solid #000;
+    }
+
+    .gg-list.active {
+        transform: rotate(2520deg);
+    }
+
+    .gg-list li {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 50%;
+        background: var(--wheelSliceBG1);
+        transform-origin: 100% 100%;
+        overflow: hidden;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        border: 1px solid #000;
+    }
+
+    .gg-list li strong {
+        color: var(--wheelSliceText1);
+    }
+
+    .gg-list li:nth-child(1) {
+        transform: rotate(60deg) skew(30deg);
+        z-index: 6;
+    }
+
+    .gg-list li:nth-child(2) {
+        transform: rotate(120deg) skew(30deg);
+        z-index: 7;
+    }
+
+    .gg-list li:nth-child(3) {
+        transform: rotate(180deg) skew(30deg);
+        z-index: 8;
+    }
+
+    .gg-list li:nth-child(4) {
+        transform: rotate(240deg) skew(30deg);
+        z-index: 9;
+    }
+
+    .gg-list li:nth-child(5) {
+        transform: rotate(300deg) skew(30deg);
+        z-index: 10;
+    }
+
+    .gg-list li:nth-child(6) {
+        transform: rotate(360deg) skew(30deg);
+        z-index: 11;
+    }
+
+    .gg-list li:nth-child(1),
+    .gg-list li:nth-child(4) {
+        background: var(--wheelSliceBG2);
+    }
+
+    .gg-list li:nth-child(1) strong,
+    .gg-list li:nth-child(4) strong {
+        color: var(--wheelSliceText2);
+    }
+
+    .gg-list li:nth-child(2),
+    .gg-list li:nth-child(5) {
+        background: var(--wheelSliceBG3);
+    }
+
+    .gg-list li:nth-child(2) strong,
+    .gg-list li:nth-child(5) strong {
+        color: var(--wheelSliceText3);
+    }
+
+    .gg-list__content {
+        color: #000;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 999;
+        height: 100px;
+        width: 100px;
+        transform: skew(-30deg) rotate(-60deg) translateX(-7px) translateY(-20px);
+        text-align: center;
+        font-family: var(--font-bold);
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    @media only screen and (min-width: 600px) {
+        .gg-list__content {
+            font-size: 20px;
+        }
+    }
+
+    .config_content {
+        width: 100% !important;
+    }
+
+    .wheel-small {
+        height: 300px;
+        width: 300px;
+        margin-top: 20px;
+    }
+
+    .color-picker {
+        margin: 20px 0px;
+
+    }
+
+    .no-left>* {
+        padding-left: 0px !important;
+    }
+
+
     </style>
 </head>
 
@@ -357,8 +613,8 @@
                         <span class="menu_title">Campaign</span>
                     </a>
                     <ul>
-                        <li class="act_item"><a href="page_campaign.html">View</a></li>
-                        <li><a href="page_campaign_add.html">Add</a></li>
+                        <li><a href="page_campaign.html">View</a></li>
+                        <li class="act_item"><a href="page_campaign_add.html">Add</a></li>
                     </ul>
                 </li>
                 <li title="Forms">
@@ -583,101 +839,292 @@
         <div id="top_bar">
             <div class="md-top-bar">
                 <ul id="menu_top" class="uk-clearfix">
-                    <li class="uk-hidden-small"><a style="margin-left: -50px;" href="index-2.html">Campaign<i class="material-icons md-36"></i></a></li>
+                    <li class="uk-hidden-small"><a href="index-2.html">New Event<i class="material-icons md-36"></i></a></li>
                     <li class="uk-hidden-small"><input type="text" class="md-input full_border" placeholder="Search for events"></li>
                 </ul>
             </div>
         </div>
-        <div id="page_content_inner" class="md-30" style="padding: 0px 50px !important;">
+        <div id="page_content_inner" class="md-30">
             <div class="uk-grid uk-grid-medium uk-grid-width-medium-1-2 uk-grid-width-large-1-3" data-uk-grid-margin="" data-uk-grid-match="{target:'.md-card-content'}">
                 <div class="uk-row-first">
-                    <div class="md-card" style="box-shadow: unset !important; padding: 0px !important;">
-                        <table class="uk-table uk-table-hover">
-                                    <thead>
-                                        <tr>
-                                            <th class="uk-text-nowrap"><h4>Event Name</h4></th>
-                                            <th class="uk-text-nowrap"><h4>Campaign ID</h4></th>
-                                            <th class="uk-text-nowrap"><h4>Status</h4></th>
-                                           <th class="uk-text-nowrap"></th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr class="uk-table-middle">
-                                            <td class="uk-width-3-10 uk-text-nowrap">Sample Event1</td>
-                                            <td class="uk-width-2-10 uk-text-nowrap">Wheel</td>
-                                            <td class="uk-width-3-10">
-                                                <input type="checkbox" data-switchery checked id="switch_demo_1" />
-                                            </td>
-                                            <td class="uk-width-2-10 uk-text-right uk-text-muted"><a>Edit <i style="color: #1e88e5;" class="material-icons"></i></a></td>
-                                        </tr>
-                                        <tr class="uk-table-middle">
-                                            <td class="uk-width-3-10 uk-text-nowrap">Sample Event2</td>
-                                            <td class="uk-width-2-10 uk-text-nowrap">QR</td>
-                                            <td class="uk-width-3-10">
-                                                <input type="checkbox" data-switchery id="switch_demo_1" />
-                                            </td>
-                                            <td class="uk-width-2-10 uk-text-right uk-text-muted"><a>Edit <i style="color: #1e88e5;" class="material-icons"></i></a></td>
-                                        </tr>
-                                        <tr class="uk-table-middle">
-                                            <td class="uk-width-3-10 uk-text-nowrap">Sample Event3</td>
-                                            <td class="uk-width-2-10 uk-text-nowrap">Floating Text</td>
-                                            <td class="uk-width-3-10">
-                                                <input type="checkbox" data-switchery checked id="switch_demo_1" />
-                                            </td>
-                                            <td class="uk-width-2-10 uk-text-right uk-text-muted"><a>Edit <i style="color: #1e88e5;" class="material-icons"></i></a></td>
-                                        </tr>
-                                        <tr class="uk-table-middle">
-                                            <td class="uk-width-3-10 uk-text-nowrap">Sample Event4</td>
-                                            <td class="uk-width-2-10 uk-text-nowrap">Floating Button</td>
-                                            <td class="uk-width-3-10">
-                                                <input type="checkbox" data-switchery id="switch_demo_1" />
-                                            </td>
-                                            <td class="uk-width-2-10 uk-text-right uk-text-muted"><a>Edit <i style="color: #1e88e5;" class="material-icons"></i></a></td>
-                                        </tr>
-                                        <tr class="uk-table-middle">
-                                            <td class="uk-width-3-10 uk-text-nowrap">Sample Event5</td>
-                                            <td class="uk-width-2-10 uk-text-nowrap">QR</td>
-                                            <td class="uk-width-3-10">
-                                                <input type="checkbox" data-switchery id="switch_demo_1" />
-                                            </td>
-                                            <td class="uk-width-2-10 uk-text-right uk-text-muted"><a>Edit <i style="color: #1e88e5;" class="material-icons"></i></a></td>
-                                        </tr>
-                                       
-                                    </tbody>
-                                </table>
-                    </div>
-                </div>
-                <div>
-                    <div class="md-card" style="box-shadow: unset !important; padding: 0px !important;">
-                        <h4>Initial Message</h4>
-                        <textarea cols="30" rows="4" class="md-input full_border autosized" style="overflow-x: hidden; overflow-wrap: break-word; height: 122px;">Assumenda iure id eum officiis dolor facere eius omnis eveniet perferendis veritatis quae neque aliquam corrupti asperiores et veritatis et harum quaerat dolore fuga quidem mollitia nesciunt id id odio ullam.</textarea>
-                        <h4>Reply Message</h4>
-                        <textarea cols="30" rows="4" class="md-input full_border autosized" style="overflow-x: hidden; overflow-wrap: break-word; height: 122px;">Assumenda iure id eum officiis dolor facere eius omnis eveniet perferendis veritatis quae neque aliquam corrupti asperiores et veritatis et harum quaerat dolore fuga quidem mollitia nesciunt id id odio ullam.</textarea>
-                        <a class="md-btn md-btn-primary md-btn-wave-light waves-effect waves-button waves-light" href="javascript:void(0)">Save SMS</a>
-                    </div>
-                </div>
-                <div>
-                    <div class="md-card mcCardPhone" style="padding: 0px !important; background: url(assets/img/Asset8.png); background-size: 100% 100% !important; box-shadow: unset !important;">
-                        <div>
-                            <p class="partop">&nbsp;</p>
-                            <p class="par01">Assumenda iure id eum officiis dolor facere eius omnis eveniet perferendis veritatis quae neque aliquam corrupti asperiores et veritatis et harum quaerat dolore fuga quidem mollitia nesciunt id id odio ullam.</p>
-                            <p class="par02">Assumenda iure id eum officiis dolor facere eius omnis eveniet perferendis veritatis quae neque aliquam corrupti asperiores et veritatis et harum quaerat dolore fuga quidem mollitia nesciunt id id odio ullam.</p>
-                            <p class="partop">&nbsp;</p>
+                    <div class="md-card">
+                        <div class="md-card-content">
+                            <table class="uk-table uk-table-hover">
+                                <thead>
+                                    <tr>
+                                        <th class="uk-text-nowrap">
+                                            <h4>Whisp Type</h4>
+                                        </th>
+                                        <th class="uk-text-nowrap">
+                                            <h4>Status</h4>
+                                        </th>
+                                        <th class="uk-text-nowrap">
+                                            <h4>Download</h4>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody id="notes_grid_filter">
+                                    <tr class="uk-table-middle uk-active" data-uk-filter="label-1">
+                                        <td class="uk-width-3-10 uk-text-nowrap"><a href="#">Contest Wheel</a></td>
+                                        <td class="uk-width-2-10 uk-text-nowrap"><input type="checkbox" data-switchery checked id="switch_demo_1" /></td>
+                                        <td class="uk-width-3-10">
+                                            <a><i style="color: #1e88e5;" class="material-icons">file_download</i></a>
+                                        </td>
+                                    </tr>
+                                    <tr class="uk-table-middle" data-uk-filter="label-2">
+                                        <td class="uk-width-3-10 uk-text-nowrap"><a href="#">QR Dark</a></td>
+                                        <td class="uk-width-2-10 uk-text-nowrap"><input type="checkbox" data-switchery id="switch_demo_1" /></td>
+                                        <td class="uk-width-3-10">
+                                            <a><i style="color: #1e88e5;" class="material-icons">file_download</i></a>
+                                        </td>
+                                    </tr>
+                                    <tr class="uk-table-middle" data-uk-filter="label-3">
+                                        <td class="uk-width-3-10 uk-text-nowrap">Floater</td>
+                                        <td class="uk-width-2-10 uk-text-nowrap"><input type="checkbox" data-switchery id="switch_demo_1" /></td>
+                                        <td class="uk-width-3-10">
+                                            <a><i style="color: #1e88e5;" class="material-icons">file_download</i></a>
+                                        </td>
+                                    </tr>
+                                    <tr class="uk-table-middle" data-uk-filter="label-4">
+                                        <td class="uk-width-3-10 uk-text-nowrap">Floating Button</td>
+                                        <td class="uk-width-2-10 uk-text-nowrap"><input type="checkbox" data-switchery id="switch_demo_1" /></td>
+                                        <td class="uk-width-3-10">
+                                            <a><i style="color: #1e88e5;" class="material-icons">file_download</i></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="uk-grid" data-uk-grid-margin="">
+                                <div class="uk-width-medium-1-2">
+                                    <a class="md-btn md-btn-primary md-btn-wave-light waves-effect waves-button waves-light" href="javascript:void(0)">Save Whisp</a>
+                                </div>
+                                <div class="uk-width-medium-1-2">
+                                    <a class="md-btn md-btn-primary md-btn-wave-light waves-effect waves-button waves-light" href="javascript:void(0)">Cancel Whisp</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-    <div id="page_content">
-        <div id="page_content_inner" class="">
-            <div class="">
-                <div class="uk-row-first">
-                    <hr />
-                    <a class="md-btn md-btn-primary md-btn-wave-light waves-effect waves-button waves-light" style="background: hotpink !important;">
-                        Save Event
-                    </a>
-                    <a class="md-btn md-btn-wave waves-effect waves-button" href="javascript:void(0)">Cancel</a>
+                <div class="uk-grid uk-grid-small uk-grid-width-1 uk-grid-width-medium-1-1 uk-grid-width-large-1-1 uk-grid-width-xlarge-1-1">
+                    <div class="md-card">
+                        <ul class="md-card-content uk-grid no-left" data-uk-grid="{gutter: 20, controls: '#notes_grid_filter'}">
+                            <li class="uk-active" data-uk-filter="label-1">
+                                <div class="md-card-hover md-card-overlay">
+                                    <h4>Advance Tracking</h4>
+                                    <input type="checkbox" class="input-whisp" data-switchery checked data-switchery-color="#1e88e5" id="switch_demo_2" />
+                                    <input type="text" class="md-input full_border input-whisp" placeholder="Source" />
+                                    <input type="text" class="md-input full_border input-whisp" placeholder="Affiliate" />
+                                    <input type="text" class="md-input full_border input-whisp" placeholder="Other" />
+                                    <h4 class="heading_c uk-margin-bottom">Preview</h4>
+                                    <div style="position: relative;">
+                                        <div class="gg-wheel">
+                                            <div class="gg-wheel__center"></div>
+                                            <ul class="gg-list">
+                                                <li><strong class="gg-list__content">Free Demo</strong></li>
+                                                <li><strong class="gg-list__content">1 Month Free</strong></li>
+                                                <li><strong class="gg-list__content">Free Demo</strong></li>
+                                                <li><strong class="gg-list__content">2 Months Free</strong></li>
+                                                <li><strong class="gg-list__content">Free Demo</strong></li>
+                                                <li><strong class="gg-list__content">1 Month Free</strong></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li data-uk-filter="label-2" style="display: none;">
+                                <div class="md-card-hover md-card-overlay">
+                                    <h4>Advance Tracking</h4>
+                                    <input type="checkbox" class="input-whisp" data-switchery checked data-switchery-color="#1e88e5" id="switch_demo_2" />
+                                    <input type="text" class="md-input full_border input-whisp" placeholder="Source" />
+                                    <input type="text" class="md-input full_border input-whisp" placeholder="Affiliate" />
+                                    <input type="text" class="md-input full_border input-whisp" placeholder="Other" />
+                                    <h4 class="heading_c uk-margin-bottom">Preview</h4>
+                                    <div style="position: relative;">
+                                        <img src="assets/img/qr.png">
+                                    </div>
+                                </div>
+                            </li>
+                            <li data-uk-filter="label-3" style="display: none;">
+                                <div class="md-card-hover md-card-overlay">
+                                    <h4>Advance Tracking</h4>
+                                    <input type="checkbox" class="input-whisp" data-switchery checked data-switchery-color="#1e88e5" id="switch_demo_2" />
+                                    <input type="text" class="md-input full_border input-whisp" placeholder="Source" />
+                                    <input type="text" class="md-input full_border input-whisp" placeholder="Affiliate" />
+                                    <input type="text" class="md-input full_border input-whisp" placeholder="Other" />
+                                    <h4 class="heading_c uk-margin-bottom">Preview</h4>
+                                    <div style="position: relative;">
+                                        <img src="assets/img/Asset56.png">
+                                    </div>
+                                </div>
+                            </li>
+                            <li data-uk-filter="label-4" style="display: none;">
+                                <div class="md-card-hover md-card-overlay">
+                                    <h4>Advance Tracking</h4>
+                                    <input type="checkbox" class="input-whisp" data-switchery checked data-switchery-color="#1e88e5" id="switch_demo_2" />
+                                    <input type="text" class="md-input full_border input-whisp" placeholder="Source" />
+                                    <input type="text" class="md-input full_border input-whisp" placeholder="Affiliate" />
+                                    <input type="text" class="md-input full_border input-whisp" placeholder="Other" />
+                                    <h4 class="heading_c uk-margin-bottom">Preview</h4>
+                                    <div style="position: relative;">
+                                        <img src="assets/img/button.png">
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="uk-grid uk-grid-small uk-grid-width-1 uk-grid-width-medium-1-1 uk-grid-width-large-1-1 uk-grid-width-xlarge-1-1" style="margin-top: 0px !important;">
+                    <div class="md-card">
+                        <ul class="md-card-content uk-grid no-left" data-uk-grid="{controls: '#notes_grid_filter'}">
+                            <li class="uk-active" data-uk-filter="label-1" text-align: center;">
+                                <div class="md-card-hover md-card-overlay">
+                                    <h4>Contest Wheel</h4>
+                                    <div class="md-card">
+                                        <label class="whisp_title token bold">Whisp Configuration</label>
+                                        <div style="position: relative;">
+                                            <div class="gg-wheel wheel-small">
+                                                <div class="gg-wheel__center"></div>
+                                                <ul class="gg-list">
+                                                    <li><strong class="gg-list__content">Free Demo</strong></li>
+                                                    <li><strong class="gg-list__content">1 Month Free</strong></li>
+                                                    <li><strong class="gg-list__content">Free Demo</strong></li>
+                                                    <li><strong class="gg-list__content">2 Months Free</strong></li>
+                                                    <li><strong class="gg-list__content">Free Demo</strong></li>
+                                                    <li><strong class="gg-list__content">1 Month Free</strong></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="color-picker">
+                                            <label>Choose Color</label><br>
+                                            <div id="kUI_color_picker"></div>
+                                        </div>
+                                        <input type="text" class="md-input full_border input-whisp" placeholder="Content" />
+                                    </div>
+                                    <a class="md-btn md-btn-primary md-btn-block md-btn-wave-light waves-effect waves-button waves-light" href="javascript:void(0)">Create Whisp</a>
+                                </div>
+                            </li>
+                            <li class="config_content" data-uk-filter="label-2" style="display: none;text-align: center;">
+                                <div class="">
+                                    <h4>QR Dark</h4>
+                                    <div class="md-card" style="text-align: left;">
+                                        <h4 class="whisp_title token bold">Whisp Configuration</h4>
+                                        <label>Background Opacity</label>
+                                        <input type="text" id="ionslider_1" name="ionslider_1" class="ion-slider" data-min1="0" data-max="100" data-from="50" />
+                                        <input type="text" class="md-input full_border input-whisp" placeholder="Content" />
+                                        <label>Choose Color</label><br>
+                                        <input id="colorpicker" type="color" />
+                                    </div>
+                                    <a class="md-btn md-btn-primary md-btn-block md-btn-wave-light waves-effect waves-button waves-light" href="javascript:void(0)">Create Whisp</a>
+                                </div>
+                            </li>
+                            <li class="config_content" data-uk-filter="label-3" style="display: none;text-align: center;">
+                                <div class="">
+                                    <h4>QR Dark</h4>
+                                    <div class="md-card" style="text-align: left;">
+                                        <h4 class="whisp_title token bold">Whisp Configuration</h4>
+                                        <label>Background Opacity</label>
+                                        <input type="text" id="ionslider_1" name="ionslider_1" class="ion-slider" data-min1="0" data-max="100" data-from="50" />
+                                        <input type="text" class="md-input full_border input-whisp" placeholder="Content" />
+                                        <label>Choose Color</label><br>
+                                        <input id="colorpicker" type="color" />
+                                    </div>
+                                    <a class="md-btn md-btn-primary md-btn-block md-btn-wave-light waves-effect waves-button waves-light" href="javascript:void(0)">Create Whisp</a>
+                                </div>
+                            <li class="config_content" data-uk-filter="label-4" style="display: none;">
+                                <div class="">
+                                    <h4>QR Dark</h4>
+                                    <div class="md-card" style="text-align: left;">
+                                        <h4 class="whisp_title token bold">Whisp Configuration</h4>
+                                        <div class="md-card-content">
+                                            <div class="uk-grid" data-uk-grid-margin="">
+                                                <div class="uk-width-medium-1-2 uk-row-first">
+                                                    <p>
+                                                        <div class="md-input-wrapper md-input-filled">
+                                                            <label>Text</label><input type="text" class="md-input input_button label-fixed"></div>
+                                                    </p>
+                                                    <p>
+                                                        <div class="md-input-wrapper md-input-filled"><select id="select_demo_2" class="md-input" data-uk-tooltip="{pos:'top'}">
+                                                                <option value="" disabled="" selected="" hidden="">Select...</option>
+                                                                <option value="a">Item A</option>
+                                                                <option value="b">Item B</option>
+                                                                <option value="c">Item C</option>
+                                                            </select><span class="md-input-bar "></span></div>
+                                                    </p>
+                                                    <p>
+                                                        <div class="uk-grid" data-uk-grid-margin="">
+                                                            <div class="uk-width-medium-1-2">
+                                                                <div class="md-input-wrapper md-input-filled"><input type="text" class="md-input input_button" placeholder="10"><span class="md-input-bar"></span></div>
+                                                            </div>
+                                                            <div class="uk-width-medium-1-2">
+                                                                <div class="md-input-wrapper md-input-filled"><select id="select_demo_2" class="md-input input_button" data-uk-tooltip="{pos:'top'}">
+                                                                        <option value="" disabled="" selected="" hidden="">Select...</option>
+                                                                        <option value="a">Semi Bold</option>
+                                                                        <option value="b">Bold</option>
+                                                                    </select><span class="md-input-bar "></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </p>
+                                                    
+                                                </div>
+                                                <div class="uk-width-medium-1-2">
+                                                    <p>
+                                                        <div class="uk-grid" data-uk-grid-margin="">
+                                                            <div class="uk-width-medium-1-2">
+                                                                <div class="md-input-wrapper md-input-filled"><label>Scale</label><input type="text" placeholder="H" class="md-input input_button label-fixed"><span class="md-input-bar "></span></div>
+                                                            </div>
+                                                            <div class="uk-width-medium-1-2">
+                                                                <div class="md-input-wrapper md-input-filled"><label></label><input type="text" placeholder="W" class="md-input input_button label-fixed"><span class="md-input-bar "></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </p>
+                                                    <p>
+                                                        <div class="md-input-wrapper md-input-filled">
+                                                            <h4>Corner Radius</h4><span class="md-input-bar "></span>
+                                                        </div>
+                                                    </p>
+                                                    <p>
+                                                        <div class="uk-grid" data-uk-grid-margin="">
+                                                            <div class="uk-width-medium-1-2">
+                                                                <label class="radio_label" style="margin-right: 10px;">
+                                                                    <input type="radio" name="radio_demo" class="radio_input" id="radio_demo_1" data-md-icheck />
+                                                                    <span class="radio_span"></span>
+                                                                </label>
+                                                                <label class="radio_label">
+                                                                    <input type="radio" name="radio_demo" class="radio_input" id="radio_demo_1" data-md-icheck />
+                                                                    <span class="radio_span"></span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="uk-width-medium-1-2">
+                                                                <div class="md-input-wrapper md-input-filled"><label></label><input type="text" class="md-input input_button label-fixed"><span class="md-input-bar "></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </p>
+                                                </div>
+                                                <div class="uk-width-medium-1-2">
+                                                                <label class="radio_label">
+                                                                    <span class="radio_span">Fill Color</span>
+                                                                    <input type="radio" name="radio_demo" class="radio_input" id="radio_demo_1" data-md-icheck />
+                                                                    
+                                                                </label>
+                                                                
+                                                            </div>
+                                                            <div class="uk-width-medium-1-2">
+                                                                <label class="radio_label">
+                                                                    <span class="radio_span">Text Color</span>
+                                                                    <input type="radio" name="radio_demo" class="radio_input" id="radio_demo_1" data-md-icheck />
+                                                                    
+                                                                </label>
+                                                            </div>
+                                            </div>
+                                        </div>
+                                        <label>Choose Color</label><br>
+                                        <input id="colorpicker" type="color" />
+                                    </div>
+                                    <a class="md-btn md-btn-primary md-btn-block md-btn-wave-light waves-effect waves-button waves-light" href="javascript:void(0)">Create Whisp</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -708,6 +1155,17 @@
     <script src="assets/js/uikit_custom.min.js"></script>
     <!-- altair common functions/helpers -->
     <script src="assets/js/altair_admin_common.min.js"></script>
+    <!-- jquery ui -->
+    <script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+    <!-- page specific plugins -->
+    <!-- ionrangeslider -->
+    <script src="bower_components/ion.rangeslider/js/ion.rangeSlider.min.js"></script>
+    <!-- kendo UI -->
+    <script src="assets/js/kendoui_custom.min.js"></script>
+    <!--  kendoui functions -->
+    <script src="assets/js/pages/kendoui.min.js"></script>
+    <!--  forms advanced functions -->
+    <script src="assets/js/pages/forms_advanced.min.js"></script>
     <script>
         $(function() {
             if(isHighDensity()) {
@@ -720,7 +1178,9 @@
         $window.on('load', function() {
             // ie fixes
             altair_helpers.ie_fix();
+
         });
+        $('#colorpicker').kendoColorPicker();
     </script>
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

@@ -934,7 +934,7 @@
                             <li data-uk-filter="label-2" style="display: none;">
                                 <div class="md-card-hover md-card-overlay">
                                     <h4>Advance Tracking</h4>
-                                    <input type="checkbox" class="input-whisp" data-switchery checked data-switchery-color="#1e88e5" id="switch_demo_2" />
+                                    <input type="checkbox" class="input-whisp" data-switchery checked data-switchery-color="#1e88e5" id="switch_demo_2 switchAdvanceTracking" />
                                     <input type="text" class="md-input full_border input-whisp" placeholder="Source" />
                                     <input type="text" class="md-input full_border input-whisp" placeholder="Affiliate" />
                                     <input type="text" class="md-input full_border input-whisp" placeholder="Other" />
@@ -942,6 +942,18 @@
                                     <div style="position: relative;">
                                         <img src="assets/img/qr.png">
                                     </div>
+                                    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+                                    <script type="text/javascript">
+                                        $(document).ready(function(){
+                                            $('.input-whisp').change(function(){
+                                            if($(this).is(":checked"))
+                                                console.log('test1');
+                                            else
+                                            $('#autoUpdate').fadeOut('slow');
+                                        });
+                                        });
+                                    </script>
+
                                 </div>
                             </li>
                             <li data-uk-filter="label-3" style="display: none;">

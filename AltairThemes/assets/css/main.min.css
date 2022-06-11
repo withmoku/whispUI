@@ -14868,7 +14868,6 @@ address p + p {
 .top_bar_snippet {
     background: none !important;
     box-shadow: none !important;
-
     position: inherit !important;
 }
 
@@ -14883,8 +14882,10 @@ address p + p {
 }
 /*******************************/
 /*ADD CSS*/
-#header_main .sSwitch:before, 
-#header_main .sSwitch .sSwitchIcon, #header_main .sSwitch .sSwitchIcon:after, #header_main .sSwitch .sSwitchIcon:before 
+#header_main .sSwitch_left:before, 
+#header_main .sSwitch_left .sSwitchIcon, 
+#header_main .sSwitch_left .sSwitchIcon:after, 
+#header_main .sSwitch_left .sSwitchIcon:before 
 {
     background: #000000 !important;
 }
@@ -14911,11 +14912,7 @@ html {
     background-repeat: no-repeat !important;
     background-position: 100% 0% !important;
     background-color: #ffffff !important;
-}
-
-.uk-navbar-flip {
-    float: right;
-    padding-right: 200px;
+    background-size: 32% 23% !important;
 }
 
 .mdCardDyGrid {
@@ -14942,6 +14939,85 @@ html {
     background: #f2f2f2 !important;
 }
 
+#header_main .uk-navbar .uk-navbar-nav > li > a {
+    background: white !important;
+    background: #ff00001f;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2) !important;
+    border-radius: 10px;
+}
+
+#header_main .uk-navbar .uk-navbar-nav > li {
+    margin: 10px !important;
+}
+
+#header_main .sSwitch.sSwitch_right .sSwitchIcon:after, #header_main .sSwitch.sSwitch_right .sSwitchIcon:before {
+    background: #ffffff !important;
+}
+
+#sidebar_secondary_toggle .sSwitch .sSwitchIcon:after,
+#sidebar_secondary_toggle .sSwitchIcon {
+    background: #ffffff !important;
+}
+
+#pageContentFooterWrap {
+    display: none;
+}
+
+#pageContentFooterWrap .md-card-content {
+    border: solid 10px red !important;
+}
+
+.uk-navbar-nav>li>a {
+    padding: 0px 10px !important;
+}
+
+#header_main .md-user-image{
+    width: 25px !important;
+    margin-top: -5px !important;
+}
+
+#header_main .user_actions .user_action_icon {
+    padding-top: 0px !important;
+}
+
+#header_main .uk-navbar .uk-navbar-nav > li > a {
+    height: 40px !important;
+}
+
+.uk-navbar-flip li:first-child a {
+    padding-bottom: 5px;
+}
+ .switchery-default {
+     background: #39b54a !important;
+ }
+
+ .mcCardPhone {
+    padding-top: 100px;
+ }
+
+ .mcCardPhone .par1 {
+     margin-top: 50px;
+ }
+
+ .mcCardPhone p {
+     padding: 10px !important;
+     background: #deebbd;
+     width: 50%;
+     margin-left: auto;
+     margin-right: auto;
+     border-radius: 10px;
+ }
+
+ .mcCardPhone .par1 {
+     margin-top: 150%;
+ }
+
+ .mcCardPhone .partop {
+     padding-top: 100px;
+     background: transparent !important;
+     height: 100px;
+ }
+ 
 /*END*/
 
 
