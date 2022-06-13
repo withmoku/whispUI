@@ -5649,12 +5649,12 @@ body > .content-preloader.preloader-active {
     box-sizing: border-box;
 }
 .md-card-list-wrapper .md-card-list-header {
-    position: absolute;
+    /*position: absolute;
     top: -24px;
-    left: 0;
+    left: 0;*/
 }
 .md-card-list-wrapper .md-card-list {
-    margin: 48px 0 0 0;
+    padding: 12px 0 0 0;
     position: relative;
 }
 .md-card-list-wrapper .md-card-list:first-child {
@@ -11730,7 +11730,7 @@ a.editable-click.editable-disabled:hover {
     box-sizing: border-box;
     border-radius: 0;
     vertical-align: top;
-    padding: 6px 15px;
+    padding: 6px 60px;
     font-size: 16px;
     height: auto;
     background: rgba(255, 255, 255, 0.2);
@@ -14569,7 +14569,7 @@ address p + p {
 }
 
 #page_content_inner {
-    padding: 24px 24px 100px;
+    padding: 0px 24px 100px;
 }
 #page_overflow {
     min-height: 100%;
@@ -14772,7 +14772,7 @@ address p + p {
 /****Modified****/
 /***whisp new design (mailbox)***/
 .content_mailbox {
-    padding: 90px 24px 100px !important;
+    padding: 0px 24px 100px !important;
 }
 .mailbox-top-bar{
     display: -ms-flexbox;
@@ -14801,11 +14801,14 @@ address p + p {
 }
 
 .border-5{
-    border-radius: 5px;
+    border-radius: 0px;
 }
 .md-card-list-item-date{
     font-weight: bolder;
     color: #000 !important;
+}
+.mail_content{
+    width: 95% !important;
 }
 /*****end mailbox edit******/
 
@@ -14899,7 +14902,7 @@ address p + p {
     background: transparent !important;
     position: relative !important;
     box-shadow: unset !important;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 
 body {

@@ -34,6 +34,10 @@
         #mail_add{
             background: #1e88e5 !important;
         }
+        .md-card-list-wrapper .md-card-list{
+            background: #fff;
+            box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+        }
     </style>
 </head>
 
@@ -550,7 +554,7 @@
     </aside><!-- main sidebar end -->
     <div id="top_bar" class="top_mailbox">
         <div class="md-top-bar ">
-            <div class="uk-width-large-8-10 uk-container-center uk-mailbox border-5">
+            <div class="uk-width-large-8-10 uk-container-center uk-mailbox border-5 mail_content">
                 <div class="uk-clearfix">
                     <div class="md-top-bar-actions-left">
                         <div class="md-top-bar-checkbox">
@@ -592,7 +596,7 @@
     <div id="page_content">
         <div id="page_content_inner" class="content_mailbox">
             <div class="md-card-list-wrapper" id="mailbox">
-                <div class="uk-width-large-8-10 uk-container-center">
+                <div class="uk-width-large-8-10 uk-container-center mail_content">
                     <div class="md-card-list">
                         <div class="md-card-list-header heading_list">Today</div>
                         <div class="md-card-list-header md-card-list-header-combined heading_list" style="display: none">All Messages</div>
