@@ -11543,7 +11543,7 @@ a.editable-click.editable-disabled:hover {
 }
 #header_main .uk-navbar .uk-navbar-nav > li > a:after {
     position: absolute;
-    bottom: -2px;
+    bottom: -11px;
     left: 50%;
     content: "";
     display: block;
@@ -11734,7 +11734,7 @@ a.editable-click.editable-disabled:hover {
     font-size: 16px;
     height: auto;
     background: rgba(255, 255, 255, 0.2);
-    color: #fff;
+    color: #000000;
 }
 #header_main .header_main_search_btn {
     position: absolute;
