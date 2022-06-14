@@ -397,6 +397,10 @@
                     $("#showTwo").hide();
                     $("#showThree").hide();
                     $("#showFour").hide();
+
+                    $(".switchCampaignPage input:checked + .slider").css('background','#c1272d');
+                    $(".switchCampaignPageContest input:checked + .slider").css('background','#39b54a');
+
                 } else {
                     console.log("advance track uncheck");
                     $('#wheelPreview').hide();
@@ -410,7 +414,7 @@
                     $("#showThree").hide();
                     $("#showFour").hide();
 
-               
+                    $(".switchCampaignPage input:checked + .slider").css('background','#c1272d');
                 }
             });
 
@@ -428,7 +432,9 @@
                     $("#showThree").hide();
                     $("#showFour").hide();
 
-                    
+                    $(".switchCampaignPage input:checked + .slider").css('background','#c1272d');
+                    $(".switchCampaignPageQr input:checked + .slider").css('background','#39b54a');
+
                 } else {
                     console.log("advance track uncheck");
                     $('#QrDarkWrap').hide();
@@ -442,7 +448,7 @@
                     $("#showThree").hide();
                     $("#showFour").hide();
 
-                   
+                    $(".switchCampaignPage input:checked + .slider").css('background','#c1272d');
                 }
             });
 
@@ -460,7 +466,8 @@
                     $("#showThree").show();
                     $("#showFour").hide();
 
-                    
+                    $(".switchCampaignPage input:checked + .slider").css('background','#c1272d');
+                    $(".switchCampaignPagefloater input:checked + .slider").css('background','#39b54a');
                 } else {
                     console.log("advance track uncheck");
                     $('#floaterWrap').hide();
@@ -474,7 +481,7 @@
                     $("#showThree").hide();
                     $("#showFour").hide();
 
-               
+                    $(".switchCampaignPage input:checked + .slider").css('background','#c1272d');
                 }
             });
 
@@ -492,7 +499,8 @@
                     $("#showThree").hide();
                     $("#showFour").show();
 
-               
+                    $(".switchCampaignPage input:checked + .slider").css('background','#c1272d');
+                    $(".switchCampaignPageBtnF input:checked + .slider").css('background','#39b54a');
                 } else {
                     console.log("advance track uncheck");
                     $('#floatingButtonWrap').hide();
@@ -506,8 +514,8 @@
                     $("#showThree").hide();
                     $("#showFour").hide();
 
-
-                 }
+                    $(".switchCampaignPage input:checked + .slider").css('background','#c1272d');
+                }
             });
         })
     </script>
