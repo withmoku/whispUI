@@ -15097,9 +15097,13 @@ html {
   }
 
   .myDiv{
-	display:none;
+    display:none;
     padding:10px;
 }  
+
+.campaignModal .box{
+    display: none;
+  }
 
   /*RESPOSNSIVE*/
   @media screen and (min-width: 1366px) {
