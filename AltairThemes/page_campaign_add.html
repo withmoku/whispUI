@@ -398,9 +398,11 @@
                     $("#showThree").hide();
                     $("#showFour").hide();
 
-                    $(".switchCampaignPageCenter input:checked + .slider").css('background','#c1272d');
-                    $(".switchCampaignPageContest input:checked + .slider").css('background','#39b54a');
+                    $(".switchCampaignPageCenter .slider").css('background','#c1272d');
+                    $(".switchCampaignPageContest .slider").css('background','#39b54a');
 
+                    $('.switchCampaignPageCenter input').prop('checked', false);
+                    $('.switchCampaignPageContest input').prop('checked', true);
                 } else {
                     console.log("advance track uncheck");
                     $('#wheelPreview').hide();
@@ -414,6 +416,7 @@
                     $("#showThree").hide();
                     $("#showFour").hide();
 
+                    $(".switchCampaignPageContest .slider").css('background','#c1272d');
                 }
             });
 
@@ -431,8 +434,11 @@
                     $("#showThree").hide();
                     $("#showFour").hide();
 
-                    $(".switchCampaignPageCenter input:checked + .slider").css('background','#c1272d');
-                    $(".switchCampaignPageQr input:checked + .slider").css('background','#39b54a');
+                    $(".switchCampaignPageCenter .slider").css('background','#c1272d');
+                    $(".switchCampaignPageQr .slider").css('background','#39b54a');
+
+                    $('.switchCampaignPageCenter input').prop('checked', false);
+                    $('.switchCampaignPageQr input').prop('checked', true);
 
                 } else {
                     console.log("advance track uncheck");
@@ -447,6 +453,7 @@
                     $("#showThree").hide();
                     $("#showFour").hide();
 
+                    $(".switchCampaignPageQr .slider").css('background','#c1272d');
                   }
             });
 
@@ -464,8 +471,12 @@
                     $("#showThree").show();
                     $("#showFour").hide();
 
-                    $(".switchCampaignPageCenter input:checked + .slider").css('background','#c1272d');
-                    $(".switchCampaignPagefloater input:checked + .slider").css('background','#39b54a');
+                    $(".switchCampaignPageCenter .slider").css('background','#c1272d');
+                    $(".switchCampaignPagefloater .slider").css('background','#39b54a');
+
+                    $('.switchCampaignPageCenter input').prop('checked', false);
+                    $('.switchCampaignPagefloater input').prop('checked', true);
+
                 } else {
                     console.log("advance track uncheck");
                     $('#floaterWrap').hide();
@@ -479,6 +490,7 @@
                     $("#showThree").hide();
                     $("#showFour").hide();
 
+                    $(".switchCampaignPagefloater .slider").css('background','#c1272d');
                 }
             });
 
@@ -496,8 +508,12 @@
                     $("#showThree").hide();
                     $("#showFour").show();
 
-                    $(".switchCampaignPageCenter input:checked + .slider").css('background','#c1272d');
-                    $(".switchCampaignPageBtnF input:checked + .slider").css('background','#39b54a');
+                    $(".switchCampaignPageCenter .slider").css('background','#c1272d');
+                    $(".switchCampaignPageBtnF .slider").css('background','#39b54a');
+
+                    $('.switchCampaignPageCenter input').prop('checked', false);
+                    $('.switchCampaignPageBtnF input').prop('checked', true);
+
                 } else {
                     console.log("advance track uncheck");
                     $('#floatingButtonWrap').hide();
@@ -510,6 +526,8 @@
                     $("#showTwo").hide();
                     $("#showThree").hide();
                     $("#showFour").hide();
+
+                    $(".switchCampaignPageBtnF .slider").css('background','#c1272d');
                 }
             });
         })
