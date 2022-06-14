@@ -329,6 +329,7 @@
     <script>
         $(document).ready(function () {
             //using jQuery code
+            $('#contestinputwrapModal').hide();
             $('#wheelPreview').show();
             $('#ContestWheelWrap').show();
             $('#QrDarkWrap').hide();
@@ -346,6 +347,16 @@
             $('#floaterinputwrap').hide();
             $('#floatingbuttoninputwrap').hide();
             
+            $('#advancecontestModal').on('change', function (e) {
+                if (e.currentTarget.checked) {
+                    console.log("advance track check");
+                    $('#contestinputwrapModal').show();
+                } else {
+                    console.log("advance track uncheck");
+                    $('#contestinputwrapModal').hide();
+                }
+            });
+
             $('#advancecontest').on('change', function (e) {
                 if (e.currentTarget.checked) {
                     console.log("advance track check");
@@ -355,6 +366,7 @@
                     $('#contestinputwrap').hide();
                 }
             });
+
             $('#advanceqrdark').on('change', function (e) {
                 if (e.currentTarget.checked) {
                     console.log("advance track check");
@@ -1043,12 +1055,47 @@
         </div>
     </aside><!-- main sidebar end -->
     <div id="page_content">
-        <div id="top_bar">
+        <div id="top_bar" style='z-index: 99999;'>
             <div class="md-top-bar">
                 <ul id="menu_top" class="uk-clearfix">
-                    <li class="uk-hidden-small"><a href="index-2.html">Campaign<i class="material-icons md-36"></i></a></li>
+                    <li class="uk-hidden-small" data-uk-modal="{target:'#modal_default'}"><a href="#">Campaign<i class="material-icons md-36"></i></a></li>
                     <li class="uk-hidden-small"><input type="text" class="md-input full_border" placeholder="Search for events"></li>
                 </ul>
+            </div>
+            <div>
+                <div class="uk-modal" id="modal_default">
+                    <div class="uk-modal-dialog">
+                        <button type="button" class="uk-modal-close uk-close"></button>
+                        <div class="md-card-hover md-card-overlay">
+                            <h4>Advance Tracking</h4>
+                                <label class="switchCampaignPage">
+                                    <input id="advancecontestModal" type="checkbox">
+                                    <span class="slider round"></span>
+                                </label><br /><br />
+                            <div id="wheelPreviewModal">
+                            <div id="contestinputwrapModal">
+                                <input type="text" class="md-input full_border input-whisp" placeholder="Source"  />
+                                <input type="text" class="md-input full_border input-whisp" placeholder="Affiliate" />
+                                <input type="text" class="md-input full_border input-whisp" placeholder="Other" />
+                            </div>
+                            <h4 class="heading_c uk-margin-bottom">Preview</h4>
+                                <div style="position: relative; width: 400px; margin: 0 auto;">
+                                    <div class="gg-wheel">
+                                        <div class="gg-wheel__center"></div>
+                                        <ul class="gg-list">
+                                            <li><strong class="gg-list__content">Free Demo</strong></li>
+                                            <li><strong class="gg-list__content">1 Month Free</strong></li>
+                                            <li><strong class="gg-list__content">Free Demo</strong></li>
+                                            <li><strong class="gg-list__content">2 Months Free</strong></li>
+                                            <li><strong class="gg-list__content">Free Demo</strong></li>
+                                            <li><strong class="gg-list__content">1 Month Free</strong></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div id="page_content_inner" class="md-30">
