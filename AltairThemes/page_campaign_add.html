@@ -398,7 +398,7 @@
                     $("#showThree").hide();
                     $("#showFour").hide();
 
-                    $(".switchCampaignPage input:checked + .slider").css('background','#c1272d');
+                    $(".switchCampaignPageCenter input:checked + .slider").css('background','#c1272d');
                     $(".switchCampaignPageContest input:checked + .slider").css('background','#39b54a');
 
                 } else {
@@ -414,7 +414,6 @@
                     $("#showThree").hide();
                     $("#showFour").hide();
 
-                    $(".switchCampaignPage input:checked + .slider").css('background','#c1272d');
                 }
             });
 
@@ -432,7 +431,7 @@
                     $("#showThree").hide();
                     $("#showFour").hide();
 
-                    $(".switchCampaignPage input:checked + .slider").css('background','#c1272d');
+                    $(".switchCampaignPageCenter input:checked + .slider").css('background','#c1272d');
                     $(".switchCampaignPageQr input:checked + .slider").css('background','#39b54a');
 
                 } else {
@@ -448,8 +447,7 @@
                     $("#showThree").hide();
                     $("#showFour").hide();
 
-                    $(".switchCampaignPage input:checked + .slider").css('background','#c1272d');
-                }
+                  }
             });
 
             $('#btnfloater').on('change', function (e) {
@@ -466,7 +464,7 @@
                     $("#showThree").show();
                     $("#showFour").hide();
 
-                    $(".switchCampaignPage input:checked + .slider").css('background','#c1272d');
+                    $(".switchCampaignPageCenter input:checked + .slider").css('background','#c1272d');
                     $(".switchCampaignPagefloater input:checked + .slider").css('background','#39b54a');
                 } else {
                     console.log("advance track uncheck");
@@ -481,7 +479,6 @@
                     $("#showThree").hide();
                     $("#showFour").hide();
 
-                    $(".switchCampaignPage input:checked + .slider").css('background','#c1272d');
                 }
             });
 
@@ -499,7 +496,7 @@
                     $("#showThree").hide();
                     $("#showFour").show();
 
-                    $(".switchCampaignPage input:checked + .slider").css('background','#c1272d');
+                    $(".switchCampaignPageCenter input:checked + .slider").css('background','#c1272d');
                     $(".switchCampaignPageBtnF input:checked + .slider").css('background','#39b54a');
                 } else {
                     console.log("advance track uncheck");
@@ -513,8 +510,6 @@
                     $("#showTwo").hide();
                     $("#showThree").hide();
                     $("#showFour").hide();
-
-                    $(".switchCampaignPage input:checked + .slider").css('background','#c1272d');
                 }
             });
         })
@@ -1062,7 +1057,7 @@
                                         <td class="uk-width-3-10 uk-text-nowrap"><a href="#">Contest Wheel</a></td>
                                         <td class="uk-width-2-10 uk-text-nowrap">
                                             <!--<input type="checkbox" data-switchery checked id="switch_demo_1" style='display: none' />-->
-                                            <label class="switchCampaignPage switchCampaignPageContest">
+                                            <label class="switchCampaignPage switchCampaignPageCenter switchCampaignPageContest">
                                                 <input id="btncontestwheel" type="checkbox" checked>
                                                 <span class="slider round"></span>
                                             </label>
@@ -1075,7 +1070,7 @@
                                         <td class="uk-width-3-10 uk-text-nowrap"><a href="#">QR Dark</a></td>
                                         <td class="uk-width-2-10 uk-text-nowrap">
                                             <!--<input type="checkbox" data-switchery id="switch_demo_1" style="display:none" />-->
-                                            <label class="switchCampaignPage switchCampaignPageQr" >
+                                            <label class="switchCampaignPage switchCampaignPageCenter switchCampaignPageQr" >
                                                 <input type="checkbox" id='btnqrdark'>
                                                 <span class="slider round"></span>
                                             </label>
@@ -1088,7 +1083,7 @@
                                         <td class="uk-width-3-10 uk-text-nowrap">Floater</td>
                                         <td class="uk-width-2-10 uk-text-nowrap">
                                             <!--<input type="checkbox" data-switchery id="switch_demo_1" style='display: none'/>-->
-                                            <label class="switchCampaignPage switchCampaignPagefloater">
+                                            <label class="switchCampaignPage switchCampaignPageCenter switchCampaignPagefloater">
                                                 <input id="btnfloater" type="checkbox">
                                                 <span class="slider round"></span>
                                             </label>
@@ -1101,7 +1096,7 @@
                                         <td class="uk-width-3-10 uk-text-nowrap">Floating Button</td>
                                         <td class="uk-width-2-10 uk-text-nowrap">
                                             <!--<input type="checkbox" data-switchery id="switch_demo_1" />-->
-                                            <label class="switchCampaignPage switchCampaignPageBtnF">
+                                            <label class="switchCampaignPage switchCampaignPageCenter switchCampaignPageBtnF">
                                                 <input id="btnfloatingbutton" type="checkbox">
                                                 <span class="slider round"></span>
                                             </label></td>
