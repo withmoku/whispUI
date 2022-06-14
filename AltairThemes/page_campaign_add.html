@@ -329,18 +329,88 @@
     <script>
         $(document).ready(function () {
             //using jQuery code
-            $('#wheelPreview').hide();
+            $('#wheelPreview').show();
+            $('#ContestWheelWrap').show();
             $('#QrDarkWrap').hide();
             $('#floaterWrap').hide();
             $('#floatingButtonWrap').hide();
+
+            $("#showOne").show();
+            $("#showTwo").hide();
+            $("#showThree").hide();
+            $("#showFour").hide();
+
+            //advance tracking
+            $('#contestinputwrap').show();
+            $('#qrdarkinputwrap').hide();
+            $('#floaterinputwrap').hide();
+            $('#floatingbuttoninputwrap').hide();
             
-            $('#remember').on('change', function (e) {
+            $('#advancecontest').on('change', function (e) {
+                if (e.currentTarget.checked) {
+                    console.log("advance track check");
+                    $('#contestinputwrap').show();
+                } else {
+                    console.log("advance track uncheck");
+                    $('#contestinputwrap').hide();
+                }
+            });
+            $('#advanceqrdark').on('change', function (e) {
+                if (e.currentTarget.checked) {
+                    console.log("advance track check");
+                    $('#qrdarkinputwrap').show();
+                } else {
+                    console.log("advance track uncheck");
+                    $('#qrdarkinputwrap').hide();
+                }
+            });
+            $('#advancefloater').on('change', function (e) {
+                if (e.currentTarget.checked) {
+                    console.log("advance track check");
+                    $('#floaterinputwrap').show();
+                } else {
+                    console.log("advance track uncheck");
+                    $('#floaterinputwrap').hide();
+                }
+            });
+            $('#advancefloatingbutton').on('change', function (e) {
+                if (e.currentTarget.checked) {
+                    console.log("advance track check");
+                    $('#floatingbuttoninputwrap').show();
+                } else {
+                    console.log("advance track uncheck");
+                    $('#floatingbuttoninputwrap').hide();
+                }
+            });
+            //END advance tracking
+
+            $('#btncontestwheel').on('change', function (e) {
                 if (e.currentTarget.checked) {
                     console.log("advance track check");
                     $('#wheelPreview').show();
+                    $('#ContestWheelWrap').show();
+                    $('#QrDarkWrap').hide();
+                    $('#floaterWrap').hide();
+                    $('#floatingButtonWrap').hide();
+
+                    $("#showOne").show();
+                    $("#showTwo").hide();
+                    $("#showThree").hide();
+                    $("#showFour").hide();
                 } else {
                     console.log("advance track uncheck");
                     $('#wheelPreview').hide();
+                    $('#ContestWheelWrap').hide();
+                    $('#QrDarkWrap').hide();
+                    $('#floaterWrap').hide();
+                    $('#floatingButtonWrap').hide();
+
+                    $("#showOne").hide();
+                    $("#showTwo").hide();
+                    $("#showThree").hide();
+                    $("#showFour").hide();
+
+               
                 }
             });
 
@@ -348,9 +418,31 @@
                 if (e.currentTarget.checked) {
                     console.log("advance track check");
                     $('#QrDarkWrap').show();
+                    $('#wheelPreview').hide();
+                    $('#ContestWheelWrap').hide();
+                    $('#floaterWrap').hide();
+                    $('#floatingButtonWrap').hide();
+
+                    $("#showOne").hide();
+                    $("#showTwo").show();
+                    $("#showThree").hide();
+                    $("#showFour").hide();
+
+                    
                 } else {
                     console.log("advance track uncheck");
                     $('#QrDarkWrap').hide();
+                    $('#wheelPreview').hide();
+                    $('#ContestWheelWrap').hide();
+                    $('#floaterWrap').hide();
+                    $('#floatingButtonWrap').hide();
+
+                    $("#showOne").hide();
+                    $("#showTwo").hide();
+                    $("#showThree").hide();
+                    $("#showFour").hide();
+
+                   
                 }
             });
 
@@ -358,9 +450,31 @@
                 if (e.currentTarget.checked) {
                     console.log("advance track check");
                     $('#floaterWrap').show();
+                    $('#wheelPreview').hide();
+                    $('#ContestWheelWrap').hide();
+                    $('#QrDarkWrap').hide();
+                    $('#floatingButtonWrap').hide();
+
+                    $("#showOne").hide();
+                    $("#showTwo").hide();
+                    $("#showThree").show();
+                    $("#showFour").hide();
+
+                    
                 } else {
                     console.log("advance track uncheck");
                     $('#floaterWrap').hide();
+                    $('#wheelPreview').hide();
+                    $('#ContestWheelWrap').hide();
+                    $('#QrDarkWrap').hide();
+                    $('#floatingButtonWrap').hide();
+
+                    $("#showOne").hide();
+                    $("#showTwo").hide();
+                    $("#showThree").hide();
+                    $("#showFour").hide();
+
+               
                 }
             });
 
@@ -368,10 +482,32 @@
                 if (e.currentTarget.checked) {
                     console.log("advance track check");
                     $('#floatingButtonWrap').show();
+                    $('#wheelPreview').hide();
+                    $('#ContestWheelWrap').hide();
+                    $('#QrDarkWrap').hide();
+                    $('#floaterWrap').hide();
+
+                    $("#showOne").hide();
+                    $("#showTwo").hide();
+                    $("#showThree").hide();
+                    $("#showFour").show();
+
+               
                 } else {
                     console.log("advance track uncheck");
                     $('#floatingButtonWrap').hide();
-                }
+                    $('#wheelPreview').hide();
+                    $('#ContestWheelWrap').hide();
+                    $('#QrDarkWrap').hide();
+                    $('#floaterWrap').hide();
+
+                    $("#showOne").hide();
+                    $("#showTwo").hide();
+                    $("#showThree").hide();
+                    $("#showFour").hide();
+
+
+                 }
             });
         })
     </script>
@@ -897,7 +1033,7 @@
         <div id="page_content_inner" class="md-30">
             <div class="uk-grid uk-grid-medium uk-grid-width-medium-1-2 uk-grid-width-large-1-3" data-uk-grid-margin="" data-uk-grid-match="{target:'.md-card-content'}">
                 <div class="uk-row-first">
-                    <div class="md-card">
+                    <div class="md-card" style="box-shadow: unset !important;">
                         <div class="md-card-content">
                             <table class="uk-table uk-table-hover">
                                 <thead>
@@ -918,8 +1054,8 @@
                                         <td class="uk-width-3-10 uk-text-nowrap"><a href="#">Contest Wheel</a></td>
                                         <td class="uk-width-2-10 uk-text-nowrap">
                                             <!--<input type="checkbox" data-switchery checked id="switch_demo_1" style='display: none' />-->
-                                            <label class="switchCampaignPage">
-                                                <input id="checkbox" type="checkbox" checked>
+                                            <label class="switchCampaignPage switchCampaignPageContest">
+                                                <input id="btncontestwheel" type="checkbox" checked>
                                                 <span class="slider round"></span>
                                             </label>
                                         </td>
@@ -931,7 +1067,7 @@
                                         <td class="uk-width-3-10 uk-text-nowrap"><a href="#">QR Dark</a></td>
                                         <td class="uk-width-2-10 uk-text-nowrap">
                                             <!--<input type="checkbox" data-switchery id="switch_demo_1" style="display:none" />-->
-                                            <label class="switchCampaignPage">
+                                            <label class="switchCampaignPage switchCampaignPageQr" >
                                                 <input type="checkbox" id='btnqrdark'>
                                                 <span class="slider round"></span>
                                             </label>
@@ -944,7 +1080,7 @@
                                         <td class="uk-width-3-10 uk-text-nowrap">Floater</td>
                                         <td class="uk-width-2-10 uk-text-nowrap">
                                             <!--<input type="checkbox" data-switchery id="switch_demo_1" style='display: none'/>-->
-                                            <label class="switchCampaignPage">
+                                            <label class="switchCampaignPage switchCampaignPagefloater">
                                                 <input id="btnfloater" type="checkbox">
                                                 <span class="slider round"></span>
                                             </label>
@@ -957,7 +1093,7 @@
                                         <td class="uk-width-3-10 uk-text-nowrap">Floating Button</td>
                                         <td class="uk-width-2-10 uk-text-nowrap">
                                             <!--<input type="checkbox" data-switchery id="switch_demo_1" />-->
-                                            <label class="switchCampaignPage">
+                                            <label class="switchCampaignPage switchCampaignPageBtnF">
                                                 <input id="btnfloatingbutton" type="checkbox">
                                                 <span class="slider round"></span>
                                             </label></td>
@@ -981,17 +1117,19 @@
                 <div class="uk-grid uk-grid-small uk-grid-width-1 uk-grid-width-medium-1-1 uk-grid-width-large-1-1 uk-grid-width-xlarge-1-1">
                     <div class="md-card">
                         <ul class="md-card-content uk-grid no-left mdCardContentAdd" data-uk-grid="{gutter: 20, controls: '#notes_grid_filter'}" id="">
-                            <li class="uk-active" data-uk-filter="label-1" id="wrapWheelcampaign">
+                            <li class="uk-active" data-uk-filter="label-1" id="ContestWheelWrap">
                                 <div class="md-card-hover md-card-overlay">
                                     <h4>Advance Tracking</h4>
                                         <label class="switchCampaignPage">
-                                            <input id="remember" type="checkbox">
+                                            <input id="advancecontest" type="checkbox">
                                             <span class="slider round"></span>
                                         </label><br /><br />
                                     <div id="wheelPreview">
-                                    <input type="text" class="md-input full_border input-whisp" placeholder="Source" />
-                                    <input type="text" class="md-input full_border input-whisp" placeholder="Affiliate" />
-                                    <input type="text" class="md-input full_border input-whisp" placeholder="Other" />
+                                    <div id="contestinputwrap">
+                                        <input type="text" class="md-input full_border input-whisp" placeholder="Source"  />
+                                        <input type="text" class="md-input full_border input-whisp" placeholder="Affiliate" />
+                                        <input type="text" class="md-input full_border input-whisp" placeholder="Other" />
+                                    </div>
                                     <h4 class="heading_c uk-margin-bottom">Preview</h4>
                                         <div style="position: relative">
                                             <div class="gg-wheel">
@@ -1012,10 +1150,15 @@
                             <li data-uk-filter="label-2" style="display: none1;" id="QrDarkWrap">
                                 <div class="md-card-hover md-card-overlay">
                                     <h4>Advance Tracking</h4>
-                                    <input type="checkbox" class="input-whisp" data-switchery checked data-switchery-color="#1e88e5" id="switch_demo_2 switchAdvanceTracking" />
-                                    <input type="text" class="md-input full_border input-whisp" placeholder="Source" />
-                                    <input type="text" class="md-input full_border input-whisp" placeholder="Affiliate" />
-                                    <input type="text" class="md-input full_border input-whisp" placeholder="Other" />
+                                    <label class="switchCampaignPage">
+                                        <input id="advanceqrdark" type="checkbox">
+                                        <span class="slider round"></span>
+                                    </label><br /><br />
+                                    <div id="qrdarkinputwrap">
+                                        <input type="text" class="md-input full_border input-whisp" placeholder="Source" />
+                                        <input type="text" class="md-input full_border input-whisp" placeholder="Affiliate" />
+                                        <input type="text" class="md-input full_border input-whisp" placeholder="Other" />
+                                        </div>
                                     <h4 class="heading_c uk-margin-bottom">Preview</h4>
                                     <div style="position: relative;">
                                         <img src="assets/img/qr.png">
@@ -1037,10 +1180,15 @@
                             <li data-uk-filter="label-3" style="display: none1;" id="floaterWrap">
                                 <div class="md-card-hover md-card-overlay">
                                     <h4>Advance Tracking</h4>
-                                    <input type="checkbox" class="input-whisp" data-switchery checked data-switchery-color="#1e88e5" id="switch_demo_2" />
-                                    <input type="text" class="md-input full_border input-whisp" placeholder="Source" />
-                                    <input type="text" class="md-input full_border input-whisp" placeholder="Affiliate" />
-                                    <input type="text" class="md-input full_border input-whisp" placeholder="Other" />
+                                    <label class="switchCampaignPage">
+                                        <input id="advancefloater" type="checkbox">
+                                        <span class="slider round"></span>
+                                    </label><br /><br />
+                                    <div id="floaterinputwrap">
+                                        <input type="text" class="md-input full_border input-whisp" placeholder="Source" />
+                                        <input type="text" class="md-input full_border input-whisp" placeholder="Affiliate" />
+                                        <input type="text" class="md-input full_border input-whisp" placeholder="Other" />
+                                    </div>
                                     <h4 class="heading_c uk-margin-bottom">Preview</h4>
                                     <div style="position: relative;">
                                         <img src="assets/img/Asset56.png">
@@ -1050,10 +1198,15 @@
                             <li data-uk-filter="label-4" style="display: none1;" id="floatingButtonWrap">
                                 <div class="md-card-hover md-card-overlay">
                                     <h4>Advance Tracking</h4>
-                                    <input type="checkbox" class="input-whisp" data-switchery checked data-switchery-color="#1e88e5" id="switch_demo_2" />
-                                    <input type="text" class="md-input full_border input-whisp" placeholder="Source" />
-                                    <input type="text" class="md-input full_border input-whisp" placeholder="Affiliate" />
-                                    <input type="text" class="md-input full_border input-whisp" placeholder="Other" />
+                                    <label class="switchCampaignPage">
+                                        <input id="advancefloatingbutton" type="checkbox">
+                                        <span class="slider round"></span>
+                                    </label><br /><br />
+                                    <div id="floatingbuttoninputwrap">
+                                        <input type="text" class="md-input full_border input-whisp" placeholder="Source" />
+                                        <input type="text" class="md-input full_border input-whisp" placeholder="Affiliate" />
+                                        <input type="text" class="md-input full_border input-whisp" placeholder="Other" />
+                                    </div>
                                     <h4 class="heading_c uk-margin-bottom">Preview</h4>
                                     <div style="position: relative;">
                                         <img src="assets/img/button.png">
@@ -1065,9 +1218,188 @@
                 </div>
                 <div class="uk-grid uk-grid-small uk-grid-width-1 uk-grid-width-medium-1-1 uk-grid-width-large-1-1 uk-grid-width-xlarge-1-1" style="margin-top: 0px !important;">
                     <div class="md-card">
+                        <select id="myselection" style="display: none;">
+                            <option>Select Option</option>
+                            <option value="One">Contest Wheel</option>
+                            <option value="Two">QR Dark</option>
+                            <option value="Three">Floater</option>
+                            <option value="Four">Floating Button</option>
+                        </select>
+                        <div id="showOne" class="myDiv">
+                            <div class="md-card-content uk-grid no-left" data-uk-grid="{controls: '#notes_grid_filter'}">
+                                <div class="uk-active" data-uk-filter="label-1" text-align: center;" id="showOne">
+                                    <div class="md-card-hover md-card-overlay" id="whispconfig">
+                                        <h4>Contest Wheel</h4>
+                                        <div class="md-card" style='box-shadow: unset !important;'>
+                                            <label class="whisp_title token bold">Whisp Configuration</label>
+                                            <div style="position: relative;">
+                                                <div class="gg-wheel wheel-small">
+                                                    <div class="gg-wheel__center"></div>
+                                                    <ul class="gg-list">
+                                                        <li><strong class="gg-list__content">Free Demo</strong></li>
+                                                        <li><strong class="gg-list__content">1 Month Free</strong></li>
+                                                        <li><strong class="gg-list__content">Free Demo</strong></li>
+                                                        <li><strong class="gg-list__content">2 Months Free</strong></li>
+                                                        <li><strong class="gg-list__content">Free Demo</strong></li>
+                                                        <li><strong class="gg-list__content">1 Month Free</strong></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="color-picker">
+                                                <label>Choose Color</label><br>
+                                                <div id="kUI_color_picker"></div>
+                                            </div>
+                                            <input type="text" class="md-input full_border input-whisp" placeholder="Content" />
+                                        </div>
+                                        <a class="md-btn md-btn-primary md-btn-block md-btn-wave-light waves-effect waves-button waves-light" href="javascript:void(0)">Create Whisp</a>
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>
+                        <div id="showTwo" class="myDiv">
+                            <div class="">
+                                <h4>QR Dark</h4>
+                                <div class="md-card" style="text-align: left;">
+                                    <h4 class="whisp_title token bold">Whisp Configuration</h4>
+                                    <label>Background Opacity</label>
+                                    <input type="text" id="ionslider_1" name="ionslider_1" class="ion-slider" data-min1="0" data-max="100" data-from="50" />
+                                    <input type="text" class="md-input full_border input-whisp" placeholder="Content" />
+                                    <label>Choose Color</label><br>
+                                    <input id="colorpicker" type="color" />
+                                </div>
+                                <a class="md-btn md-btn-primary md-btn-block md-btn-wave-light waves-effect waves-button waves-light" href="javascript:void(0)">Create Whisp</a>
+                            </div>
+                        </div>
+                        <div id="showThree" class="myDiv">
+                            <div class="">
+                                <h4>QR Dark</h4>
+                                <div class="md-card" style="text-align: left;">
+                                    <h4 class="whisp_title token bold">Whisp Configuration</h4>
+                                    <label>Background Opacity</label>
+                                    <input type="text" id="ionslider_1" name="ionslider_1" class="ion-slider" data-min1="0" data-max="100" data-from="50" />
+                                    <input type="text" class="md-input full_border input-whisp" placeholder="Content" />
+                                    <label>Choose Color</label><br>
+                                    <input id="colorpicker" type="color" />
+                                </div>
+                                <a class="md-btn md-btn-primary md-btn-block md-btn-wave-light waves-effect waves-button waves-light" href="javascript:void(0)">Create Whisp</a>
+                            </div>
+                        </div> 
+                        <div id="showFour" class="myDiv">
+                            <div class="">
+                                <h4>QR Dark</h4>
+                                <div class="md-card" style="text-align: left;">
+                                    <h4 class="whisp_title token bold">Whisp Configuration</h4>
+                                    <div class="md-card-content">
+                                        <div class="uk-grid" data-uk-grid-margin="">
+                                            <div class="uk-width-medium-1-2 uk-row-first">
+                                                <p>
+                                                    <div class="md-input-wrapper md-input-filled">
+                                                        <label>Text</label><input type="text" class="md-input input_button label-fixed"></div>
+                                                </p>
+                                                <p>
+                                                    <div class="md-input-wrapper md-input-filled"><select id="select_demo_2" class="md-input" data-uk-tooltip="{pos:'top'}">
+                                                            <option value="" disabled="" selected="" hidden="">Select...</option>
+                                                            <option value="a">Item A</option>
+                                                            <option value="b">Item B</option>
+                                                            <option value="c">Item C</option>
+                                                        </select><span class="md-input-bar "></span></div>
+                                                </p>
+                                                <p>
+                                                    <div class="uk-grid" data-uk-grid-margin="">
+                                                        <div class="uk-width-medium-1-2">
+                                                            <div class="md-input-wrapper md-input-filled"><input type="text" class="md-input input_button" placeholder="10"><span class="md-input-bar"></span></div>
+                                                        </div>
+                                                        <div class="uk-width-medium-1-2">
+                                                            <div class="md-input-wrapper md-input-filled"><select id="select_demo_2" class="md-input input_button" data-uk-tooltip="{pos:'top'}">
+                                                                    <option value="" disabled="" selected="" hidden="">Select...</option>
+                                                                    <option value="a">Semi Bold</option>
+                                                                    <option value="b">Bold</option>
+                                                                </select><span class="md-input-bar "></span></div>
+                                                        </div>
+                                                    </div>
+                                                </p>
+                                                
+                                            </div>
+                                            <div class="uk-width-medium-1-2">
+                                                <p>
+                                                    <div class="uk-grid" data-uk-grid-margin="">
+                                                        <div class="uk-width-medium-1-2">
+                                                            <div class="md-input-wrapper md-input-filled"><label>Scale</label><input type="text" placeholder="H" class="md-input input_button label-fixed"><span class="md-input-bar "></span></div>
+                                                        </div>
+                                                        <div class="uk-width-medium-1-2">
+                                                            <div class="md-input-wrapper md-input-filled"><label></label><input type="text" placeholder="W" class="md-input input_button label-fixed"><span class="md-input-bar "></span></div>
+                                                        </div>
+                                                    </div>
+                                                </p>
+                                                <p>
+                                                    <div class="md-input-wrapper md-input-filled">
+                                                        <h4>Corner Radius</h4><span class="md-input-bar "></span>
+                                                    </div>
+                                                </p>
+                                                <p>
+                                                    <div class="uk-grid" data-uk-grid-margin="">
+                                                        <div class="uk-width-medium-1-2">
+                                                            <label class="radio_label" style="margin-right: 10px;">
+                                                                <input type="radio" name="radio_demo" class="radio_input" id="radio_demo_1" data-md-icheck />
+                                                                <span class="radio_span"></span>
+                                                            </label>
+                                                            <label class="radio_label">
+                                                                <input type="radio" name="radio_demo" class="radio_input" id="radio_demo_1" data-md-icheck />
+                                                                <span class="radio_span"></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="uk-width-medium-1-2">
+                                                            <div class="md-input-wrapper md-input-filled"><label></label><input type="text" class="md-input input_button label-fixed"><span class="md-input-bar "></span></div>
+                                                        </div>
+                                                    </div>
+                                                </p>
+                                            </div>
+                                            <div class="uk-width-medium-1-2">
+                                                    <label class="radio_label">
+                                                        <span class="radio_span">Fill Color</span>
+                                                        <input type="radio" name="radio_demo" class="radio_input" id="radio_demo_1" data-md-icheck />
+                                                        
+                                                    </label>
+                                                    
+                                                </div>
+                                                <div class="uk-width-medium-1-2">
+                                                    <label class="radio_label">
+                                                        <span class="radio_span">Text Color</span>
+                                                        <input type="radio" name="radio_demo" class="radio_input" id="radio_demo_1" data-md-icheck />
+                                                        
+                                                    </label>
+                                                </div>
+                                        </div>
+                                    </div>
+                                    <label>Choose Color</label><br>
+                                    <input id="colorpicker" type="color" />
+                                </div>
+                                <a class="md-btn md-btn-primary md-btn-block md-btn-wave-light waves-effect waves-button waves-light" href="javascript:void(0)">Create Whisp</a>
+                            </div>
+                        </div> 
+
+                        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>      
+                        <script>
+                        $(document).ready(function(){
+                            $("#showOne").show();
+                            $("#showTwo").hide();
+                            $("#showThree").hide();
+                            $("#showFour").hide();
+                            $('#myselection').on('change', function(){
+                                var demovalue = $(this).val(); 
+                                $("div.myDiv").hide();
+                                $("#show"+demovalue).show();
+                                if (demovalue == "One") {
+                                    $("#showOne").show();
+                                }
+                            });
+                        });
+                        </script> 
+
+                
                         <ul class="md-card-content uk-grid no-left" data-uk-grid="{controls: '#notes_grid_filter'}">
-                            <li class="uk-active" data-uk-filter="label-1" text-align: center;" id="contestWheel">
-                                <div class="md-card-hover md-card-overlay">
+                            <li class="uk-active" data-uk-filter="label-1" text-align: center;" id="showOne" style="display: none;">
+                                <div class="md-card-hover md-card-overlay" id="whispconfig">
                                     <h4>Contest Wheel</h4>
                                     <div class="md-card" style='box-shadow: unset !important;'>
                                         <label class="whisp_title token bold">Whisp Configuration</label>
@@ -1120,6 +1452,7 @@
                                     </div>
                                     <a class="md-btn md-btn-primary md-btn-block md-btn-wave-light waves-effect waves-button waves-light" href="javascript:void(0)">Create Whisp</a>
                                 </div>
+                            </li>
                             <li class="config_content" data-uk-filter="label-4" style="display: none;">
                                 <div class="">
                                     <h4>QR Dark</h4>

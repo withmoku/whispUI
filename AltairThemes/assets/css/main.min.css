@@ -15093,6 +15093,11 @@ html {
       height: unset !important;
   }
 
+  .myDiv{
+	display:none;
+    padding:10px;
+}  
+
   /*RESPOSNSIVE*/
   @media screen and (min-width: 1366px) {
     html {
