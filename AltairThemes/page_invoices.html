@@ -73,8 +73,29 @@
             text-align: right;
             padding-right: 30px;
         }
+        .invoices_list{
+            padding: 20px;
+        }
         #invoice_add{
             background: #1e88e5 !important;
+        }
+        hr{
+                border-top: 1px solid #000000;
+        }
+        .uk-table td{
+            border-bottom-color: #000000;
+        }
+        .uk-table thead th{
+            border-bottom: 1px solid rgb(0 0 0);
+        }
+        .uk-text-large{
+            font-weight: 900;
+        }
+        .wise_label{
+            color: #40b2e3;
+        }
+        .md-list > li{
+            border-bottom: 1px solid rgb(0 0 0);
         }
     </style>
 </head>
@@ -643,7 +664,7 @@
         
                                 <li>
                                     <a href="#" class="md-list-content" data-invoice-id="3">
-                                        <span class="uk-badge uk-badge-primary">Header/Footer</span>
+                                       
                                         <span class="md-list-heading uk-text-truncate">Invoice 32/2015 <span class="uk-text-small uk-text-muted">(8 Mar)</span></span>
                                         <span class="uk-text-small uk-text-muted">Herzog Inc</span>
                                     </a>
@@ -652,7 +673,7 @@
         
                                 <li>
                                     <a href="#" class="md-list-content" data-invoice-id="4">
-                                        <span class="uk-badge uk-badge-danger">Overdue</span>
+                                       
                                         <span class="md-list-heading uk-text-truncate">Invoice 160/2015 <span class="uk-text-small uk-text-muted">(7 Mar)</span></span>
                                         <span class="uk-text-small uk-text-muted">Langworth, Spinka and Schulist</span>
                                     </a>
@@ -677,7 +698,7 @@
         
                                 <li>
                                     <a href="#" class="md-list-content" data-invoice-id="7">
-                                        <span class="uk-badge uk-badge-primary">Header/Footer</span>
+                                        
                                         <span class="md-list-heading uk-text-truncate">Invoice 14/2015 <span class="uk-text-small uk-text-muted">(4 Mar)</span></span>
                                         <span class="uk-text-small uk-text-muted">Spencer LLC</span>
                                     </a>
@@ -712,7 +733,7 @@
         
                                 <li>
                                     <a href="#" class="md-list-content" data-invoice-id="12">
-                                        <span class="uk-badge uk-badge-danger">Overdue</span>
+                                       
                                         <span class="md-list-heading uk-text-truncate">Invoice 85/2015 <span class="uk-text-small uk-text-muted">(9 Feb)</span></span>
                                         <span class="uk-text-small uk-text-muted">Murazik PLC</span>
                                     </a>
@@ -737,7 +758,7 @@
         
                                 <li>
                                     <a href="#" class="md-list-content" data-invoice-id="15">
-                                        <span class="uk-badge uk-badge-danger">Overdue</span>
+                                        
                                         <span class="md-list-heading uk-text-truncate">Invoice 85/2015 <span class="uk-text-small uk-text-muted">(12 Oct)</span></span>
                                         <span class="uk-text-small uk-text-muted">Green-O'Hara</span>
                                     </a>
@@ -924,7 +945,7 @@
                                     </tbody>
                                 </table><br /><br />
                                 <div class="uk-grid sec">
-                                    <div class="uk-width-small-1-2">
+                                    <div class="uk-width-small-1-3">
                                         <b>Payment Method</b><br /><br />
                                         <div>
                                             <p>Select Payment: <b>Wire Transfer</b></p>
@@ -933,7 +954,13 @@
                                             <p>Tracking Number: <b>0000-000-00RN</b></p>
                                         </div>  
                                     </div>
-                                    <div class="uk-width-small-1-2">
+                                    <div class="uk-width-small-1-3">
+                                        <b class="wise_label">Select Payment</b><br /><br />
+                                        <div>
+                                            <img src="./assets/img/wise.png" width="100">
+                                        </div>  
+                                    </div>
+                                    <div class="uk-width-small-1-3">
                                         <table class="uk-table">
                                             <tbody>
                                                 <tr class="uk-table-middle">
