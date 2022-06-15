@@ -85,6 +85,9 @@
         .uk-table td{
             border-bottom-color: #000000;
         }
+        .uk-table td.no_border{
+            border-bottom-color: transparent;
+        }
         .uk-table thead th{
             border-bottom: 1px solid rgb(0 0 0);
         }
@@ -97,6 +100,17 @@
         .md-list > li{
             border-bottom: 1px solid rgb(0 0 0);
         }
+        .tbl_padding{
+            padding: 20px !important;
+        }
+        .grid-block{
+            background: none;
+        }
+        .inline_grid{
+            display: inline-grid;
+        }
+
+        
     </style>
 </head>
 <body class="disable_transitions sidebar_main_open sidebar_main_swipe header_double_height">
@@ -907,38 +921,38 @@
                                     </thead>
                                     <tbody>
                                         <tr class="uk-table-middle">
-                                            <td>
+                                            <td class="tbl_padding">
                                                 <span class="uk-text-large">Website design & development</span><br/>
                                                 <span class="uk-text-muted uk-text-small">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
                                             </td>
-                                            <td>
+                                            <td class="tbl_padding">
                                                 $25.00
                                             </td>
-                                            <td class="uk-text-center">
+                                            <td class="uk-text-center tbl_padding">
                                                 32
                                             </td>
-                                            <td class="uk-text-center">
+                                            <td class="uk-text-center tbl_padding">
                                                 23%
                                             </td>
-                                            <td class="uk-text-center">
+                                            <td class="uk-text-center tbl_padding">
                                                 $984.00
                                             </td>
                                         </tr>
                                         <tr class="uk-table-middle">
-                                            <td>
+                                            <td class="tbl_padding">
                                                 <span class="uk-text-large">Search engine optimization</span><br/>
                                                 <span class="uk-text-muted uk-text-small">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
                                             </td>
-                                            <td>
+                                            <td class="tbl_padding">
                                                 $50.00
                                             </td>
-                                            <td class="uk-text-center">
+                                            <td class="uk-text-center tbl_padding">
                                                 20
                                             </td>
-                                            <td class="uk-text-center">
+                                            <td class="uk-text-center tbl_padding">
                                                 $100.00
                                             </td>
-                                            <td class="uk-text-center">
+                                            <td class="uk-text-center tbl_padding">
                                                 $1,537.00
                                             </td>
                                         </tr>
@@ -964,18 +978,18 @@
                                         <table class="uk-table">
                                             <tbody>
                                                 <tr class="uk-table-middle">
-                                                    <td>
+                                                    <td class="no_border">
                                                         <span class="uk-text-large">Sub Total</span>
                                                     </td>
-                                                    <td>
+                                                    <td class="no_border">
                                                         <span class="uk-text-large">$3,050.00</span>
                                                     </td>
                                                 </tr>
                                                 <tr class="uk-table-middle">
-                                                    <td>
+                                                    <td class="no_border">
                                                         <span class="uk-text-large">Discount</span>
                                                     </td>
-                                                    <td>
+                                                    <td class="no_border">
                                                         <span class="uk-text-large">$0</span>
                                                     </td>
                                                 </tr>
@@ -988,10 +1002,10 @@
                                                     </td>
                                                 </tr>
                                                 <tr class="uk-table-middle">
-                                                    <td>
+                                                    <td class="no_border">
                                                         <span class="uk-text-large"><b>Total</b></span>
                                                     </td>
-                                                    <td>
+                                                    <td class="no_border">
                                                         <span class="uk-text-large"><b>$3,751.50</b></span>
                                                     </td>
                                                 </tr>
@@ -1046,15 +1060,15 @@
             <div class="md-card-content large-padding">
                 <div class="uk-grid" data-uk-grid-margin>
                     <div class="uk-width-medium-1-2">
-                        <label class="uk-form-label" for="hobbies">Issue date:</label>
+                        <h4 class="uk-form-label" for="hobbies">Issue date:</h4>
                         <div class="uk-input-group">
                             <span class="uk-input-group-addon"><i class="uk-input-group-icon uk-icon-calendar"></i></span>
                             <label for="invoice_dp">Select date</label>
                             <input class="md-input" type="text" id="invoice_dp" value="" data-uk-datepicker="{format:'DD.MM.YYYY'}">
                         </div>
                     </div>
-                    <div class="uk-width-medium-1-2">
-                        <label class="uk-form-label uk-margin-bottom" for="hobbies">Due date (days):</label>
+                    <div class="uk-width-medium-1-2 inline_grid">
+                        <h4 class="uk-form-label uk-margin-bottom" for="hobbies">Due date (days):</h4>
                         <span class="icheck-inline">
                             <input type="radio" name="invoice_due_date" id="invoice_due_date_7" data-md-icheck />
                             <label for="invoice_due_date_7" class="inline-label">7</label>
@@ -1071,7 +1085,7 @@
                 </div>
                 <div class="uk-grid uk-grid-divider grid-block" data-uk-grid-margin>
                     <div class="uk-width-medium-1-2">
-                        <label class="uk-form-label uk-margin-bottom" for="hobbies">From:</label>
+                        <h4 class="uk-form-label uk-margin-bottom" for="hobbies">From:</h4>
                         <div class="uk-form-row">
                             <label for="invoice_from_company">Company Name</label>
                             <input type="text" class="md-input" id="invoice_from_company" name="invoice_from_company"/>
@@ -1086,7 +1100,7 @@
                         </div>
                     </div>
                     <div class="uk-width-medium-1-2">
-                        <label class="uk-form-label uk-margin-bottom" for="hobbies">To:</label>
+                        <h4 class="uk-form-label uk-margin-bottom" for="hobbies">To:</h4>
                         <div class="uk-form-row">
                             <label for="invoice_to_company">Company Name</label>
                             <input type="text" class="md-input" id="invoice_to_company" name="invoice_to_company"/>
