@@ -4825,3 +4825,7 @@ table.k-editor {
 .k-picker-wrap .k-input {
     border-radius: 10px 0 0 10px;
 }
+.k-menu-item{
+    margin-right: 30px;
+    font-weight: 900;
+}
