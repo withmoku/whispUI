@@ -11671,6 +11671,7 @@ a.editable-click.editable-disabled:hover {
 #header_main .sSwitch.sSwitch_left {
     float: left;
     margin-right: 16px;
+    margin-top: 20px;
 }
 #header_main .sSwitch.sSwitch_left:before {
     left: -8px;
