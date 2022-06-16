@@ -11870,11 +11870,12 @@ a.editable-click.editable-disabled:hover {
 }
 #sidebar_main .menu_section > ul > li > a {
     font: 400 12px Roboto, sans-serif;
-    color: #212121;
+    color: #a4afb9;
     padding: 8px 20px;
     display: block;
     overflow: hidden;
     position: relative;
+    font-size: 16px;
 }
 @media only screen and (max-width: 767px) {
     #sidebar_main .menu_section > ul > li > a {
@@ -11916,7 +11917,7 @@ a.editable-click.editable-disabled:hover {
     color: #32a9de;
 }
 #sidebar_main .menu_section > ul > li.current_section > a .menu_title {
-    color: #32a9de;
+    color: #37aade;
 }
 #sidebar_main .menu_section > ul > li ul {
     margin: 0;
@@ -11995,10 +11996,10 @@ a.editable-click.editable-disabled:hover {
 #sidebar_main .sidebar_main_header {
     padding-top: 30px;
     padding-bottom: 20px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    /*border-bottom: 1px solid rgba(0, 0, 0, 0.12);*/
     margin-bottom: 20px;
     position: relative;
-    background-color: #eff8fc;
+    background-color: #ffffff !important;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
     only screen and (min-device-pixel-ratio: 2),
@@ -14814,6 +14815,7 @@ address p + p {
 }
 .mail_content{
     width: 95% !important;
+    border-radius: 10px 10px 0px 0px;
 }
 /*****end mailbox edit******/
 
