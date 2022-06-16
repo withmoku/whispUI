@@ -42,7 +42,11 @@
         <script type="text/javascript" src="bower_components/matchMedia/matchMedia.addListener.js"></script>
         <link rel="stylesheet" href="assets/css/ie.css" media="all">
     <![endif]-->
-
+    <style type="text/css">
+        .md-input-wrapper{
+            width: 40% !important;
+        }
+    </style>
 </head>
 <body class="disable_transitions sidebar_main_open sidebar_main_swipe">
     <!-- main header -->
@@ -585,9 +589,10 @@
                     <div class="uk-grid" data-uk-grid-margin>
                         <div class="uk-width-large-1-2">
                             <form class="uk-form-stacked">
+                                <h3 for="kUI_automplete">Choose shipping countries:</h3>
                                 <div class="uk-form-row">
-                                    <label for="kUI_automplete" class="uk-form-label">Choose shipping countries:</label>
-                                    <input class="uk-width-1-1 md-input" />
+                                    
+                                    <input class="uk-width-1-1 md-input" placeholder="Select Country" />
                                 </div>
                             </form>
                         </div>
@@ -635,8 +640,9 @@ var autoComplete = $(selector).kendoAutoComplete({
                     <div class="uk-grid" data-uk-grid-margin>
                         <div class="uk-width-large-1-2">
                             <form class="uk-form-stacked">
+                                <h3 for="kUI_automplete">Contacts:</h3>
                                 <div class="uk-form-row">
-                                    <label for="kUI_automplete_template" class="uk-form-label">Contacts:</label>
+                                    
                                     <input class=" md-input" />
                                     <span class="uk-form-help-block">Hint: type "am" or "wi"</span>
                                 </div>
