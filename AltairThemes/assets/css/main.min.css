@@ -15105,6 +15105,31 @@ html {
     display: none;
   }
 
+  .main_login_wrap {
+    background: url('https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/62a9ad019c8cd9bfd343e821.jpeg') !important;
+    background-color: #fcfcfc !important;
+    background-size: 100% !important;
+    background-position: bottom !important;
+    background-repeat: no-repeat !important;
+}
+
+.main_login_wrap .login_page_wrapper {
+    width: 800px;
+    padding-top: 100px;
+}
+
+.btn-signin-login {
+    background: hotpink !important;
+    border-radius: 10px !important;
+}
+
+.btn-signin-signup {
+    background: #26a9e0 !important;
+    border-radius: 10px !important;
+}
+
+
+
   /*RESPOSNSIVE*/
   @media screen and (min-width: 1366px) {
     html {
