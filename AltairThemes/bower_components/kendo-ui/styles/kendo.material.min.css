@@ -487,7 +487,8 @@
 .k-calendar {
     border-color: #e6e6e6;
     color: #444;
-    background-color: #fff
+    background-color: #fff;
+    padding: 20px;
 }
 
 .k-calendar>.k-header {
