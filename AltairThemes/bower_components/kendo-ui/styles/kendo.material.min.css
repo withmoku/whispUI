@@ -4832,3 +4832,25 @@ table.k-editor {
 .k-autocomplete .k-input, .k-multiselect-wrap, .k-textbox>input{
     border-radius: 10px;
 }
+.k-radius, .k-radius ul{
+    border-radius: 10px;
+}
+.k-radius ul li:first-child{
+    background-color: none !important;
+    background: none !important;
+}
+.k-radius ul li:last-child{
+    background-color: none !important;
+    background: none !important;
+    
+}
+.k-radius ul li:last-child span{
+    border-bottom: #e6e6e6 !important;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+}
+.k-radius ul li:first-child span{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
