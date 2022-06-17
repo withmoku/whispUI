@@ -7547,10 +7547,9 @@ pre[class*="language-"] {
 }
 pre[class*="language-"] > code {
     position: relative;
-    border-left: 10px solid #358ccb;
-    box-shadow: -1px 0 0 0 #358ccb, 0 0 0 1px #dfdfdf;
+    /*box-shadow: -1px 0 0 0 #358ccb, 0 0 0 1px #dfdfdf;*/
     background-color: #fdfdfd;
-    background-image: linear-gradient(transparent 50%, rgba(69, 142, 209, 0.04) 50%);
+    background-image: linear-gradient(#f6f7f9 50%, #e6ebf1 50%);
     background-size: 3em 3em;
     background-origin: content-box;
     background-attachment: local;
@@ -7680,6 +7679,9 @@ pre[class*="language-"].line-numbers.line-numbers {
 }
 pre[class*="language-"].line-numbers.line-numbers code {
     padding-left: 3.8em;
+    border: solid 1px #e0e2e5 !important;
+    border-radius: 20px;
+    padding-left: 50px;
 }
 pre[class*="language-"].line-numbers.line-numbers .line-numbers-rows {
     left: 0;
@@ -13449,6 +13451,11 @@ a.editable-click.editable-disabled:hover {
     overflow-y: hidden;
     overflow-x: auto;
 }
+
+.mdInputWrapper .md-input-wrapper input {
+    border-bottom: solid 2px #96a0b5;
+}
+
 @media only screen and (min-width: 768px) {
     #chatbox_wrapper {
         text-align: right;
@@ -15125,7 +15132,27 @@ html {
     border-radius: 10px !important;
 }
 
+/*kendo ui*/
+.md-card .md-card-content {
+    padding: 60px;
+}
 
+.uk-form-stacked h3 {
+    color: #0e233b !important;
+    font-weight: bold !important;
+    font-size: 20px !important;
+}
+
+.mdInputWrapper .md-input-wrapper {
+    width: 70% !important;
+}
+
+.language-javascript {
+    border: 0px !important;
+}
+ 
+
+/*end kendo ui*/
 
   /*RESPOSNSIVE*/
   @media screen and (min-width: 1366px) {
