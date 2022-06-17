@@ -6338,7 +6338,7 @@ label.md-label {
     -moz-osx-font-smoothing: grayscale;
     font-feature-settings: "liga";
     vertical-align: -4px;
-    color: rgba(0, 0, 0, 0.54);
+    color: #32a9de;
 }
 .material-icons.md-inactive {
     color: rgba(0, 0, 0, 0.26);
@@ -14578,6 +14578,15 @@ address p + p {
     min-height: 100%;
     overflow-y: auto;
 }
+.uiPickerColorWrap .material-icons {
+    width: 10px !important;
+    font-size: 40px !important;
+}
+
+.uiPickerColorWrap  .uk-width-medium-1-5 {
+    border: solid 0px !important;
+}
+
 @media only screen and (min-width: 1220px) {
     .boxed_layout #page_content {
         max-width: 1220px;
@@ -15150,6 +15159,32 @@ html {
 .language-javascript {
     border: 0px !important;
 }
+
+.uiPickerColorWrap .uk-grid-divider>* {
+    text-align: left !important;
+}
+
+.WrapkUIcolorpalette #kUI_color_palette{
+    width: 105% !important;
+}
+
+.WrapkUIcolorpalette .k-colorpalette {
+    border: solid 1px #dcdee0 !important;
+}
+
+.WrapkUIcolorpalette .k-item {
+    width: 20px !important;
+    height: 20px !important;
+    float: left;
+    margin: 5px;
+}
+
+.WrapkUIcolorpalette tr {
+    float: left;
+}
+
+
+ 
  
 
 /*end kendo ui*/
