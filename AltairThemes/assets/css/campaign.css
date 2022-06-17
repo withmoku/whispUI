@@ -258,6 +258,10 @@
     font-size: 14px;
 }
 
+#ContestWheelWrap {
+    position: relative !important;
+}
+
 @media only screen and (min-width: 600px) {
     .gg-list__content {
         font-size: 20px;
