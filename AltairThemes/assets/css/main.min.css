@@ -15187,8 +15187,24 @@ html {
     float: left;
 }
 
-
+.wrapComboBox .k-input, .wrapComboBox .k-dropdown-wrap, .wrapComboBox .k-widget,
+.wrapComboBox .k-list {
+    border-radius: 100px !important;
+}
  
+.wrapComboBox label {
+    font-size: 16px !important;
+    font-weight: bold !important;
+    color: #000000 !important;
+}
+
+.k-animation-container {
+    margin-top: 10px !important;
+}
+
+.wrapComboBox .k-reset {
+    border-radius: 50px !important;
+}
  
 
 /*end kendo ui*/

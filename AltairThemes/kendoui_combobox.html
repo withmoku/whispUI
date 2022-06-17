@@ -597,7 +597,7 @@
     </aside><!-- main sidebar end -->
 
     <div id="page_content">
-        <div id="page_content_inner">
+        <div id="page_content_inner" class="wrapComboBox">
             <div class="md-card">
                 <div class="md-card-content">
                     <div class="uk-grid" data-uk-grid-margin>
@@ -608,20 +608,20 @@
                             </form>
                         </div>
                         <div class="uk-width-large-1-2">
-<pre class="line-numbers"><code class="language-javascript">// create ComboBox from input HTML element
-$('input').kendoComboBox({
-  dataTextField: "text",
-  dataValueField: "value",
-  dataSource: [
-    { text: "Cotton", value: "1" },
-    { text: "Polyester", value: "2" },
-    { text: "Cotton/Polyester", value: "3" },
-    { text: "Rib Knit", value: "4" }
-  ],
-  filter: "contains",
-  suggest: true,
-  index: 3
-});</code></pre>
+                            <pre class="line-numbers"><code class="language-javascript">// create ComboBox from input HTML element
+                            $('input').kendoComboBox({
+                            dataTextField: "text",
+                            dataValueField: "value",
+                            dataSource: [
+                                { text: "Cotton", value: "1" },
+                                { text: "Polyester", value: "2" },
+                                { text: "Cotton/Polyester", value: "3" },
+                                { text: "Rib Knit", value: "4" }
+                            ],
+                            filter: "contains",
+                            suggest: true,
+                            index: 3
+                            });</code></pre>
                         </div>
                     </div>
                 </div>
