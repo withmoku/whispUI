@@ -487,7 +487,8 @@
 .k-calendar {
     border-color: #e6e6e6;
     color: #444;
-    background-color: #fff
+    background-color: #fff;
+    padding: 20px;
 }
 
 .k-calendar>.k-header {
@@ -4806,7 +4807,7 @@ table.k-editor {
 
 /*# sourceMappingURL=kendo.material.min.css.map */
 /*******Update CSS**********/
-.k-picker-wrap {
+.k-autocomplete, .k-block, .k-calendar-container, .k-colorpicker, .k-combobox, .k-datepicker, .k-datetimepicker, .k-drag-clue, .k-dropdown, .k-dropdown-wrap, .k-editor-inline, .k-grid .k-filter-options, .k-grouping-header .k-group-indicator, .k-inline-block, .k-list-container, .k-multiselect, .k-numeric-wrap, .k-numerictextbox, .k-picker-wrap, .k-slider-selection, .k-slider-track, .k-textbox, .k-tile, .k-timepicker, .k-tooltip, .k-touch-scrollbar, .k-treeview .k-in, .k-upload, .k-window, .k-window-action, .k-window-titleless .k-window-content {
     border-radius: 10px !important;
 }
 
@@ -4823,4 +4824,8 @@ table.k-editor {
 
 .k-picker-wrap .k-input {
     border-radius: 10px 0 0 10px;
+}
+.k-menu-item{
+    margin-right: 30px;
+    font-weight: 900;
 }
