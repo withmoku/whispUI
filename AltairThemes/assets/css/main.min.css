@@ -15172,6 +15172,10 @@ html {
     border: solid 1px #dcdee0 !important;
 }
 
+.WrapkUIcolorpalette .uk-width-medium-1-2{
+    border: 0px !important;
+}
+
 .WrapkUIcolorpalette .k-item {
     width: 20px !important;
     height: 20px !important;
