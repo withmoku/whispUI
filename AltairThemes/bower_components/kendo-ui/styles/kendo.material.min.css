@@ -4829,3 +4829,6 @@ table.k-editor {
     margin-right: 30px;
     font-weight: 900;
 }
+.k-autocomplete .k-input, .k-multiselect-wrap, .k-textbox>input{
+    border-radius: 10px;
+}
