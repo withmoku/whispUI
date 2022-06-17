@@ -4854,3 +4854,8 @@ table.k-editor {
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
 }
+
+.k-separator{
+    border-width: 10px 0px 0px 1px !important;
+    border-color: #000000 !important;
+}
