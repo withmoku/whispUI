@@ -15198,8 +15198,8 @@ html {
     color: #000000 !important;
 }
 
-.k-animation-container {
-    margin-top: 10px !important;
+.wrapComboBox .k-animation-container {
+    margin-top: 20px !important;
 }
 
 .wrapComboBox .k-reset {
