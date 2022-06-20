@@ -15222,6 +15222,25 @@ html {
     padding: 55px !important;
 }
 
+.componentsModalWrap h3 {
+    color: #0e233b;
+}
+
+.componentsModalWrap .uk-text-large {
+    color: #3f5063;
+}
+
+.componentsModalWrap .md-btn {
+    border: solid 2px #74808b !important;
+    border-radius: 10px !important;
+    padding: 4px 50px 1px 50px !important;
+    color: #66737f;
+}
+
+.componentsModalWrap .md-card-content {
+    margin-bottom:30px;
+}
+
   /*RESPOSNSIVE*/
   @media screen and (min-width: 1366px) {
     html {
