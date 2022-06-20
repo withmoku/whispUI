@@ -25,6 +25,8 @@
     <!-- themes -->
     <link rel="stylesheet" href="assets/css/themes/themes_combined.min.css" media="all">
     <link rel="stylesheet" href="assets/css/campaign.css" media="all">
+
+ 
     <!-- matchMedia polyfill for testing media queries in JS -->
     <!--[if lte IE 9]>
         <script type="text/javascript" src="bower_components/matchMedia/matchMedia.js"></script>
@@ -70,115 +72,6 @@
 </head>
 
 <body class="disable_transitions sidebar_main_open sidebar_main_swipe">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            //using jQuery code
-            $('#contestinputwrapModal').hide();
-            $('#wheelPreview').show();
-            $('#ContestWheelWrap').show();
-            $('#QrDarkWrap').hide();
-            $('#floaterWrap').hide();
-            $('#floatingButtonWrap').hide();
-
-            $("#showOne").show();
-            $("#showTwo").hide();
-            $("#showThree").hide();
-            $("#showFour").hide();
-
-            //advance tracking
-            $('#contestinputwrap').hide();
-            $('#qrdarkinputwrap').hide();
-            $('#floaterinputwrap').hide();
-            $('#floatingbuttoninputwrap').hide();
-            
-            $('#advancecontestModal').on('change', function (e) {
-                if (e.currentTarget.checked) {
-                    console.log("advance track check");
-                    $('#contestinputwrapModal').show();
-                } else {
-                    console.log("advance track uncheck");
-                    $('#contestinputwrapModal').hide();
-                }
-            });
-
-            $('#advancecontest').on('change', function (e) {
-                if (e.currentTarget.checked) {
-                    console.log("advance track check");
-                    $('#contestinputwrap').show();
-                } else {
-                    console.log("advance track uncheck");
-                    $('#contestinputwrap').hide();
-                }
-            });
-
-            $('#advanceqrdark').on('change', function (e) {
-                if (e.currentTarget.checked) {
-                    console.log("advance track check");
-                    $('#qrdarkinputwrap').show();
-                } else {
-                    console.log("advance track uncheck");
-                    $('#qrdarkinputwrap').hide();
-                }
-            });
-            $('#advancefloater').on('change', function (e) {
-                if (e.currentTarget.checked) {
-                    console.log("advance track check");
-                    $('#floaterinputwrap').show();
-                } else {
-                    console.log("advance track uncheck");
-                    $('#floaterinputwrap').hide();
-                }
-            });
-            $('#advancefloatingbutton').on('change', function (e) {
-                if (e.currentTarget.checked) {
-                    console.log("advance track check");
-                    $('#floatingbuttoninputwrap').show();
-                } else {
-                    console.log("advance track uncheck");
-                    $('#floatingbuttoninputwrap').hide();
-                }
-            });
-            //END advance tracking
-
-            $('#btncontestwheel').on('change', function (e) {
-                if (e.currentTarget.checked) {
-                    console.log("advance track check");
-                    $('#wheelPreview').show();
-                    $('#ContestWheelWrap').show();
-                    $('#QrDarkWrap').hide();
-                    $('#floaterWrap').hide();
-                    $('#floatingButtonWrap').hide();
-
-                    $("#showOne").show();
-                    $("#showTwo").hide();
-                    $("#showThree").hide();
-                    $("#showFour").hide();
-
-                    $(".switchCampaignPageCenter .slider").css('background','#c1272d');
-                    $(".switchCampaignPageContest .slider").css('background','#39b54a');
-
-                    $('.switchCampaignPageCenter input').prop('checked', false);
-                    $('.switchCampaignPageContest input').prop('checked', true);
-                } else {
-                    console.log("advance track uncheck");
-                    $('#wheelPreview').hide();
-                    $('#ContestWheelWrap').hide();
-                    $('#QrDarkWrap').hide();
-                    $('#floaterWrap').hide();
-                    $('#floatingButtonWrap').hide();
-
-                    $("#showOne").hide();
-                    $("#showTwo").hide();
-                    $("#showThree").hide();
-                    $("#showFour").hide();
-
-                    $(".switchCampaignPageContest .slider").css('background','#c1272d');
-                }
-            });
- 
-        })
-    </script>
     <!-- main header -->
     <header id="header_main">
         <div class="header_main_content">
@@ -855,6 +748,7 @@
                 <div>
                     <div>
                         <div class="md-card mcCardPhone" style="padding: 0px !important; background: url(assets/img/Asset8.png); background-size: 100% 100% !important; box-shadow: unset !important;">
+                         
                             <div>
                                 <p class="partop">&nbsp;</p>
                                 <p class="par01">Assumenda iure id eum officiis dolor facere eius omnis eveniet perferendis veritatis quae neque aliquam corrupti asperiores et veritatis et harum quaerat dolore fuga quidem mollitia nesciunt id id odio ullam.</p>
