@@ -15241,6 +15241,31 @@ html {
     margin-bottom:30px;
 }
 
+#kUI_calendar {
+    border-radius: 10px !important;
+}
+
+.k-calendar .k-header {
+    box-shadow: unset !important;
+    border: solid 0px !important;
+}
+
+.k-calendar .k-month th {
+    color: #b7a8a8 !important;
+}
+
+#kUI_datepicker_a, .k-picker-wrap span {
+    border-radius: 50px 0px 0px 50px !important;
+} 
+
+.k-picker-wrap {
+    border-radius: 50px !important;
+}
+
+.k-calendar, .k-calendar-container {
+    border-radius: 20px !important;
+}
+
   /*RESPOSNSIVE*/
   @media screen and (min-width: 1366px) {
     html {
