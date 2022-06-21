@@ -15258,12 +15258,34 @@ html {
     border-radius: 50px 0px 0px 50px !important;
 } 
 
-.k-picker-wrap {
+.k-picker-wrap, .kUI_datetimepicker_range_start, .kUI_datetimepicker_range_end,
+#kUI_dropdown_basic_input, .k-dropdown .k-state-default, .k-widget, #kUI_masked_phone, #kUI_masked_ssn, #kUI_masked_credit_card, #kUI_masked_postcode {
     border-radius: 50px !important;
+}
+
+.uiPickerColorWrap #kUI_color_palette, .uiPickerColorWrap .k-animation-container,.uiPickerColorWrap .k-widget {
+    border-radius: 10px !important;
+}
+
+.colorPickerWrap .k-animation-container .k-widget {
+    border-radius: 10px !important;
 }
 
 .k-calendar, .k-calendar-container {
     border-radius: 20px !important;
+}
+
+.kmenuWrap .k-link {
+    color: #021831 !important;
+    font-weight: bold;
+}
+
+.kmenuWrap .k-group .k-menu-link {
+    font-weight: normal !important;
+}
+
+.kmenuWrap .k-group {
+    border-radius: 15px !important;
 }
 
   /*RESPOSNSIVE*/
