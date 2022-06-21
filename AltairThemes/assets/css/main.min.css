@@ -15278,6 +15278,7 @@ html {
 .kmenuWrap .k-link {
     color: #021831 !important;
     font-weight: bold;
+    font-family: Roboto;
 }
 
 .kmenuWrap .k-group .k-menu-link {
@@ -15286,6 +15287,10 @@ html {
 
 .kmenuWrap .k-group {
     border-radius: 15px !important;
+}
+
+.pageCamapaignAddWrap #showFour1 .md-card-content {
+    padding: 0px !important;
 }
 
   /*RESPOSNSIVE*/
@@ -15304,7 +15309,80 @@ html {
         width: 90% !important;
     } 
   }
-/*END*/
+  @media screen and (max-width: 1600px) 
+  and (min-width:  1200px) {
+    .pageCamapaignWrap #page_content_inner {
+        padding: 0px  0px 0px 50px!important;
+    }
+    .pageCamapaignWrap #page_content_inner table {
+        display: grid;
+    }
+    .pageCamapaignAddWrap #page_content_inner {
+        padding: 0px  0px 0px 50px!important;
+    }
+    .pageCamapaignAddWrap #page_content_inner {
+        margin-top: 80px;
+    }
+    .pageCamapaignAddWrap #page_content_inner table {
+        display: grid;
+    }
+  }
+
+  @media screen and (max-width: 1700px) 
+  and (min-width:  1600px) {
+    .gg-wheel {
+        height: 350px !important;
+        width: 350px !important;
+    }
+  }
+
+  @media screen and (max-width: 1599px) 
+  and (min-width:  1200px) {
+    .gg-wheel {
+        height: 300px !important;
+        width: 300px !important;
+    }
+    .pageCamapaignAddWrap #whispconfig .md-card {
+        padding: 0px !important;
+    }
+    .pageCamapaignAddWrap .uk-width-medium-3-10.uk-row-first {
+        padding-left: 0px !important;
+    }
+    .pageCamapaignAddWrap table tr td:first-child {
+        width: 100px !important;
+    }
+    .pageCamapaignAddWrap .md-card:first-child {
+        padding: 15px !important;
+    }
+    #wheelPreview {
+        padding-left: 20px;
+    }
+  }
+
+  @media screen and (max-width: 1899px) 
+  and (min-width:  1200px) {
+    .pageCamapaignAddWrap #whispconfig .md-card {
+        padding: 0px !important;
+    }
+    .pageCamapaignAddWrap .uk-width-medium-3-10.uk-row-first {
+        padding-left: 0px !important;
+    }
+    .pageCamapaignAddWrap table tr td:first-child {
+        width: 100px !important;
+    }
+    .pageCamapaignAddWrap .md-card:first-child {
+        padding: 15px !important;
+    }
+  }
+
+  @media screen and (max-width: 2000px) 
+  and (min-width:  1600px) {
+    .pageCamapaignWrap #page_content_inner table {
+        display: grid;
+    }
+  }
+
+/*END RESPONSIVE*/
 
 
 
