@@ -15321,10 +15321,13 @@ html {
         padding: 0px  0px 0px 50px!important;
     }
     .pageCamapaignAddWrap #page_content_inner {
-        margin-top: 80px;
+        margin-top: 40px;
     }
     .pageCamapaignAddWrap #page_content_inner table {
         display: grid;
+    }
+    .pageCamapaignAddWrap .md-top-bar {
+        margin-left: -20px;
     }
   }
 
