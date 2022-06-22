@@ -13155,10 +13155,10 @@ a.editable-click.editable-disabled:hover {
     border-radius:  10px;
 }
 .scrum_task.blocker {
-    border-top-color: #e53935;
+    border-top-color: #e5393566;
 }
 .scrum_task.critical {
-    border-top-color: #ffa000;
+    border-top-color: #ffa00066;
 }
 .scrum_task.minor {
     border-top-color: #7cb342;
@@ -14863,10 +14863,10 @@ address p + p {
 
 /******Scrumboard Edit********/
 .scrumboard_content {
-    padding-top: 145px !important;
+    /*margin-top: 45px !important;*/
 }
 .scrum_task.minor {
-    border-top-color: #7cb342;
+    border-top-color: #7cb34266;
 }
 .scrum_task {
     border-top-style: solid;
@@ -14876,12 +14876,20 @@ address p + p {
 
     background: none !important;
     box-shadow: none !important;
-    margin-top: 25px;
-    /*position: inherit !important;*/
+    height: 70px !important;
+    top: 0 !important;
+    position: relative !important;
 }
 .top_bar_panel_scrumboard {
     margin-right:  10% !important;
     margin-left: 10% !important;
+}
+.full_border {
+        border-radius: 10px !important;
+        border-width: 1px 1px 1px !important;
+}
+.uk-right-10{
+    margin-right: 10px;
 }
 /*******************************/
 
