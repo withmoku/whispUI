@@ -15293,6 +15293,25 @@ html {
     padding: 0px !important;
 }
 
+.kmultiselectWrap .k-multiselect-wrap>ul>.k-button, .kmultiselectWrap .k-input, .kmultiselectWrap .k-multiselect-wrap {
+    border: solid 2px #e5c5c5;
+    border-radius: 50px !important;
+    padding-right: 20px;
+}
+
+.numericTextBoxWrap .k-numeric-wrap {
+    border-radius: 50px !important;
+    border: solid 1px #e1d0d0;
+}
+
+.numericTextBoxWrap .k-icon:before, .numericTextBoxWrap .k-icon:after {
+    color: #e1d0d0;
+}
+
+.numericTextBoxWrap h3 {
+    color: #3f5063;
+}
+
   /*RESPOSNSIVE*/
   @media screen and (min-width: 1366px) {
     html {

@@ -599,7 +599,9 @@
 
     <div id="page_content">
         <div id="page_content_inner">
-
+            <script>
+                document.body.classList.add('numericTextBoxWrap');
+            </script>
             <div class="md-card">
                 <div class="md-card-content md-padding-55">
                     <div class="uk-grid" data-uk-grid-margin>
@@ -624,27 +626,27 @@
                             </form>
                         </div>
                         <div class="uk-width-large-1-2">
-<pre class="line-numbers"><code class="language-javascript">// price
-$(input).kendoNumericTextBox();
+                            <pre class="line-numbers"><code class="language-javascript">// price
+                            $(input).kendoNumericTextBox();
 
-// price discount
-$(input).kendoNumericTextBox({
-  format: "c",
-  decimals: 3
-});
+                            // price discount
+                            $(input).kendoNumericTextBox({
+                            format: "c",
+                            decimals: 3
+                            });
 
-// weight
-$(input).kendoNumericTextBox({
-  format: "p0",
-  min: 0,
-  max: 0.1,
-  step: 0.01
-});
+                            // weight
+                            $(input).kendoNumericTextBox({
+                            format: "p0",
+                            min: 0,
+                            max: 0.1,
+                            step: 0.01
+                            });
 
-// currently in stock
-$(input).kendoNumericTextBox({
-  format: "#.00 kg"
-});</code></pre>
+                            // currently in stock
+                            $(input).kendoNumericTextBox({
+                            format: "#.00 kg"
+                            });</code></pre>
                         </div>
                     </div>
                 </div>
