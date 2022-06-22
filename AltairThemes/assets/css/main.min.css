@@ -7685,7 +7685,7 @@ pre[class*="language-"].line-numbers.line-numbers {
 pre[class*="language-"].line-numbers.line-numbers code {
     padding-left: 3.8em;
     border: solid 1px #e0e2e5 !important;
-    border-radius: 20px;
+    /*border-radius: 20px;*/
     padding-left: 50px;
 }
 pre[class*="language-"].line-numbers.line-numbers .line-numbers-rows {
@@ -14894,6 +14894,26 @@ address p + p {
 /*******************************/
 
 /*******snippet edit*************/
+.md-card.md-card-overlay .md-card-overlay-content{
+    margin-top: 0px;
+}
+.md-card.md-card-overlay {
+    padding-bottom: 0px !important;
+}   
+.md-card.md-card-overlay .md-card-overlay-content p{
+    margin: 40px;
+}
+.md-card.md-card-overlay .md-card-overlay-header .md-icon{
+    z-index: 99;
+}
+.md-card.md-card-overlay .md-card-overlay-header{
+    padding: 12px 22px;
+}
+/****update snippet******/
+.md-card-snippet{
+    padding: 16px !important;
+}
+
 .top_bar_snippet {
     background: none !important;
     box-shadow: none !important;
