@@ -15312,6 +15312,15 @@ html {
     color: #3f5063;
 }
 
+.kToolbarWrap #kUI_toolBar {
+    border-radius: unset !important;
+    border-bottom: solid 2px #96a0b5 !important;
+}
+
+.kToolbarWrap .k-toolbar .k-separator {
+    border-color: #96a0b5 !important;
+}
+
   /*RESPOSNSIVE*/
   @media screen and (min-width: 1366px) {
     html {
