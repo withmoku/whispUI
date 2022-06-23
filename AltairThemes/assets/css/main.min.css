@@ -1235,6 +1235,12 @@ fieldset + * {
 .uk-htmleditor-fullscreen .uk-htmleditor-content {
     top: 38px;
 }
+.icon_upload{
+    font-size: 3em !important;
+    background: #e7f5fb;
+    border-radius: 50%;
+    padding: 10px;
+}
 .uk-form-file {
     display: inline-block;
     vertical-align: middle;
