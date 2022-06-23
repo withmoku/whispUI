@@ -7547,12 +7547,9 @@ pre[class*="language-"] {
 }
 pre[class*="language-"] > code {
     position: relative;
-<<<<<<< HEAD
     /*box-shadow: -1px 0 0 0 #358ccb, 0 0 0 1px #dfdfdf;*/
-=======
     /*border-left: 10px solid #358ccb;
     box-shadow: -1px 0 0 0 #358ccb, 0 0 0 1px #dfdfdf;*/
->>>>>>> 55b1339 (kendo update)
     background-color: #fdfdfd;
     background-image: linear-gradient(#f6f7f9 50%, #e6ebf1 50%);
     background-size: 3em 3em;
@@ -15177,7 +15174,7 @@ html {
 
 /*kendo ui*/
 .md-card .md-card-content {
-    padding: 60px;
+    /*padding: 60px;*/
 }
 
 .uk-form-stacked h3 {
