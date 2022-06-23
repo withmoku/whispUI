@@ -7430,7 +7430,7 @@ button.md-icon {
     content: "\e5ca";
     font-family: "Material Icons";
     font-size: 18px;
-    color: #fff;
+    color: #000000;
     position: absolute;
     left: 1px;
     top: -2px;
@@ -7438,8 +7438,8 @@ button.md-icon {
 }
 .icheckbox_md.checked,
 .icheckbox_md.hover.checked {
-    background: #009688;
-    border-color: #009688 !important;
+    background: #fff;
+    border-color: #000000 !important;
 }
 .icheckbox_md.disabled:after {
     display: none;
@@ -15036,9 +15036,9 @@ html {
 .uk-navbar-flip li:first-child a {
     padding-bottom: 5px;
 }
- .switchery-default {
+/* .switchery-default {
      background: #39b54a !important;
- }
+ }*/
 
  .mcCardPhone {
     padding-top: 100px;
