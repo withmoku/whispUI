@@ -9748,7 +9748,7 @@ div.steps > ul li:not(:last-child) .title:after{
     width: auto;
     padding: 12px 8px;
     text-decoration: none;
-    color: #fff;
+    color: #e5e7e9;
 }
 @media only screen and (min-width: 960px) {
     .wizard > .steps > ul > li a,
@@ -9923,7 +9923,7 @@ div.steps > ul li:not(:last-child) .title:after{
     }
     .wizard.vertical > .steps .number {
         font-size: 12px;
-        border: 2px solid #fff;
+        border: 2px solid #e5e7e9;
         width: 24px;
         height: 24px;
         line-height: 24px;
