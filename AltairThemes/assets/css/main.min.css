@@ -15349,6 +15349,59 @@ html {
     border-color: #96a0b5 !important;
 }
 
+.componentsMainLlistgridWrap #top_bar  {
+    background: transparent !important;
+    box-shadow: unset !important;
+    margin-left: -100px !important;
+    z-index: 99999;
+    position: relative;
+    margin-top: -60px;
+}
+
+.componentsMainLlistgridWrap .uk-badge-danger {
+    background-image: url("../img/rib.png");
+    padding: 10px 5px 65px 5px !important;
+    background-size: 100% 100% !important;
+    margin-top: 0px !important;
+}
+
+.componentsMainLlistgridWrap .md-card .md-card-head-img {
+    height: 100%;
+    width: 50%;
+    height: auto !important;
+    margin-left: 50px !important;
+    margin-top: 30px !important;
+}
+
+.componentsMainLlistgridWrap .md-card .md-card-content {
+    padding: 20px !important;
+}
+
+.componentsMainLlistgridWrap .md-btn {
+    background: #5bbae4;
+    border-radius: 10px !important;
+}
+
+.componentsMainLlistgridWrap #page_content_inner {
+    margin-top: 50px;
+}
+
+.componentsMainLlistgridWrap .uk-margin-medium-top {
+    margin-top: 20px !important;
+}
+
+.componentsMainLlistgridWrap .heading_c {
+    color: #001730 !important;
+    font-weight: bold !important;
+    font-family: Roboto;
+}
+
+.componentsMainLlistgridWrap #top_bar .top_bar_nav > li.uk-active a {
+    box-shadow: inset 0 -3px 0 #2196f3;
+    background: white;
+    border-radius: 10px;
+}
+
   /*RESPOSNSIVE*/
   @media screen and (min-width: 1366px) {
     html {
