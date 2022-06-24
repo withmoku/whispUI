@@ -9629,6 +9629,10 @@ div.ganttview .ui-resizable-w {
 .animate_hide {
     display: none;
 }
+.wizard_heading{
+    margin: 0 auto !important;
+    text-align: center;
+}
 .tabcontrol,
 .wizard {
     display: block;
@@ -9643,8 +9647,10 @@ div.ganttview .ui-resizable-w {
 .tabcontrol ul,
 .wizard ul {
     list-style: none !important;
-    padding: 0;
+    /*padding: 0;*/
     margin: 0;
+    text-align: center;
+    padding-left: 0px !important;
 }
 .tabcontrol ul > li,
 .wizard ul > li {
@@ -9664,12 +9670,13 @@ div.ganttview .ui-resizable-w {
 .wizard > .steps {
     position: relative;
     display: block;
-    width: 100%;
-    background: #32a9de;
+    width: 20%;
+    margin: 0 auto;
+    /*background: #32a9de;*/
 }
 .wizard > .steps .number {
     font-size: 14px;
-    border: 2px solid #fff;
+    border: 2px solid #e5e7e9;
     width: 24px;
     height: 24px;
     line-height: 24px;
@@ -9679,6 +9686,20 @@ div.ganttview .ui-resizable-w {
     left: 12px;
     top: 50%;
     margin-top: -14px;
+}
+div.steps > ul li:not(:last-child) .title:after{
+    content: '';
+    position: absolute;
+    display: block;
+    top: 50%;
+    height: 1px;
+    width: 20px;
+    background: #e5e7e9;
+    left: 85%;
+    z-index: 1;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-38%);
+    border: 1px solid #e5e7e9;
 }
 @media only screen and (min-width: 960px) {
     .wizard > .steps .number {
@@ -9700,11 +9721,11 @@ div.ganttview .ui-resizable-w {
     box-sizing: border-box;
 }
 .wizard > .steps > ul > li {
-    display: block;
+    display: inline-block;
 }
 @media only screen and (min-width: 960px) {
     .wizard > .steps > ul > li {
-        float: left;
+        /*float: left;*/
         width: 25%;
     }
 }
@@ -9739,27 +9760,48 @@ div.ganttview .ui-resizable-w {
 .wizard > .steps > ul > li.disabled a,
 .wizard > .steps > ul > li.disabled a:active,
 .wizard > .steps > ul > li.disabled a:hover {
-    color: #fff;
+    color: #000000;
     cursor: default;
 }
 .wizard > .steps > ul > li.current a,
 .wizard > .steps > ul > li.current a:active,
 .wizard > .steps > ul > li.current a:hover {
-    background: #5bbae4;
-    color: #fff;
+    /*background: #5bbae4;*/
+    color: #5bbae4;
     cursor: default;
+
+}
+.wizard > .steps > ul > li.current a > span.number,
+.wizard > .steps > ul > li.current a > span.number,
+.wizard > .steps > ul > li.current a > span.number {
+    border: 2px solid #5bbae4;
+   
+}
+.wizard > .steps > ul > li.done a > span.number,
+.wizard > .steps > ul > li.done a > span.number,
+.wizard > .steps > ul > li.done a > span.number{
+    /*background: #1976d2;*/
+    border: 2px solid #1976d2 !important;
 }
 .wizard > .steps > ul > li.done a,
 .wizard > .steps > ul > li.done a:active,
 .wizard > .steps > ul > li.done a:hover {
-    background: #1976d2;
-    color: #fff;
+    /*background: #1976d2;*/
+    color: #1976d2;
 }
 .wizard > .steps > ul > li.error a,
 .wizard > .steps > ul > li.error a:active,
 .wizard > .steps > ul > li.error a:hover {
-    background: #c62828;
-    color: #fff;
+    /*background: #c62828;*/
+    color: #c62828;
+
+}
+.wizard > .steps > ul > li.error a > span.number,
+.wizard > .steps > ul > li.error a > span.number,
+.wizard > .steps > ul > li.error a > span.number {
+
+    border: 2px solid #c62828 !important;
+
 }
 .wizard > .content {
     display: block;
