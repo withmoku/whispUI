@@ -15405,6 +15405,61 @@ html {
     border-radius: 10px;
 }
 
+.componentsMainLlistgridWrap #top_bar  {
+    left: -5em;
+}
+
+.componentsNestableList .uk-nestable01 .uk-nestable-panel{
+    border-top: solid 8px #2dc5a7;
+    border-radius: 10px;
+    margin-bottom: 20px !important;
+}
+
+.componentsNestableList .uk-text-muted {
+    color: #d3bcbc !important;
+    font-weight: normal !important;
+    padding-top: 5px !important;
+    display: block;
+}
+
+.componentsNestableList  .uk-nestable-panel {
+    font-weight: bold;
+    font-family: Roboto;
+    color: #1b2e45;
+}
+
+.componentsNestableList .uk-nestable02 .uk-nestable-panel{
+    border-top: solid 8px #ff91c8;
+    border-radius: 10px;
+    margin-bottom: 20px !important;
+}
+
+.componentsNestableList .uk-nestable03 .uk-nestable-panel{
+    border-top: solid 8px #69c0e7;
+    border-radius: 10px;
+    margin-bottom: 20px !important;
+}
+
+.componentsNestableList .uk-nestable04 .uk-nestable-panel{
+    border-top: solid 8px #b9e0fe;
+    border-radius: 10px;
+    margin-bottom: 20px !important;
+}
+
+.componentsNestableList .uk-nestable05 .uk-nestable-panel{
+    border-top: solid 8px #b9fec9;
+    border-radius: 10px;
+    margin-bottom: 20px !important;
+}
+
+.componentsNestableList .uk-nestable06 .uk-nestable-panel{
+    border-top: solid 8px #fefeba;
+    border-radius: 10px;
+    margin-bottom: 20px !important;
+}
+
+
+
   /*RESPOSNSIVE*/
   @media screen and (min-width: 1366px) {
     html {
