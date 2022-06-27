@@ -15372,7 +15372,7 @@ html {
 }
 
 .kmultiselectWrap .k-multiselect-wrap>ul>.k-button, .kmultiselectWrap .k-input, .kmultiselectWrap .k-multiselect-wrap {
-    border: solid 2px #e5c5c5;
+    border: solid 1px #dcdee0;
     border-radius: 50px !important;
     padding-right: 20px;
 }
