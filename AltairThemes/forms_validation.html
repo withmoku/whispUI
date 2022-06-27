@@ -50,6 +50,9 @@
                 border-radius: 10px;
                 padding: 2px 50px !important;
             }
+            #form_message{
+                font-weight: 900;
+            }
         </style>
 
 </head>
@@ -697,7 +700,7 @@
                         <div class="uk-grid">
                             <div class="uk-width-1-1">
                                 <div class="parsley-row">
-                                    <label class="no_abso" for="message">Message (20 chars min, 100 max)</label>
+                                    <label class="no_abso" for="message"><span id="form_message">Message</span> (20 chars min, 100 max)</label>
                                     <textarea class="md-input full_border" name="message" cols="10" rows="8" data-parsley-trigger="keyup" data-parsley-minlength="20" data-parsley-maxlength="100" data-parsley-validation-threshold="10" data-parsley-minlength-message = "Come on! You need to enter at least a 20 caracters long comment.."></textarea>
                                 </div>
                             </div>

@@ -15328,9 +15328,11 @@ html {
 }
 
 #kUI_datepicker_a, .k-picker-wrap span {
-    border-radius: 50px 0px 0px 50px !important;
+    /*border-radius: 50px 0px 0px 50px !important;*/
 } 
-
+.k-colorpicker .k-picker-wrap{
+    border-radius: 0px !important;
+}
 .k-picker-wrap, .kUI_datetimepicker_range_start, .kUI_datetimepicker_range_end,
 #kUI_dropdown_basic_input, .k-dropdown .k-state-default, .k-widget, #kUI_masked_phone, #kUI_masked_ssn, #kUI_masked_credit_card, #kUI_masked_postcode {
     border-radius: 50px !important;
@@ -15338,6 +15340,9 @@ html {
 
 .uiPickerColorWrap #kUI_color_palette, .uiPickerColorWrap .k-animation-container,.uiPickerColorWrap .k-widget {
     border-radius: 10px !important;
+    border: solid 1px #dcdee0 !important;
+    padding: 5px;
+    background-color: #fff !important;
 }
 
 .colorPickerWrap .k-animation-container .k-widget {
