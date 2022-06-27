@@ -15379,11 +15379,11 @@ html {
 
 .numericTextBoxWrap .k-numeric-wrap {
     border-radius: 50px !important;
-    border: solid 1px #e1d0d0;
+    border: solid 1px #dcdee0;
 }
 
 .numericTextBoxWrap .k-icon:before, .numericTextBoxWrap .k-icon:after {
-    color: #e1d0d0;
+    color: #dcdee0;
 }
 
 .numericTextBoxWrap h3 {
