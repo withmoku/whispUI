@@ -15334,7 +15334,7 @@ html {
     border-radius: 0px !important;
 }
 .k-picker-wrap, .kUI_datetimepicker_range_start, .kUI_datetimepicker_range_end,
-#kUI_dropdown_basic_input, .k-dropdown .k-state-default, .k-widget, #kUI_masked_phone, #kUI_masked_ssn, #kUI_masked_credit_card, #kUI_masked_postcode {
+#kUI_dropdown_basic_input, .k-dropdown .k-state-default, #kUI_masked_phone, #kUI_masked_ssn, #kUI_masked_credit_card, #kUI_masked_postcode {
     border-radius: 50px !important;
 }
 
