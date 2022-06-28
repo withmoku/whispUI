@@ -15519,7 +15519,23 @@ html {
     color: #66737f;
 }
 
-  /*RESPOSNSIVE*/
+.componentsNotificationsWrap .notify-action {
+    color: #000000;
+}
+
+.componentsNotificationsWrap .notify-action:hover {
+    color: #000000;
+}
+
+.componentsPanels .md-card {
+    border-top: solid 10px #F97577;
+}
+
+.componentsPanels .md-card-content {
+    color: #a39292;
+}
+
+  /*RESPONSIVE*/
   @media screen and (min-width: 1366px) {
     html {
         background-size: 30% 17% !important;
