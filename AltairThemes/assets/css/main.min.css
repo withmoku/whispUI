@@ -15562,6 +15562,107 @@ html {
     color: #a39292;
 }
 
+.componentsPreloaders .md-btn {
+    border: solid 1px #9BA3AB;
+    border-radius: 10px;
+    color: #9BA3AB;
+}
+
+.componentsScrollTop .md-card {
+    border-top: solid 10px #FF69B4;
+    margin-bottom: 20px;
+}
+
+.componentsSliders .md-card, .componentsSliders h3 {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.componentsSliders .uk-slidenav-position {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.componentsSliders .uk-slidenav-position li {
+    padding: 2px !important;
+}
+
+.componentsSliders .defaultSlider {
+    width: 93%;
+}
+
+.componentsSliders .defaultSlider .md-card-content {
+    padding: 10px 0px !important;
+}
+
+.componentsSliders .defaultSlider li img {
+    border-radius: 10px !important;
+    height: 145px;
+    width: 100% !important;
+}
+
+.componentsSliders .texttualslider {
+    background: transparent;
+    box-shadow: unset !important;
+}
+
+.componentsSliders .defaultSlider li {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+}
+
+.componentsSliders .defaultSlider .uk-slidenav-previous {
+    left: -10px;
+}
+
+.componentsSliders .defaultSlider .uk-slidenav-next {
+    right: -10px;
+}
+
+.componentsSliders .centerMode .uk-slidenav-previous {
+    left: -50px;
+    display: block;
+}
+
+.componentsSliders .centerMode .uk-slidenav-next {
+    right: -50px;
+    display: block;
+}
+
+.componentsSliders .centerMode li .md-card-content {
+    display: none;
+}
+
+.componentsSliders .centerMode .md-card img {
+    border-radius: 10px;
+}
+
+.componentsSliders .texttualslider {
+    padding: 0px !important;
+    width: 100% !important;
+}
+
+.componentsSliders .texttualslider li {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
+.componentsSliders .texttualslider p {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.componentsSliders .uk-slidenav-previous {
+    left: -60px;
+    display: block;
+}
+
+.componentsSliders .uk-slidenav-next {
+    right: -50px;
+    display: block;
+}
+
   /*RESPONSIVE*/
   @media screen and (min-width: 1366px) {
     html {
