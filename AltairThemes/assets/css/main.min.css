@@ -15663,6 +15663,47 @@ html {
     display: block;
 }
 
+.componentsSlideshow .md-card-content {
+    padding: 40px 50px 50px 50px !important;
+}
+
+.componentsSlideshow .uk-slideshow li p {
+    border: solid 1px #C3CAD2;
+    border-radius: 10px;
+    padding: 20px !important;
+}
+
+.componentsSlideshow .uk-slidenav-position .uk-slidenav-previous {
+    left: -55px;
+}
+
+.componentsSlideshow .uk-slidenav-position .uk-slidenav-next {
+    right: -55px;
+}
+
+.componentsSlideshow h3, .componentsSlideshow h2{
+    color: #001730 !important;
+    padding-bottom: 20px;
+}
+
+.componentsSortable h3, .componentsSortable h4 {
+    color: #2F4257;
+}
+
+.componentsSortable .uikitSortable .md-card-content {
+    border-top: solid 5px #32A9DE;
+    border-radius: 10px;
+}
+
+.componentsSortable .md-list .uk-nestable-list > li, .md-list > li {
+    border-bottom: 0px !important;
+}
+
+.componentsSortable .md-list-heading {
+    color: #334559;
+    font-weight: bold !important;
+}
+
   /*RESPONSIVE*/
   @media screen and (min-width: 1366px) {
     html {
