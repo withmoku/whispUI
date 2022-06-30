@@ -15704,6 +15704,52 @@ html {
     font-weight: bold !important;
 }
 
+.componentsSwitcher h5 {
+    color: #10253d !important;
+    font-weight: bold !important;
+}
+
+.componentsSwitcher .uk-switcher-medium {
+    border: solid 1px #8f959b !important;
+}
+
+.pagesBlank h3 {
+    color: #0c223a !important;
+    font-weight: bold;
+    font-size: 20px !important;
+}
+
+.pagesBlank .uk-row-first {
+    color: #b5a7a7;
+}
+
+.pageContactList .uk-subnav-pill > .uk-active > * {
+    background: #eef2f6;
+    color: #382423;
+}
+
+.pageContactList .md-card {
+    box-shadow: unset !important;
+}
+
+.pageContactList .md-list {
+    padding-top: 80px;
+}
+
+.pageContactList .md-card {
+    text-align: center;
+}
+
+.pageContactList h3 {
+    color: #273a4f !important;
+}
+
+
+
+.md-card .md-card-head-avatar {
+    margin-top: 115px; !important;
+}
+
   /*RESPONSIVE*/
   @media screen and (min-width: 1366px) {
     html {
