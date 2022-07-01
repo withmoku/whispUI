@@ -13799,12 +13799,14 @@ a.editable-click.editable-disabled:hover {
 .gallery_grid_item img,
 .gallery_grid_item > a {
     display: block;
+    border-radius: 15px;
 }
 .gallery_grid_image_caption {
     padding: 8px 16px;
     display: block;
     position: relative;
     z-index: 10;
+    border-radius: 15px;
     background-color: #fff;
 }
 .gallery_grid_image_caption .gallery_image_title {
