@@ -5323,6 +5323,7 @@ body > .content-preloader.preloader-active {
     right: 8px;
     top: 8px;
 }
+
 .md-card .md-card-head-avatar {
     width: 82px;
     height: 82px;
@@ -5330,6 +5331,15 @@ body > .content-preloader.preloader-active {
     margin-top: 16px;
     border: 2px solid #fff;
     display: inline-block;
+}
+.md-card .avatar-profile {
+    border-radius: 10%;
+    margin-top: 0px !important;
+    border: none;
+
+}
+.avatar-center{
+    padding: 25px;
 }
 .md-card .md-card-head-text {
     padding: 8px 16px 16px;
@@ -5633,6 +5643,9 @@ body > .content-preloader.preloader-active {
 }
 .md-card-horizontal .md-card-head-grid {
     border-right: 1px solid rgba(0, 0, 0, 0.12);
+}
+.md-card-avatar-head{
+    background: #b8c1cc;
 }
 .md-card-horizontal .md-card-head-menu {
     right: auto;
