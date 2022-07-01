@@ -11824,6 +11824,12 @@ a.editable-click.editable-disabled:hover {
     top: 3px;
     left: 2px;
 }
+.help-center{
+    float: none !important;
+}
+.md-help-toolbar{
+    text-align: center;
+}
 .header_double_height:after {
     position: absolute;
     top: 48px;
@@ -11833,6 +11839,31 @@ a.editable-click.editable-disabled:hover {
     background: #1976d2;
     content: "";
     display: block;
+}
+.help-section{
+    font-weight: 900 !important;
+    background: none !important;
+}
+.help-accordion{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 0px !important;
+}
+div.help_accordion > div > div.uk-active{
+    background: #fafcfd;
+}
+.help-accordion:after{
+    background: none !important;
+    border:  1px solid;
+}
+.uk-accordion-alt .help-accordion:after{
+     right: 16px !important;
+    left: auto !important;
+}
+.uk-accordion-alt .help-accordion.uk-active:after{
+     right: 16px !important;
+    left: auto !important;
+    color: red !important;
+    background: red;
 }
 .header_double_height #header_main {
     box-shadow: none;
@@ -11850,6 +11881,9 @@ a.editable-click.editable-disabled:hover {
     position: relative;
     z-index: 1;
     transform-origin: 50% 50%;
+}
+.md-card-help{
+    padding: 30px;
 }
 .header_double_height .md-card-single .md-card-content {
     overflow-x: hidden;
