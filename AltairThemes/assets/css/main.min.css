@@ -5338,6 +5338,11 @@ body > .content-preloader.preloader-active {
     border: none;
 
 }
+.md-card .avatar-profile-forum{
+    border-radius: 10%;
+    margin-top: 20px !important;
+    border: none;
+}
 .avatar-center{
     padding: 25px;
 }
